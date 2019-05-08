@@ -1,0 +1,27 @@
+// stylelint-disable declaration-no-important
+/* $HELPERS */
+
+// LAYOUT
+// Hide an element
+.h-hidden {display: none !important;}
+
+// Not show it, but maintain the layout
+.h-invisible {visibility: hidden !important;}
+
+// A11Y
+.h-screenReader {@include screenReader;}
+
+
+// TEXT
+.h-uppercase {text-transform: uppercase;}
+.h-capitalize {text-transform: capitalize;}
+.h-smallCaps {font-variant: small-caps;}
+
+// In HTML5, tags with pure stylistic purposes are deprecated, I recommend
+// use the clasess below into a '<span>' element.
+.h-bold {font-weight: var(--fontWeight--bold);}
+.h-italic {font-style: italic;}
+.h-underline {text-decoration: underline;}
+.h-overline {text-decoration: overline;}
+.h-strikethrough {text-decoration: line-through;}
+.h-monospace {font-family: var(--fontFamily-monospace);}

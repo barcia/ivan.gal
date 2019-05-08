@@ -1,0 +1,33 @@
+// Full width in small screens
+@mixin oversize($marginX) {
+	position: relative;
+	left: 50%;
+	width: calc(100% + (#{$marginX} * 2));
+	transform: translateX(-50%);
+}
+
+
+
+// Convert a list in a inline list
+@mixin inlineList {
+	display: inline-flex;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	li {
+		margin: 0;
+	}
+}
+
+
+
+// Helper to clear inner floats
+@mixin clearfix {
+	&::after {
+		clear: both;
+		display: table;
+		content: "";
+	}
+}

@@ -1,0 +1,72 @@
+/* $LIST */
+
+// Base
+.List {
+	--List-item-minHeight: 48px;
+	--List-item-paddingVertical: 4px;
+	--List-item-paddingHorizontal: 16px;
+	padding: 8px 0;
+	margin: 0;
+	list-style-type: none;
+	background-color: var(--bgColor);
+
+	li {
+		display: flex;
+
+		&.is-centered {
+			overflow-x: scroll;
+		}
+	}
+
+
+	// List items
+	&-main,
+	&-aside {
+		@include voidLink;
+		display: inline-flex;
+		align-items: center;
+		min-height: var(--List-item-minHeight);
+		padding: var(--List-item-paddingVertical) var(--List-item-paddingHorizontal);
+
+		@include hoverFocus {
+			background-color: var(--bgColor-onHover);
+		}
+
+		&[data-value]::after {
+			flex: 1;
+			margin-left: var(--List-item-paddingHorizontal);
+			text-align: right;
+			content: attr(data-value);
+		}
+	}
+
+	&-main {
+		flex: 1;
+
+		li.is-centered > & {
+			justify-content: center;
+		}
+	}
+
+	&-icon {
+		@include size(1.5em);
+
+		&:not(:last-child) {
+			margin-right: var(--List-item-paddingHorizontal);
+		}
+	}
+
+
+
+	// VARIANTS
+	// stylelint-disable no-duplicate-selectors
+
+	// Small variant
+	&.is-small {
+		&.is-small {
+			--List-item-minHeight: 40px;
+			--List-item-paddingVertical: 2px;
+			--List-item-paddingHorizontal: 8px;
+		}
+	}
+}

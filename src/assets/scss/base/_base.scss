@@ -1,0 +1,111 @@
+/* $BASE */
+
+// Body
+body {
+	font-family: font(normal);
+	font-size: 1em;
+	color: var(--fontColor);
+	scroll-behavior: smooth;
+}
+
+::selection {
+	background-color: tint(color(primary), 70%);
+}
+
+
+// Headings
+// stylelint-disable-next-line selector-list-comma-newline-after
+h1, h3, h4, h2, h5, h6 {
+	margin-top: 1.2em;
+	margin-bottom: 0.5em;
+	line-height: 1.4em;
+	text-rendering: optimizeLegibility;
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+
+// Text
+p {
+	@include textBlock(1em);
+	margin-top: 0;
+	line-height: $textLineHeight;
+	text-align: left;
+}
+
+
+// Lists
+ul,
+ol {
+	padding-left: 20px;
+
+	li {
+		@include marginY(0.25em);
+	}
+
+	@include from(medium) {
+		padding-left: 30px;
+	}
+}
+
+
+// Inline elements
+a {
+	color: color(primary);
+
+	&:hover,
+	&:focus {
+		color: shadow(color(primary), 15%);
+	}
+
+	&:active {
+		color: shadow(color(primary), 30%);
+	}
+}
+
+
+small {
+	font-size: 0.85em;
+	color: var(--fontColor--light);
+}
+
+
+del {
+	color: var(--red);
+}
+
+
+ins {
+	color: var(--green);
+}
+
+
+mark {
+	background-color: var(--yellow);
+}
+
+
+kbd {
+	background-color: $white;
+	box-shadow: 0 2px $grey-150;
+}
+
+abbr {
+	text-transform: uppercase;
+}
+
+
+
+// Media
+figure {
+	@include textBlock(1em);
+}
+
+figcaption {
+	font-size: 0.85em;
+	color: var(--fontColor--light);
+	&:first-child {margin-bottom: 0.5em;}
+	&:last-child {margin-top: 0.5em;}
+}

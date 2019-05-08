@@ -1,0 +1,56 @@
+/* $CARD */
+
+// Base
+.Card {
+	@include paddingY(8px);
+	@include boxShadow(2);
+	display: inline-block;
+	width: 100%;
+	border-radius: 5px;
+	background-color: var(--bgColor);
+
+	@include from(small) {
+		width: 400px;
+	}
+
+	&-section {
+		margin: 16px;
+	}
+}
+
+
+
+// Modifiers
+// stylelint-disable no-duplicate-selectors
+.Card {
+	// Aspect ratio
+	@include aspectRatio;
+
+	// Link card
+	&.is-link {
+		@include voidLink;
+		@include transition(box-shadow);
+		cursor: pointer;
+		@include hoverFocus {
+			@include boxShadow(3);
+		}
+	}
+
+
+	// Media
+	&.is-media {
+		position: relative;
+		margin: 0 auto;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		// For preserve the aspect ratio
+		// http://nicolasgallagher.com/flexible-css-cover-images
+		&::before {
+			display: block;
+			padding-bottom: percentage(9 / 16);
+			content: "";
+		}
+	}
+}

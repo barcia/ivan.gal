@@ -1,0 +1,87 @@
+// Mixin to styles in :hover and :focus pseudo-classes
+@mixin hoverFocus {
+	&:hover,
+	&:focus {
+		@content;
+	}
+}
+
+
+
+// Mixin to styles in :hover, :focus and :active pseudo-classes
+@mixin hoverFocusActive {
+	&:hover,
+	&:focus,
+	&:active {
+		@content;
+	}
+}
+
+
+
+// Mixin to styles in :hover, :focus and :active pseudo-classes **and the element itself**
+@mixin selfHoverFocusActive {
+	&,
+	&:hover,
+	&:focus,
+	&:active {
+		@content;
+	}
+}
+
+
+
+// Mixin to remove the link classes and its pseudo-classes
+@mixin voidLink {
+	@include selfHoverFocusActive {
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
+
+
+// Mixin to add the styles to selector pseudo classes
+@mixin linkStates($property, $value1, $value2: $value1) {
+	@include hoverFocus {
+		#{$property}: $value1;
+	}
+
+	&:active {
+		#{$property}: $value2;
+	}
+}
+
+
+
+// Mixin to create an animated underline effect when the text is hovered over
+// Example: @include underlineAnimation(x, red, 2px, 0.3s);
+@mixin underlineAnimation($axis, $color, $height, $time) {
+	position: relative;
+	display: inline-block;
+
+	&::after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: $height;
+		background-color: $color;
+		content: "";
+		transition: transform $time ease-out;
+		transform-origin: bottom left;
+		@if $axis == X or $axis == x {
+			transform: scaleX(0);
+		} @else {
+			transform: scaleY(0);
+		}
+	}
+
+	&:hover::after {
+		@if $axis == X or $axis == x {
+			transform: scaleX(1);
+		} @else {
+			transform: scaleY(1);
+		}
+	}
+}
