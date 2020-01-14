@@ -1,0 +1,56 @@
+@use 'library/function';
+@use 'library/mixin';
+
+:root {
+	--Navbar-height: 55px;
+
+	@include mixin.from(medium) {
+		--Navbar-height: 65px;
+	}
+}
+
+
+.Navbar {
+	z-index: function.elevation(navbar);
+	display: flex;
+	align-items: center;
+	width: 100vw;
+	height: var(--Navbar-height);
+	padding: 0 var(--content-spacing-x);
+
+	&-menu {
+		margin-left: auto;
+	}
+
+	&-list {
+		@include mixin.list-inline;
+
+		li:not(:first-child) {
+			margin-left: 20px;
+		}
+	}
+
+
+	// Modifiers
+	&--fixed {
+		position: fixed;
+		top: 0;
+
+		// @include browserdom.scrolled {
+
+		// }
+	}
+
+	&--scrollable {
+		position: fixed;
+		top: 0;
+
+		// @include browserdom.scrolled {
+
+		// }
+
+		// @include browserdom.scroll-down {
+		// 	// transform: translateY(calc(var(--Navbar-height) * -1));
+		// }
+	}
+}
