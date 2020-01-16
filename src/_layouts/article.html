@@ -1,0 +1,36 @@
+---
+layout: base.html
+---
+
+{%- assign day = page.date | date: "%d" -%}
+{%- assign month = page.date | date: "%m" -%}
+{%- assign year = page.date | date: "%Y" -%}
+{{ date }}
+
+<article>
+  <header class="l-marginBottom-24">
+    <div class="l-marginBottom-8">
+			<h1 class="Post-title">{{ title }}</h1>
+		</div>
+    <div class="Meta">
+			<time datetime="{{ page.date | date: "%Y-%m-%dT%H-%M-%S%z" }}">{{ day }} de {{meses[month]}} do {{year}}</time> •
+			<span>
+			{% for tag in tags %}
+				{{ tag }}
+			{% endfor %}
+			</span>
+		</div>
+	</header>
+
+	<div class="Post-content">
+		{{ content }}
+	</div>
+
+	<footer class="l-marginTop-48">
+		{{ config.author.name }}
+	</footer>
+</article>
+
+<div id="share" class="l-marginTop-48">
+	{% include share.html %}
+</div>

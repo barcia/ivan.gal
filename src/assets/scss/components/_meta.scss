@@ -1,0 +1,14 @@
+@use 'library/mixin';
+
+.Meta {
+	color: var(--fontColor-light);
+	font-size: 0.85rem;
+
+	&-tagList {
+		@include mixin.list-inline;
+
+		> li:not(:last-child) {
+			margin-right: 8px;
+		}
+	}
+}

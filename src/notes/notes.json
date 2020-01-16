@@ -1,0 +1,4 @@
+{
+    "layout": "note.html",
+    "permalink": "notas/{{ page.date | date: '%Y/%m' }}/{{ page.fileSlug }}/index.html"
+}

@@ -2,7 +2,7 @@
 
 // Sectioning root
 body {
-	font-family: var(--fontFamily-primary, sans-serif);
+	// font-family: var(--fontFamily-primary, sans-serif);
 	font-size: 1rem;
 	color: var(--fontColor, black);
 	background-color: var(--bgColor, white);
@@ -69,6 +69,7 @@ pre {
 
 // Inline text semantics
 a {
+	text-decoration: none;
 	color: var(--color-primary, blue);
 
 	&:focus {

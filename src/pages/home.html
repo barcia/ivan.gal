@@ -1,0 +1,46 @@
+---
+layout: base.html
+permalink: /index.html
+---
+
+<header class="l-marginBottom-48 p-home-header">
+	<div class="l-marginBottom-12">
+		<h1 class="title-page">{{ config.title }}</h1>
+	</div>
+
+	<div class="p-home-description">
+		<img class="p-home-profileImg" src="/img/ivanbarcia.jpg" alt="Foto de Iván Barcia">
+		<div>
+			<p>Deseñador e programador web.</p>
+			<p>Este é o meu sitio web persoal.</p>
+			<p>De Portomouro, Val do Dubra.</p>
+		</div>
+	</div>
+</header>
+
+<section class="l-marginBottom-48">
+	<h2 class="title-section">Último artigo</h2>
+	<ul class="u-list-raw l-postList">
+		{%- assign articles = collections.articles  -%}
+		{%- for article in articles limit:1 -%}
+			{% include list-post.html, post: article, dateFormat: 'short' %}
+		{%- endfor -%}
+	</ul>
+	<div class="l-marginTop-24">
+		<a href="/artigos" class="Button">Ver artigos</a>
+	</div>
+</section>
+
+
+<section>
+	<h2 class="title-section">Últimas notas</h2 class="title-section">
+	<ul class="u-list-raw l-postList">
+		{%- assign notes = collections.notes  -%}
+		{%- for note in notes limit:3 -%}
+			{% include list-post.html, post: note, dateFormat: 'long' %}
+		{%- endfor -%}
+	</ul>
+	<div class="l-marginTop-24">
+		<a href="/notas" class="Button">Ver notas</a>
+	</div>
+</section>

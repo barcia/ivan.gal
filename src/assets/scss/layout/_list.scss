@@ -1,0 +1,6 @@
+@use 'library/mixin';
+
+.l-postList {
+	display: grid;
+	gap: 24px;
+}

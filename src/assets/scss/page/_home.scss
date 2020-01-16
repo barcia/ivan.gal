@@ -1,0 +1,37 @@
+@use 'library/mixin';
+
+.p-home {
+	&-header {
+		text-align: center;
+
+		@include mixin.from(small) {
+			text-align: left;
+		}
+	}
+
+	&-profileImg {
+		@include mixin.circle(100px);
+
+		margin: 0 auto 16px;
+
+		@include mixin.from(small) {
+			margin: 0 16px 0 0;
+		}
+	}
+
+	&-description {
+		display: flex;
+		flex-direction: column;
+		font-size: 1.1em;
+		color: var(--fontColor-light);
+
+		@include mixin.from(small) {
+			flex-direction: row;
+		}
+
+		p {
+			margin-bottom: 0.4em;
+		}
+
+	}
+}

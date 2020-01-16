@@ -1,0 +1,5 @@
+@use 'library/mixin';
+
+.u-list-raw {
+	@include mixin.list-raw;
+}

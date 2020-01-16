@@ -6,17 +6,11 @@
 	min-height: 100vh;
 }
 
-.l-flex {
-	flex: 1;
-}
-
 .l-wrapper {
 	@include mixin.padding-x(var(--content-spacing-x, 0));
 
+	flex: 1;
+	width: 100%;
 	max-width: calc(var(--content-width, none) + calc(var(--content-spacing-x, 0) * 2));
-	margin: 0 auto;
-}
-
-.l-navbar {
-	margin: var(--Navbar-height, 0) auto 0;
+	margin: calc(var(--Navbar-height, 0) + 24px) auto 96px;
 }

@@ -1,5 +1,6 @@
 @use 'library/function';
 @use 'library/mixin';
+@use "browserdom/dist/mixins" as browserdom;
 
 :root {
 	--Navbar-height: 55px;
@@ -17,6 +18,12 @@
 	width: 100vw;
 	height: var(--Navbar-height);
 	padding: 0 var(--content-spacing-x);
+	background-color: hsla(0, 0, 100%, 0.7);
+	backdrop-filter: blur(5px);
+
+	@include mixin.from(medium) {
+		padding: 0 calc(var(--content-spacing-x) * 2);
+	}
 
 	&-menu {
 		margin-left: auto;
@@ -28,29 +35,31 @@
 		li:not(:first-child) {
 			margin-left: 20px;
 		}
+
+		a {
+			font-size: 1.1em;
+			color: inherit;
+
+			&:hover {
+				text-decoration: underline;
+			}
+
+		}
 	}
 
 
 	// Modifiers
-	&--fixed {
-		position: fixed;
-		top: 0;
-
-		// @include browserdom.scrolled {
-
-		// }
-	}
-
 	&--scrollable {
 		position: fixed;
 		top: 0;
+		transition: transform 300ms ease-out, box-shadow 300ms ease-out;
 
-		// @include browserdom.scrolled {
+		@include browserdom.scrolled {
+			box-shadow: function.shadow(2);
+		}
 
-		// }
-
-		// @include browserdom.scroll-down {
-		// 	// transform: translateY(calc(var(--Navbar-height) * -1));
-		// }
+		@include browserdom.scroll(down) {
+			transform: translateY(calc(var(--Navbar-height) * -1));
+		}
 	}
 }

@@ -1,0 +1,30 @@
+.title-page {
+	margin-bottom: 0;
+	font-size: 3rem;
+}
+
+.title-list-post {
+	margin-bottom: 0;
+	font-size: 1.5rem;
+	line-height: 1.2;
+}
+
+.link-list-post {
+	text-decoration: none;
+	color: var(--fontColor);
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.title-single {
+	font-size: 2rem;
+	margin-bottom: 0;
+}
+
+.title-section {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: var(--fontColor-lighter);
+}

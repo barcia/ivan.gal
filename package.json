@@ -1,9 +1,8 @@
 {
-	"name": "web-starter",
-	"version": "20.01.2",
+	"name": "ivan.gal",
+	"version": "1.0.0",
+	"description": "",
 	"license": "MIT",
-	"description": "A web starter kit",
-	"homepage": "https://www.barcia.dev/web-starter",
 	"repository": "https://github.com/barcia/web-starter",
 	"private": true,
 	"author": "Iván Barcia <ivan@barcia.dev> (https://barcia.dev)",
@@ -19,6 +18,7 @@
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "^0.10.0",
+		"@11ty/eleventy-plugin-rss": "^1.0.7",
 		"@babel/core": "^7.7.7",
 		"@babel/preset-env": "^7.7.7",
 		"@barcia/stylelint-config-order": "^1.0.0-alpha.3",

@@ -1,0 +1,10 @@
+---
+title: Artigos
+---
+
+<ul class="u-list-raw l-postList">
+    {%- assign articles = collections.articles -%}
+    {%- for article in articles -%}
+			{% include list-post.html, post: article %}
+    {%- endfor -%}
+</ul>

@@ -1,0 +1,23 @@
+.p-contact {
+	&-socialList {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+
+		> li {
+			max-width: 40px;
+
+
+			&:not(:last-child) {
+				margin-right: 16px;
+			}
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+
+}

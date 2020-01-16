@@ -1,0 +1,10 @@
+---
+title: Notas
+---
+
+<ul class="u-list-raw l-postList">
+    {%- assign notes = collections.notes -%}
+    {%- for note in notes -%}
+			{% include list-post.html, post: note, dateFormat: 'long' %}
+    {%- endfor -%}
+</ul>
