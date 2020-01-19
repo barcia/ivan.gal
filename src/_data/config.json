@@ -3,7 +3,6 @@
     "title": "Iván Barcia",
     "description": "Sitio web personal",
     "baseURL": "https://ivan.gal",
-	"feedURL": "https://ivan.gal/feed.xml",
 	"google-analytics-id": "UA-96902843-6",
     "author": {
         "name": "Iván Barcia",

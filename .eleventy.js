@@ -27,6 +27,10 @@ module.exports = function(eleventyConfig) {
 		return collection.getFilteredByGlob(`${config.dir.input}articles/**/*.md`).filter(page => page.date <= now && !page.data.draft).reverse();
 	})
 
+	eleventyConfig.addCollection('posts', collection => {
+		return collection.getFilteredByGlob([`${config.dir.input}articles/**/*.md`, `${config.dir.input}notes/**/*.md`]).filter(page => page.date <= now && !page.data.draft).reverse();
+	})
+
 	eleventyConfig.addCollection('pages', collection => {
 		return collection.getFilteredByGlob([`${config.dir.input}pages/**/*.html`, `${config.dir.input}pages/**/*.md`]).filter(page => !page.data.draft);
 	})

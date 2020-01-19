@@ -1,19 +1,19 @@
 ---
-permalink: notas/feed.xml
+permalink: /feed.xml
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ config.title }} • Notas</title>
+  <title>{{ config.title }}</title>
   <subtitle>{{ config.description }}</subtitle>
   <link href="{{ config.baseURL }}/{{ permalink }}" rel="self"/>
   <link href="{{ config.baseURL }}"/>
-  <updated>{{ collections.notes | rssLastUpdatedDate }}</updated>
-  <id>{{ config.baseURL }}/notas</id>
+  <updated>{{ collections.posts | rssLastUpdatedDate }}</updated>
+  <id>{{ config.baseURL }}</id>
   <author>
     <name>{{ config.author.name }}</name>
     <email>{{ config.author.email }}</email>
   </author>
-  {%- for post in collections.notes %}
+  {%- for post in collections.posts %}
   {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(config.baseURL) }}{% endset %}
   <entry>
     <title>{{ post.data.title }}</title>
