@@ -1,4 +1,5 @@
 {
     "layout": "note.html",
-    "permalink": "notas/{{ page.date | date: '%Y/%m' }}/{{ page.fileSlug }}/index.html"
+	"permalink": "notas/{{ page.date | date: '%Y/%m' }}/{{ page.fileSlug }}/index.html",
+	"description": "Notas breves, novas e opinións de temas de actualidade."
 }

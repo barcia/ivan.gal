@@ -26,7 +26,7 @@ Na miña opinión non hai nada máis natural -e bonito- que **unha lingua que ev
 
 Pero o máis curioso e relevante de todo é realmente **non sempre usamos o xénero masculino para falar de xeito xenérico**.
 
-Para falar de profesións vemos normal dicir dicir *azafatas*, pero por outra banda eles son os *pilotos*. Elas tamén son as *enfermeiras*, pero eles son *médicos*. Elas tamén tamén son *limpiadoras*, *asistentas*, *secretarias*, *caixeiras* ou *coidadoras*. Pero *xefe* e *empresario* é a que abrangue os dous xéneros.
+Para falar de profesións vemos normal dicir *azafatas*, pero por outra banda eles son os *pilotos*. Elas tamén son as *enfermeiras*, pero eles son *médicos*. Elas tamén tamén son *limpiadoras*, *asistentas*, *secretarias*, *caixeiras* ou *coidadoras*. Pero *xefe* e *empresario* é a que abrangue os dous xéneros.
 
 Que non vos caiba dúbida de que o feminismo tamén cambiará a nosa lingua e a fará evolucionar, como tantas outras cousas.
 Afortunadamente.
