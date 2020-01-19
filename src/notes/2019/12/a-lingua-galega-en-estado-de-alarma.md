@@ -2,7 +2,7 @@
 title: "A lingua galega en estado de alarma"
 date: 2019-12-30T22:28:00+02:00
 tags:
-  - lingua galega
+  - lingua-galega
 ---
 
 Hoxe cúmprense 10 anos do [1° recorte ao galego na historia da autonomía](https://praza.gal/politica/dez-anos-do-primeiro-recorte-a-proteccion-legal-do-galego-na-historia-da-autonomia). **Feijóo** e os seus secuaces eliminaron medidas de protección e promoción do **galego** para promover o seu xa famoso «bilinguismo cordial».

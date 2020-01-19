@@ -18,9 +18,6 @@
 
 
 [[redirects]]
-  from = "/feed"
-  to = "/feed.xml"
-
-[[redirects]]
-  from = "/now"
-  to = "/agora"
+  from = "/*"
+  to = "/404.html"
+  status = 404

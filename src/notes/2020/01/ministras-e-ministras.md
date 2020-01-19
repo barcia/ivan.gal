@@ -4,7 +4,7 @@ date: 2020-01-15T18:00:00+01:00
 tags:
   - politica
   - feminismo
-  - lingua galega
+  - lingua-galega
 ---
 
 O pasado luns as novas ministras e ministros prometeron o seu cargo diante do Rei.

@@ -1,9 +1,5 @@
-// const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const now = new Date();
-
-const shortcodes = require('./src/_includes/shortcodes.js');
-
 
 config = {
   dir: {
@@ -18,25 +14,33 @@ module.exports = function(eleventyConfig) {
 	// Plugins
 	eleventyConfig.addPlugin(pluginRss);
 
+
+
 	// Collections
+	// Collections - notes
 	eleventyConfig.addCollection('notes', collection => {
 		return collection.getFilteredByGlob(`${config.dir.input}notes/**/*.md`).filter(page => page.date <= now && !page.data.draft).reverse();
 	})
 
+	// Collections - articles
 	eleventyConfig.addCollection('articles', collection => {
 		return collection.getFilteredByGlob(`${config.dir.input}articles/**/*.md`).filter(page => page.date <= now && !page.data.draft).reverse();
 	})
 
+	// Collections - articles and notes
 	eleventyConfig.addCollection('posts', collection => {
 		return collection.getFilteredByGlob([`${config.dir.input}articles/**/*.md`, `${config.dir.input}notes/**/*.md`]).filter(page => page.date <= now && !page.data.draft).reverse();
 	})
 
+	// Collections - pages
 	eleventyConfig.addCollection('pages', collection => {
 		return collection.getFilteredByGlob([`${config.dir.input}pages/**/*.html`, `${config.dir.input}pages/**/*.md`]).filter(page => !page.data.draft);
 	})
 
 
+
 	// Shortcodes
+	// vimeo
 	eleventyConfig.addShortcode("vimeo", function(id, description) {
 		return `
 <figure class="Embed">
@@ -45,21 +49,21 @@ module.exports = function(eleventyConfig) {
 		`
 });
 
+	// img
 	eleventyConfig.addShortcode("img", function(src, alt) {
 		if (!src || !alt) {
-			throw Error("El shorthand 'img' debe ter 'src' y 'alt'")
+			throw Error("O shorthand 'img' debe ter 'src' e 'alt'")
 		}
 		return `<p><img src="https://d286ud17kp7omm.cloudfront.net/imaxes/${src}" alt="${alt}"></p>`
 });
 
-  // Shortcodes
-  // Object.keys(shortcodes).forEach(shortCodeName => {
-  //   eleventyConfig.addShortcode(shortCodeName, shortcodes[shortCodeName]);
-  // });
+
 
 	eleventyConfig.addPassthroughCopy({
 		'src/assets/img': 'img'
 	});
+
+
 
 	return {
 			dir: {
