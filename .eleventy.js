@@ -28,7 +28,7 @@ module.exports = function(eleventyConfig) {
 	})
 
 	eleventyConfig.addCollection('pages', collection => {
-		return collection.getFilteredByGlob(`${config.dir.input}pages/**/*.html`);
+		return collection.getFilteredByGlob([`${config.dir.input}pages/**/*.html`, `${config.dir.input}pages/**/*.md`]).filter(page => !page.data.draft);
 	})
 
 

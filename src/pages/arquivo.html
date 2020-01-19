@@ -1,0 +1,31 @@
+---
+title: Arquivo
+description: Arquivo do sitio web, con todas os artigos, notas e páxinas publicadas.
+---
+
+<section class="l-marginBottom-48">
+	<h2 class="title-section">Páxinas</h2>
+	<ul class="u-list-raw l-postList">
+			{%- for entry in collections.pages -%}
+				{% include list-post.html, post: entry, dateFormat: 'none' %}
+			{%- endfor -%}
+	</ul>
+</section>
+
+<section class="l-marginBottom-48">
+	<h2 class="title-section">Artigos</h2>
+	<ul class="u-list-raw l-postList">
+			{%- for entry in collections.articles -%}
+				{% include list-post.html, post: entry %}
+			{%- endfor -%}
+	</ul>
+</section>
+
+<section class="l-marginBottom-48">
+	<h2 class="title-section">Notas</h2>
+	<ul class="u-list-raw l-postList">
+			{%- for entry in collections.notes -%}
+				{% include list-post.html, post: entry, dateFormat: 'long' %}
+			{%- endfor -%}
+	</ul>
+</section>

@@ -5,6 +5,7 @@
 				<a class="link-list-post" href="{{ post.url }}">{{ post.data.title }}</a class="link-list-post" >
 			</h2>
 		</header>
+		{% unless dateFormat == "none" %}
 		<footer class="Meta">
 			<time datetime="{{ post.date | date: "%Y-%m-%dT%H-%M-%S%z" }}">
 				{%- assign day = post.date | date: "%d" -%}
@@ -21,5 +22,6 @@
 				{%- endif -%}
 			</time>
 		</footer>
+		{% endunless %}
 	</article>
 </li>

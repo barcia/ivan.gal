@@ -1,13 +1,12 @@
 ---
 title: O que arde
 date: 2019-11-24T20:00:00+02:00
-images:
-  - https://ik.imagekit.io/ivanbarcia/o-que-arde-benedicta_nJIWFNmKE.jpg
+image: o-que-arde-benedicta.jpg
 tags:
   - cinema
 ---
 
-{{< img src="o-que-arde-benedicta_nJIWFNmKE.jpg" desc="Benedicta. Fotograma de O que Arde." alt="Benedicta. Fotograma de O que Arde.">}}
+{% img "o-que-arde-benedicta.jpg" "Benedicta. Fotograma de O que Arde" %}
 
 Recentemente fun ao cinema Numax en Compostela a ver [O que Arde](https://distribucion.numax.org/es/peliculas/lo-que-arde) e encantoume. Logra transmitir con moita **sensibilidade** unha Galicia realmente bela e profunda.
 

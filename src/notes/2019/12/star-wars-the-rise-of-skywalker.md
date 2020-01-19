@@ -1,13 +1,12 @@
 ---
 title: "Star Wars: The Rise of Skywalker"
 date: 2019-12-23T14:08:00+02:00
-images:
-  - https://ik.imagekit.io/ivanbarcia/ep9-ff-000020_68fd2def_VXjfEDMco.jpeg
+image: bb-8.jpeg
 tags:
   - cinema
 ---
 
-{{< img src="ep9-ff-000020_68fd2def_VXjfEDMco.jpeg" desc="Os droides BB-8 e D-O." alt="Os droides BB-8 e D-O">}}
+{% img "bb-8.jpeg" "Os droides BB-8 e D-O" %}
 
 O pasado venres 20 fun ver a recén estreada <cite>Star Wars: The Rise of Skywalker</cite>, o Espisodio 9 da saga. Como valoración diría que me pareceu **un final digno para unha triloxía mediocre**.
 

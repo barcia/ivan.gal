@@ -4,7 +4,6 @@ date: 2020-01-02T17:20:00+02:00
 image: the-mandalorian-the-child.jpg
 tags:
   - tv
-  - politica
 ---
 
 {% img "the-mandalorian-the-child.jpg" "The Child en The Mandalorian" %}

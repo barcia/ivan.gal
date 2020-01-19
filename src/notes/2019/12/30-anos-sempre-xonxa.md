@@ -1,13 +1,12 @@
 ---
 title: Cúmprense 30 anos de Sempre Xonxa
 date: 2019-12-21T18:43:05+02:00
-images:
-  - https://ik.imagekit.io/ivanbarcia/sempre-xonxa_mOlKw02iv.jpg
+image: sempre-xonxa-caladino.jpg
 tags:
   - cinema
 ---
 
-{{< img src="sempre-xonxa_mOlKw02iv.jpg" desc="Caladiño. Fotograma de Sempre Xonxa." alt="Imaxe da manifestación contra o cambio climático">}}
+{% img "sempre-xonxa-caladino.jpg" "Caladiño. Fotograma de Sempre Xonxa" %}
 
 Fai 30 anos estreábase a primeira longametraxe pensada, escrita e feita en **galego**: <cite>[Sempre Xonxa](https://www.filmaffinity.com/es/film616355.html)</cite>. Unha película que marcaría un fito que perdura ata os nosos dias, pois houbo que esperar ata o mes pasado para que outra película galega, <cite>O que arde</cite>, superase a <cite>Sempre Xonxa</cite> en espectadores.
 

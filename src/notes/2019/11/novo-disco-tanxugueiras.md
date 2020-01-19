@@ -2,7 +2,7 @@
 title: Novo disco das Tanxugueiras
 date: 2019-11-20T22:00:00+02:00
 tags:
-  - música
+  - musica
 ---
 
 Xa temos novo disco das Taxugueiras: **Contrapunto**. Tanto en plataformas dixitais como en tendas físicas.

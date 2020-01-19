@@ -1,14 +1,13 @@
 ---
 title: A prol de Greta Thunberg
 description: Artigo a prol da activista contra o cambio climático Greta Thunberg onde destaco todo o que pode aportar á loita contra o cambio climático
-images:
-  - https://ik.imagekit.io/ivanbarcia/markus-spiske-D-QiXQgJxzA-unsplash_maYoBvWUz.jpg
+image: manifestacion-cambio-climatico.jpg
 tags:
   - ecoloxismo
 ---
 
 
-{{< img src="markus-spiske-D-QiXQgJxzA-unsplash_maYoBvWUz.jpg" alt="Imaxe da manifestación contra o cambio climático">}}
+{% img "manifestacion-cambio-climatico.jpg" "Foto de manifestantes contra o cambio climático" %}
 
 
 A pasada fin de semana celebrouse unha manifestación histórica polo clima en Madrid. A maior que se lembra.
