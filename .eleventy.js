@@ -27,6 +27,10 @@ module.exports = function(eleventyConfig) {
 		return collection.getFilteredByGlob(`${config.dir.input}articles/**/*.md`).filter(page => page.date <= now && !page.data.draft).reverse();
 	})
 
+	eleventyConfig.addCollection('pages', collection => {
+		return collection.getFilteredByGlob(`${config.dir.input}pages/**/*.html`);
+	})
+
 
 	// Shortcodes
 	eleventyConfig.addShortcode("vimeo", function(id, description) {

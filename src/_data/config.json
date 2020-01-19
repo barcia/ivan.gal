@@ -4,7 +4,7 @@
     "description": "Sitio web personal",
     "baseURL": "https://ivan.gal",
 	"feedURL": "https://ivan.gal/feed.xml",
-	"google-analytics-id": "",
+	"google-analytics-id": "UA-96902843-6",
     "author": {
         "name": "Iván Barcia",
         "email": "ivan@barcia.dev"

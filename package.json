@@ -8,9 +8,9 @@
 	"author": "Iván Barcia <ivan@barcia.dev> (https://barcia.dev)",
 	"scripts": {
 		"prestart": "npm run clean",
-		"start": "parcel watch ./src/assets/main.js & eleventy --serve --port=8080",
+		"start": "parcel watch ./src/assets/main.js & ELEVENTY_ENV=development eleventy --serve --port=8080",
 		"prebuild": "npm run clean",
-		"build": "parcel build ./src/assets/main.js --no-content-hash --no-source-maps && eleventy",
+		"build": "parcel build ./src/assets/main.js --no-content-hash --no-source-maps && ELEVENTY_ENV=production eleventy",
 		"clean": "rimraf ./dist/",
 		"lint": "npm run lint:css; npm run lint:js",
 		"lint:css": "stylelint './src/assets/scss'",
