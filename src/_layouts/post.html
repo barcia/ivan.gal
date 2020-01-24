@@ -12,7 +12,7 @@ layout: base
 			<time datetime="{{ page.date | date('iso') }}">{{ page.date | date }}</time> •
 			<span>
 			{% for tag in tags %}
-				{{ tag }}
+				<a href="{{ tag | absoluteUrl('/temas/') }}">{{ tag }}</a>
 			{% endfor %}
 			</span>
 		</div>

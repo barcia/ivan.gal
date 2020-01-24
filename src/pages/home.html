@@ -35,7 +35,7 @@ description: Páxina de inicio
 
 
 <section>
-	<h2 class="title-section">Últimas notas</h2 class="title-section">
+	<h2 class="title-section">Últimas notas</h2>
 	<ul class="u-list-raw l-postList">
 		{%- for post in collections.notes | limit(3) -%}
 			{% set dateFormat = 'long' %}

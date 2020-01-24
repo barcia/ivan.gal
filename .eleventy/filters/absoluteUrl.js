@@ -4,4 +4,4 @@
 
 const site = require("../../src/_data/site");
 
-module.exports = (relativeUrl) => site.baseURL + relativeUrl;
+module.exports = (relativeUrl, slug) => site.baseURL + (slug ? slug : '') + relativeUrl;

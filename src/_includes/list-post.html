@@ -5,10 +5,12 @@
 				<a class="link-list-post" href="{{ post.url }}">{{ post.data.title }}</a class="link-list-post" >
 			</h2>
 		</header>
+		{% if dateFormat !== 'none' %}
 		<footer class="Meta">
 			<time datetime="{{ post.date }}">
 				{{ post.date | date(dateFormat) }}
 			</time>
 		</footer>
+		{% endif %}
 	</article>
 </li>

@@ -13,6 +13,7 @@ module.exports = function(config) {
 	// Layouts
 	config.addLayoutAlias('base', 'base.html');
 	config.addLayoutAlias('page', 'page.html');
+	config.addLayoutAlias('tag', 'tag.html');
 
 
 
@@ -38,6 +39,9 @@ module.exports = function(config) {
 	config.addCollection('pages', collection => {
 		return collection.getFilteredByGlob([`./src/pages/**/*.html`, `./src/pages/**/*.md`]).filter(livePosts);
 	})
+
+	// Collections - tags
+	config.addCollection("tagList", require("./collections/tags"));
 
 
 
