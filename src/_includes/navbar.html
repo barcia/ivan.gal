@@ -5,9 +5,9 @@
 
 	<nav id="js-navbar-menu" class="Navbar-menu" aria-label="Menú principal">
 			<ul id="js-navbar-list" class="Navbar-list">
-				<li><a href="/artigos">Artigos</a></li>
-				<li><a href="/notas">Notas</a></li>
-				<li><a href="/contacto">Contacto</a></li>
+				{%- for item in menu.main -%}
+				<li><a href="{{ item.slug }}">{{ item.name }}</a></li>
+				{%- endfor -%}
 			</ul>
 	</nav>
 </div>

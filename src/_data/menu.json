@@ -1,0 +1,30 @@
+{
+	"main": [
+		{
+			"name": "Artigos",
+			"slug": "/artigos"
+		},
+		{
+			"name": "Notas",
+			"slug": "/notas"
+		},
+		{
+			"name": "Contacto",
+			"slug": "/contacto"
+		}
+	],
+	"footer": [
+		{
+			"name": "Privacidade",
+			"slug": "/privacidade"
+		},
+		{
+			"name": "Arquivo",
+			"slug": "/notas"
+		},
+		{
+			"name": "barcia.dev",
+			"slug": "https://barcia.dev"
+		}
+	]
+}

@@ -1,30 +1,25 @@
 <!DOCTYPE html>
-<html lang="{{ config.language }}">
+<html lang="{{ site.language }}">
 	<head>
 			<meta charset="UTF-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<meta http-equiv="X-UA-Compatible" content="ie=edge">
-			<title>{{ config.title }}{% if title %} • {{ title }}{% endif %}</title>
-			<meta name="description" content="{% if description %}{{ description }}{% else %}{{ config.description }}{% endif %}">
-
-			<meta name="theme-color" content="#000000">
-			<link rel="icon" sizes="192x192" href="/logo.png">
-			<link rel="apple-touch-icon" href="/logo.png">
-			<link rel="mask-icon" href="/logo.svg" color="black">
+			<title>Document</title>
 
 			<link rel="stylesheet" href="/main.css">
 			<script src="/main.js"></script>
 
-			{% include head/google-analytics.html %}
-			<!-- {% include head/opengraph.html %} -->
-			<!-- {% include head/twittercards.html %} -->
-	</head>
+			<link rel="manifest" href="/app.webmanifest">
 
+			{% include "head/googleanalytics.html" %}
+			{% include "head/opengraph.html" %}
+			{% include "head/twittercards.html" %}
+	</head>
 	<body class="l-body">
-		{% include navbar.html %}
+		{% include "navbar.html" %}
 		<main class="l-wrapper">
-			{{ content }}
+			{{ content | safe }}
 		</main>
-		{% include footer.html %}
+		{% include "footer.html" %}
 	</body>
 </html>

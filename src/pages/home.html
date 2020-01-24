@@ -1,13 +1,14 @@
 ---
-layout: base.html
+layout: base
 permalink: /index.html
 title: Inicio
 description: Páxina de inicio
 ---
 
+
 <header class="l-marginBottom-48 p-home-header">
 	<div class="l-marginBottom-12">
-		<h1 class="title-page">{{ config.title }}</h1>
+		<h1 class="title-page">{{ site.title }}</h1>
 	</div>
 
 	<div class="p-home-description">
@@ -23,9 +24,8 @@ description: Páxina de inicio
 <section class="l-marginBottom-48">
 	<h2 class="title-section">Último artigo</h2>
 	<ul class="u-list-raw l-postList">
-		{%- assign articles = collections.articles  -%}
-		{%- for article in articles limit:1 -%}
-			{% include list-post.html, post: article, dateFormat: 'short' %}
+		{%- for post in collections.articles -%}
+			{% include "list-post.html" %}
 		{%- endfor -%}
 	</ul>
 	<div class="l-marginTop-24">
@@ -37,9 +37,9 @@ description: Páxina de inicio
 <section>
 	<h2 class="title-section">Últimas notas</h2 class="title-section">
 	<ul class="u-list-raw l-postList">
-		{%- assign notes = collections.notes  -%}
-		{%- for note in notes limit:3 -%}
-			{% include list-post.html, post: note, dateFormat: 'long' %}
+		{%- for post in collections.notes | limit(3) -%}
+			{% set dateFormat = 'long' %}
+			{% include "list-post.html" %}
 		{%- endfor -%}
 	</ul>
 	<div class="l-marginTop-24">

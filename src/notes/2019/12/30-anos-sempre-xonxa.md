@@ -6,7 +6,7 @@ tags:
   - cinema
 ---
 
-{% img "sempre-xonxa-caladino.jpg" "Caladiño. Fotograma de Sempre Xonxa" %}
+{% img "sempre-xonxa-caladino.jpg", "Caladiño. Fotograma de Sempre Xonxa" %}
 
 Fai 30 anos estreábase a primeira longametraxe pensada, escrita e feita en **galego**: <cite>[Sempre Xonxa](https://www.filmaffinity.com/es/film616355.html)</cite>. Unha película que marcaría un fito que perdura ata os nosos dias, pois houbo que esperar ata o mes pasado para que outra película galega, <cite>O que arde</cite>, superase a <cite>Sempre Xonxa</cite> en espectadores.
 

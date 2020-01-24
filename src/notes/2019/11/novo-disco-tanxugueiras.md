@@ -9,4 +9,4 @@ Xa temos novo disco das Taxugueiras: **Contrapunto**. Tanto en plataformas dixit
 
 Sabela Maneiro, Aida Tarrío e Olaia Maneiro logran traer toda esencia da música tradicional galega aos tempos de hoxe con un disco magnífico. 😍
 
-{{< applemusicdisc "https://embed.music.apple.com/us/album/contrapunto/1484552558?l=es" >}}
+{% album applemusic="1484552558", spotify="1XDHZqg8gN8KaEB8Vk3wJo" %}

@@ -6,7 +6,7 @@ tags:
   - tv
 ---
 
-{% img "the-mandalorian-the-child.jpg" "The Child en The Mandalorian" %}
+{% img "the-mandalorian-the-child.jpg", "The Child en The Mandalorian" %}
 
 Nas vacacións de Nadal vin a serie **[The Mandalorian](https://www.imdb.com/title/tt8111088/)** e despois de ver as películas de **Star Wars** feitas por Disney a verdade é que tiña poucas esperanzas postas nesta serie, pero nada máis lonxe da realidade: **pareceume realmente boa**.
 

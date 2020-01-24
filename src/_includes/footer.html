@@ -2,13 +2,13 @@
 	<div>
 		<div class="l-marginBottom-16">
 			<ul class="Footer-menu">
-				<li><a href="/privacidade">Privacidade</a></li>
-				<li><a href="/arquivo">Arquivo</a></li>
-				<li><a href="https://barcia.dev">barcia.dev</a></li>
+				{%- for item in menu.footer -%}
+				<li><a href="{{ item.slug }}">{{ item.name }}</a></li>
+				{%- endfor -%}
 			</ul>
 		</div>
 		<small>
 			<span>&copy; Iván Barcia.</span>
-			<time datetime="{{ "now" | date: "%Y" }}">&nbsp;{{ "now" | date: "%Y" }}</time></small>
+			<time datetime="">&nbsp;</time></small>
 	</div>
 </footer>

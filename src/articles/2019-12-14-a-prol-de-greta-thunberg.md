@@ -7,7 +7,7 @@ tags:
 ---
 
 
-{% img "manifestacion-cambio-climatico.jpg" "Foto de manifestantes contra o cambio climático" %}
+{% img "manifestacion-cambio-climatico.jpg", "Foto de manifestantes contra o cambio climático" %}
 
 
 A pasada fin de semana celebrouse unha manifestación histórica polo clima en Madrid. A maior que se lembra.

@@ -11,7 +11,7 @@ module.exports = function(config) {
 
 
 	// Layouts
-	config.addLayoutAlias('default', 'base.html');
+	config.addLayoutAlias('base', 'base.html');
 	config.addLayoutAlias('page', 'page.html');
 
 
@@ -26,17 +26,17 @@ module.exports = function(config) {
 
 	// Collections - articles
 	config.addCollection('articles', collection => {
-		return collection.getFilteredByGlob(`.src/articles/**/*.md`).filter(livePosts).reverse();
+		return collection.getFilteredByGlob(`./src/articles/*.md`).filter(livePosts).reverse();
 	})
 
 	// Collections - articles and notes
 	config.addCollection('posts', collection => {
-		return collection.getFilteredByGlob([`.src/articles/**/*.md`, `.src/notes/**/*.md`]).filter(livePosts).reverse();
+		return collection.getFilteredByGlob([`./src/articles/*.md`, `./src/notes/**/*.md`]).filter(livePosts).reverse();
 	})
 
 	// Collections - pages
 	config.addCollection('pages', collection => {
-		return collection.getFilteredByGlob([`.src/pages/**/*.html`, `.src/pages/**/*.md`]).filter(livePosts);
+		return collection.getFilteredByGlob([`./src/pages/**/*.html`, `./src/pages/**/*.md`]).filter(livePosts);
 	})
 
 
@@ -44,11 +44,13 @@ module.exports = function(config) {
 	// Filters
 	config.addFilter( 'limit', require("./filters/limit") );
 	config.addFilter( 'date', require("./filters/date") );
+	config.addFilter( 'absoluteUrl', require("./filters/absoluteUrl") );
 
 
 	// Shortcodes
 	config.addShortcode("img", require("./shortcodes/img") );
 	config.addShortcode("vimeo", require("./shortcodes/vimeo"));
+	config.addShortcode("album", require("./shortcodes/album"));
 
 
 

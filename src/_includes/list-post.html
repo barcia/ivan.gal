@@ -5,23 +5,10 @@
 				<a class="link-list-post" href="{{ post.url }}">{{ post.data.title }}</a class="link-list-post" >
 			</h2>
 		</header>
-		{% unless dateFormat == "none" %}
 		<footer class="Meta">
-			<time datetime="{{ post.date | date: "%Y-%m-%dT%H-%M-%S%z" }}">
-				{%- assign day = post.date | date: "%d" -%}
-				{%- assign month = post.date | date: "%m" -%}
-				{%- assign year = post.date | date: "%Y" -%}
-
-				{%- if dateFormat == "long" -%}
-					{%- assign hour = post.date | date: "%H"  -%}
-					{%- assign minute = post.date | date: "%M"  -%}
-
-					{{ day }} de {{ meses[month] }} do {{ year}} ás {{ hour }}:{{ minute }}
-				{%- else -%}
-					{{ day }} de {{meses[month]}} do {{year}}
-				{%- endif -%}
+			<time datetime="{{ post.date }}">
+				{{ post.date | date(dateFormat) }}
 			</time>
 		</footer>
-		{% endunless %}
 	</article>
 </li>

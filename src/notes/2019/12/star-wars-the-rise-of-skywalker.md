@@ -6,7 +6,7 @@ tags:
   - cinema
 ---
 
-{% img "bb-8.jpeg" "Os droides BB-8 e D-O" %}
+{% img "bb-8.jpeg", "Os droides BB-8 e D-O" %}
 
 O pasado venres 20 fun ver a recén estreada <cite>Star Wars: The Rise of Skywalker</cite>, o Espisodio 9 da saga. Como valoración diría que me pareceu **un final digno para unha triloxía mediocre**.
 

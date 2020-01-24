@@ -1,5 +1,5 @@
 {
-    "layout": "article.html",
+    "layout": "post",
 	"permalink": "artigos/{{ page.fileSlug }}/index.html",
 	"description": "Artigos longos e, na medida do posible, atemporais,"
 }

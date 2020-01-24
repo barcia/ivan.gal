@@ -6,7 +6,7 @@ tags:
   - cinema
 ---
 
-{% img "o-que-arde-benedicta.jpg" "Benedicta. Fotograma de O que Arde" %}
+{% img "o-que-arde-benedicta.jpg", "Benedicta. Fotograma de O que Arde" %}
 
 Recentemente fun ao cinema Numax en Compostela a ver [O que Arde](https://distribucion.numax.org/es/peliculas/lo-que-arde) e encantoume. Logra transmitir con moita **sensibilidade** unha Galicia realmente bela e profunda.
 

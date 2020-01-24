@@ -4,8 +4,7 @@ description: Artigos longos e, na medida do posible, atemporais,
 ---
 
 <ul class="u-list-raw l-postList">
-    {%- assign articles = collections.articles -%}
-    {%- for article in articles -%}
-			{% include list-post.html, post: article %}
-    {%- endfor -%}
+	{%- for post in collections.articles -%}
+		{% include "list-post.html" %}
+	{%- endfor -%}
 </ul>

@@ -1,0 +1,14 @@
+.Tabs {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: inline-flex;
+
+	li {
+		margin: 0;
+
+		&:not(:last-child) {
+			margin-right: 8px;
+		}
+	}
+}

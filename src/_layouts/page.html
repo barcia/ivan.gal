@@ -1,5 +1,5 @@
 ---
-layout: base.html
+layout: base
 ---
 
 <article>
@@ -8,6 +8,6 @@ layout: base.html
 	</header>
 
 	<div class="Post-content">
-		{{ content }}
+		{{ content | safe }}
 	</div>
 </article>
