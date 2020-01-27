@@ -20,19 +20,9 @@ module.exports = function(config) {
 	// Collections
 	const livePosts = post => post.date <= now && !post.data.draft;
 
-	// Collections - notes
-	config.addCollection('notes', collection => {
-		return collection.getFilteredByGlob(`./src/notes/**/*.md`).filter(livePosts).reverse();
-	})
-
-	// Collections - articles
-	config.addCollection('articles', collection => {
-		return collection.getFilteredByGlob(`./src/articles/*.md`).filter(livePosts).reverse();
-	})
-
-	// Collections - articles and notes
-	config.addCollection('posts', collection => {
-		return collection.getFilteredByGlob([`./src/articles/*.md`, `./src/notes/**/*.md`]).filter(livePosts).reverse();
+	// Collections - blog
+	config.addCollection('blog', collection => {
+		return collection.getFilteredByGlob(`./src/blog/**/*.md`).filter(livePosts).reverse();
 	})
 
 	// Collections - pages

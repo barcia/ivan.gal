@@ -21,28 +21,15 @@ description: Páxina de inicio
 	</div>
 </header>
 
-<section class="l-marginBottom-48">
-	<h2 class="title-section">Último artigo</h2>
-	<ul class="u-list-raw l-postList">
-		{%- for post in collections.articles -%}
-			{% include "list-post.html" %}
-		{%- endfor -%}
-	</ul>
-	<div class="l-marginTop-24">
-		<a href="/artigos" class="Button">Ver artigos</a>
-	</div>
-</section>
-
 
 <section>
-	<h2 class="title-section">Últimas notas</h2>
+	<h2 class="title-section">Últimas entradas</h2>
 	<ul class="u-list-raw l-postList">
-		{%- for post in collections.notes | limit(3) -%}
-			{% set dateFormat = 'long' %}
+		{%- for post in collections.blog | limit(3) -%}
 			{% include "list-post.html" %}
 		{%- endfor -%}
 	</ul>
 	<div class="l-marginTop-24">
-		<a href="/notas" class="Button">Ver notas</a>
+		<a href="/blog" class="Button">Ver blog</a>
 	</div>
 </section>

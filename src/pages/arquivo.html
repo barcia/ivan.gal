@@ -28,21 +28,11 @@ description: Arquivo do sitio web, con todas os artigos, notas e páxinas public
 </section>
 
 
-<section class="l-marginBottom-48">
-	<h2 class="title-section">Artigos</h2>
-	<ul class="u-list-raw l-postList">
-		{%- for post in collections.articles -%}
-			{% include "list-post.html" %}
-		{%- endfor -%}
-	</ul>
-</section>
-
 
 <section>
-	<h2 class="title-section">Notas</h2>
+	<h2 class="title-section">Blog</h2>
 	<ul class="u-list-raw l-postList">
-		{%- for post in collections.notes -%}
-			{% set dateFormat = 'long' %}
+		{%- for post in collections.blog -%}
 			{% include "list-post.html" %}
 		{%- endfor -%}
 	</ul>

@@ -1,5 +1,0 @@
-{
-    "layout": "post",
-	"permalink": "notas/{{ page.date | date('postSlug') }}/{{ page.fileSlug }}/index.html",
-	"description": "Notas breves, novas e opinións de temas de actualidade."
-}

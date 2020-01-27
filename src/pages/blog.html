@@ -1,0 +1,10 @@
+---
+title: Blog
+description: Artigos, notas breves, novas e opinións de temas de actualidade.
+---
+
+<ul class="u-list-raw l-postList">
+		{%- for post in collections.blog -%}
+			{% include "list-post.html" %}
+    {%- endfor -%}
+</ul>

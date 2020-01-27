@@ -1,12 +1,8 @@
 {
 	"main": [
 		{
-			"name": "Artigos",
-			"slug": "/artigos"
-		},
-		{
-			"name": "Notas",
-			"slug": "/notas"
+			"name": "Blog",
+			"slug": "/blog"
 		},
 		{
 			"name": "Contacto",
