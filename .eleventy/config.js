@@ -13,6 +13,7 @@ module.exports = function(config) {
 	// Layouts
 	config.addLayoutAlias('base', 'base.html');
 	config.addLayoutAlias('page', 'page.html');
+	config.addLayoutAlias('blog', 'blog.html');
 	config.addLayoutAlias('tag', 'tag.html');
 
 
@@ -43,6 +44,7 @@ module.exports = function(config) {
 
 	// Shortcodes
 	config.addShortcode("img", require("./shortcodes/img") );
+	config.addShortcode("youtube", require("./shortcodes/youtube"));
 	config.addShortcode("vimeo", require("./shortcodes/vimeo"));
 	config.addShortcode("album", require("./shortcodes/album"));
 
