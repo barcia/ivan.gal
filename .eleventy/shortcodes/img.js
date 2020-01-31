@@ -3,9 +3,11 @@
 // alternate is passed as a parameter.
 // {% img "image.jpg", "alternate text" %}
 
+const site = require("../../src/_data/site");
+
 module.exports = function(src, alt) {
 	if (!src || !alt) {
 		throw new Error("O shorthand 'img' debe ter 'src' e 'alt'")
 	}
-	return `<p><img src="https://d286ud17kp7omm.cloudfront.net/imaxes/${src}" alt="${alt}"></p>`
+	return `<p><img src="${site.imagesURL}${src}" alt="${alt}"></p>`
 };

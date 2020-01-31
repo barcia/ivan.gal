@@ -5,11 +5,19 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<meta http-equiv="X-UA-Compatible" content="ie=edge">
 			<title>{{ site.title }}{% if title %} • {{ title }}{% endif %}</title>
+			<meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+			<meta name="generator" content="Eleventy">
 
 			<link rel="stylesheet" href="/main.css">
 			<script src="/main.js"></script>
 
 			<link rel="manifest" href="/app.webmanifest">
+			<link rel="archives" href="{{ site.baseURL }}/arquivo/">
+			<link rel="alternate" href="{{ site.baseURL }}/feed" type="application/rss+xml" title="RSS">
+
+			<link rel="icon" sizes="192x192" href="/img/logo-192w.png">
+			<link rel="apple-touch-icon" sizes="192x192" href="/img/logo-192w.png">
+			<link rel="mask-icon" href="/img/logo.svg" color="black">
 
 			{% include "head/googleanalytics.html" %}
 			{% include "head/opengraph.html" %}
