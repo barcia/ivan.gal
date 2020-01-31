@@ -14,7 +14,7 @@
 			{% if post.data.tags %}
 			<ul class="TagList">
 			{% for tag in post.data.tags %}
-				<li><a href="{{ tag | tagUrl }}">{{ tag }}</a></li>
+				<li><a href="{{ tag | prependSlug('/temas/') }}">{{ tag }}</a></li>
 			{% endfor %}
 			</ul>
 			{% endif %}

@@ -40,7 +40,8 @@ module.exports = function(config) {
 	config.addFilter( 'limit', require("./filters/limit") );
 	config.addFilter( 'date', require("./filters/date") );
 	config.addFilter( 'absoluteUrl', require("./filters/absoluteUrl") );
-	config.addFilter( 'tagUrl', require("./filters/tagUrl") );
+	config.addFilter( 'imageUrl', require("./filters/imageUrl") );
+	config.addFilter( 'prependSlug', require("./filters/prependSlug") );
 
 
 	// Shortcodes

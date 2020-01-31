@@ -9,7 +9,7 @@ description: Arquivo do sitio web, con todas os artigos, notas e páxinas public
 	<ul class="u-list-raw l-tagList">
 		{%- for post in collections.tagList -%}
 		<li>
-			<a class="Button l-margin-8" href="{{ post | tagUrl }}">{{ post }}</a>
+			<a class="Button l-margin-8" href="{{ post | prependSlug('/temas/') }}">{{ post }}</a>
 		</li>
 	{%- endfor -%}
 	</ul>
