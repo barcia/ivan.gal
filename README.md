@@ -1,24 +1,7 @@
 # ivan.gal
-This is a personal **web starter kit** to build websites. It has a base CSS architecture bundled with [ParcelJS][parcel] and is built on top of [Eleventy][eleventy] as static site generator.
-
-This project uses [Calendar Versioning](http://calver.org).
-
-![Calendar Versioning](https://img.shields.io/badge/CALVER-YY.0M.MICRO-22bfda)
-Note that add posts will not threated as site update
+My personal website.
 
 
-## Docs:
-* [11ty](https://www.11ty.dev/docs/)
-* [Nunjucks](https://mozilla.github.io/nunjucks/templating.html)
-* [Sass](https://sass-lang.com/documentation)
-
-## Getting started
-Use the Github template to generate a [new project](https://github.com/barcia/web-starter/generate).
-
-Or do it manually:
-1. Clone the repository: `git clone https://github.com/barcia/web-starter.git`
-2. Install the NPM packages: `npm install`
-3. Start to develop with `npm start` or build your project with `npm run build`.
 
 ## Tasks
 * `start`: **Build** all **assets** in **development** mode, build the **site**, **watch** changes on then and start a **live server**.
@@ -28,13 +11,12 @@ Or do it manually:
 * `lint`: **Lint** yout Scss and JS code.
 
 
+
 ## Credits
 Developed by Iván Barcia
 * [barcia.dev](https://barcia.dev)
 * [Twitter](http://www.twitter.com/bartzia)
 * [GitHub](http://www.github.com/barcia)
-
-Project tested on [BrowserStack](https://www.browserstack.com/)
 
 
 
