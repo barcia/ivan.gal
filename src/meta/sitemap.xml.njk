@@ -9,4 +9,10 @@ permalink: /sitemap.xml
     <lastmod>{{ page.date | date('isoDate') }}</lastmod>
   </url>
 {%- endfor %}
+{%- for page in collections.tagList %}
+  <url>
+    <loc>{{ page | prependSlug('/temas/') | absoluteUrl }}</loc>
+    <lastmod>{{ page.date }}</lastmod>
+  </url>
+{%- endfor %}
 </urlset>
