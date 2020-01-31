@@ -7,15 +7,17 @@
 		</header>
 		<footer class="Meta">
 			{% if dateFormat !== 'none' %}
-			<time datetime="{{ post.date }}">
+			<time class="l-marginRight-4" datetime="{{ post.date }}">
 				{{ post.date | date(dateFormat) }}
 			</time>
 			{% endif %}
-			<span>
+			{% if post.data.tags %}
+			<ul class="TagList">
 			{% for tag in post.data.tags %}
-				<a href="{{ tag | absoluteUrl('/temas/') }}">{{ tag }}</a>
+				<li><a href="{{ tag | tagUrl }}">{{ tag }}</a></li>
 			{% endfor %}
-			</span>
+			</ul>
+			{% endif %}
 	</footer>
 	</article>
 </li>

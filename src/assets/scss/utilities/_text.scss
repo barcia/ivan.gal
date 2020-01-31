@@ -20,3 +20,10 @@
 		hanging-punctuation: first;
 	}
 }
+
+.u-hash {
+	&::before {
+		content: '#';
+		color: var(--fontColor-lighter);
+	}
+}

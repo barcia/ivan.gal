@@ -8,12 +8,14 @@ layout: base
 			<h1 class="Post-title">{{ title }}</h1>
 		</div>
     <div class="Meta">
-			<time datetime="{{ page.date | date('iso') }}">{{ page.date | date }}</time> •
-			<span>
+			<time class="l-marginRight-4" datetime="{{ page.date | date('iso') }}">{{ page.date | date }}</time>
+			{% if tags %}
+			<ul class="TagList">
 			{% for tag in tags %}
-				<a href="{{ tag | absoluteUrl('/temas/') }}">{{ tag }}</a>
+				<li><a href="{{ tag | tagUrl }}">{{ tag }}</a></li>
 			{% endfor %}
-			</span>
+			</ul >
+			{% endif %}
 		</div>
 	</header>
 
