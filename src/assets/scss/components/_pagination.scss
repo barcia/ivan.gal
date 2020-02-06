@@ -1,0 +1,33 @@
+@use 'library/mixin';
+
+.Pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	&-list {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: inline-flex;
+		flex-wrap: wrap;
+	}
+
+	a {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		height: 48px;
+		width: 48px;
+		border-radius: 48px;
+		color: var(--fontColor);
+		background-color: var(--neutral-100);
+		margin: 4px;
+		flex-shrink: 0;
+
+		&.is-active {
+			background-color: var(--neutral-200);
+		}
+	}
+}
