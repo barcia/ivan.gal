@@ -2,6 +2,21 @@
 My personal website.
 
 
+## Frontmatter
+
+```yaml
+---
+title:
+excerpt:
+image:
+tags:
+  - galiza
+  - politica
+  - ecoloxismo
+---
+```
+
+
 
 ## Tasks
 * `start`: **Build** all **assets** in **development** mode, build the **site**, **watch** changes on then and start a **live server**.
