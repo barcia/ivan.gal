@@ -4,8 +4,8 @@
 			<meta charset="UTF-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<meta http-equiv="X-UA-Compatible" content="ie=edge">
-			<title>{{ site.title }}{% if title %} • {{ title }}{% endif %}</title>
-			<meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+			<title>{{ title }}</title>
+			<meta name="description" content="{% if excerpt %}{{ excerpt }}{% else %}{{ description }}{% endif %}">
 			<meta name="generator" content="Eleventy">
 
 			<link rel="stylesheet" href="/main.css">
@@ -14,6 +14,9 @@
 			<link rel="manifest" href="/app.webmanifest">
 			<link rel="archives" href="{{ site.baseURL }}/arquivo/">
 			<link rel="alternate" href="{{ site.baseURL }}/feed" type="application/rss+xml" title="RSS">
+			{% if canonical %}
+			<link rel="canonical" href="{{ canonical | absoluteUrl }}" />
+			{% endif %}
 
 			<link rel="icon" sizes="192x192" href="/img/logo-192w.png">
 			<link rel="apple-touch-icon" sizes="192x192" href="/img/logo-192w.png">
@@ -22,6 +25,8 @@
 			{% include "head/googleanalytics.html" %}
 			{% include "head/opengraph.html" %}
 			{% include "head/twittercards.html" %}
+
+
 	</head>
 	<body class="l-body">
 		{% include "navbar.html" %}
