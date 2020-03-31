@@ -2,7 +2,7 @@
 title: Rafael Gómez Nieto
 date: 2020-03-31T22:43:38+02:00
 excerpt: "Faleceu Rafael Gómez Nieto, o último sobrevivinte de La Nueve, a compañía de republicanos españois que combateu o fascismo por toda Europa e reconquistou París"
-image: https://cdn.ivan.gal/imaxes/rafael-gomez-nieto-la-nueve.jpeg
+image: rafael-gomez-nieto-la-nueve.jpeg
 tags:
   - historia
 ---
