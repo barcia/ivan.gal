@@ -50,6 +50,7 @@ module.exports = function(config) {
 	config.addShortcode("vimeo", require("./shortcodes/vimeo"));
 	config.addShortcode("album", require("./shortcodes/album"));
 	config.addPairedShortcode("details", require("./shortcodes/details"));
+	config.addPairedShortcode("blockquote", require("./shortcodes/blockquote"));
 
 
 

@@ -5,7 +5,7 @@
 
 module.exports = function(album) {
 	if (album.applemusic && album.spotify) {
-		return `<div id="tabs">
+		return `<p><div id="tabs">
 		<nav class="l-marginBottom-16">
 			<ul class="Tabs" id="tabs-menu">
 				<li><button class="Button Button--small" data-content="content-applemusic">Apple Music</button></li>
@@ -20,7 +20,7 @@ module.exports = function(album) {
 			<iframe src="https://open.spotify.com/embed/album/${album.spotify}" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 			</div>
 		</div>
-	</div>
+	</div></p>
 `
 	}
 

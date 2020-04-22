@@ -65,6 +65,18 @@ pre {
 	}
 }
 
+blockquote {
+	font-size: 1.3em;
+	color: var(--fontColor-light);
+	font-style: italic;
+
+	cite {
+		font-size: 0.9rem;
+		font-family: var(--fontFamily-sans, sans-serif);
+		font-style: normal;
+	}
+}
+
 
 
 // Inline text semantics
