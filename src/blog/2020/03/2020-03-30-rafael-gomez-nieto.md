@@ -37,7 +37,9 @@ Que a terra lle sexa leve.
 
 Hai un [libro](https://www.casadellibro.com/libro-la-nueve-los-espanoles-que-liberaron-paris/9788466659352/3019252) moi bo de Evelyn Mesquida que nos conta todo o que foi *La Nueve*.
 
+{% details "Máis ligazóns" %}
 * [Fallece el último superviviente de la compañía que liberó París de los nazis - La Vanguardia](https://www.lavanguardia.com/cultura/20200331/48215141168/rafael-gomez-nieto-la-nueve-paris-nazis-hitler-republicanos.html)
 * [Muere de coronavirus Rafael Gómez, el último español de La Nueve - EL PAÍS](https://elpais.com/cultura/2020-03-31/muere-de-coronavirus-rafael-gomez-el-ultimo-espanol-de-la-nueve.html)
 * [Fallece con coronavirus Rafael Gómez, último superviviente de ‘La Nueve’, la compañía de españoles que liberó París de los nazis - ElDiario.es](https://www.eldiario.es/sociedad/Fallece-Rafael-Gomez-Nieto-Paris_0_1011749828.html)
 * [La Nueve - Wikipedia, la enciclopedia libre](https://es.wikipedia.org/wiki/La_Nueve)
+{% enddetails %}

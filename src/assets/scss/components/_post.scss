@@ -1,10 +1,12 @@
 .Post {
 	&-title {
+		font-family: var(--fontFamily-serif);
 		font-size: 2rem;
 		margin-bottom: 0;
 	}
 
 	&-content {
+		font-family: var(--fontFamily-serif);
 		font-size: 1.1rem;
 
 		> :last-child {
