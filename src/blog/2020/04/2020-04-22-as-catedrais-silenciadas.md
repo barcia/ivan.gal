@@ -13,7 +13,7 @@ Veñen de lanzar un novo disco Xabier Díaz e Adufeiras de Salitre: ***As Catedr
 
 Son un aférrimo seguidor e asíduo oínte dos anteriores discos tanto de Xabier Díaz como das súas colaboracións con Adufeiras de Salitre, coas que vai con este polo terceiro disco. Pasadas xa unhas semanas do lanzamento, poida que este sexa o disco que máis me gusta de todos. **É unha auténtica ledicia escoitar todas as cancións de principio a fin**. E non debo ser o único ao que lle encantou, pois creo que chegou a estar as primeiras semanas entre os seis discos máis vendidos en Amazon.
 
-Pero, ¿Qué son as *Catedrais Silenciadas*? Xabier Díaz protagonizou en Abril unha entrevista no programa da Radio Galega [**Lume na Palleira**](http://www.crtvg.es/rg/a-carta/lume-na-palleira-lume-na-palleira-do-d-a-29-03-2020-4356554) (Programa sobre música tradicional galega, moi recomendable) e unha reportaxe moi interesante no número 338 do semanario **Sermos Galiza**, onde nos explica que as “catedrais silenciadas” son todo ese patrimonio material e inmaterial tan rico e tan poderoso que ten Galiza, que todos sabemos que ten, pero que está total e absolutamente silenciado, abandonado ou simplemente ignorado. O título ven a partires de que temos unha catedral que recibe case a totalidade de atención, e temos outras moitas “catedrais”, en cada vila, e en cada aldea, que non reciben a atención que se merecen, e que corren o risco de quedaren enterradas no olvido.
+Pero, ¿Qué son as *Catedrais Silenciadas*? Xabier Díaz protagonizou en abril unha entrevista no programa da Radio Galega [**Lume na Palleira**](http://www.crtvg.es/rg/a-carta/lume-na-palleira-lume-na-palleira-do-d-a-29-03-2020-4356554) (Programa sobre música tradicional galega, moi recomendable) e unha reportaxe moi interesante no número 338 do semanario **Sermos Galiza**, onde nos explica que as “catedrais silenciadas” son todo ese patrimonio material e inmaterial tan rico e tan poderoso que ten Galiza, que todos sabemos que ten, pero que está total e absolutamente silenciado, abandonado ou simplemente ignorado. O título ven a partires de que temos unha catedral que recibe case a totalidade de atención, e temos outras moitas “catedrais”, en cada vila, e en cada aldea, que non reciben a atención que se merecen, e que corren o risco de quedaren enterradas no olvido.
 
 
 {% blockquote "Xabier Díaz falando do estado da música tradicional galega na entrevista en Semos Galiza." %}
@@ -32,14 +32,14 @@ Como dixen no principio gústanme moito todas as cancións do disco, pero se te�
 
 Outra que tamén me gusta moito é _**Botei un Ai!**_, unha canción reversionada que xa tiña nun disco anterior (*Coplas para Icía*), e que provén de San Salvador de Padreiro (Santa Comba).
 
-{% youtube "RDcc8gEbNDJxk" %}
+{% youtube "cc8gEbNDJxk" %}
 
-***Tentenublo*** é outra das miñas favoritas, e xa paro porque senón nomearíaas todas.
+***Tentenublo*** é outra das miñas favoritas, e así podería nomealas todas.
 
 
 Recoméndovos moito escoitar tanto este como os anteriores discos de Xabier Díaz e Adufeiras de Salitre, e espero que os disfrutedes tanto como os disfruto eu.
 Tédelo en plataformas dixitais ou podedes mercalo en formato físico, onde ven acompañado con unhas marabillosas fotografías de moitas desas *catedrais silenciadas*.
 
-{% album applemusic="1499663162", spotify="5SNeij21CvSPXXm3jm1TIV" %}
+{% listen applemusic="1499663162", spotify="5SNeij21CvSPXXm3jm1TIV" %}
 
 Se seguides a [Xabier Díaz](https://www.facebook.com/xabierdiazmusic/) nas redes sociais soe contar de cando en vez cousas do disco, sube titoriais de como tocar as cancións, e amosa algunhas desas extraordinarias fotografías que acompañan ao disco.

@@ -70,7 +70,20 @@ blockquote {
 	color: var(--fontColor-light);
 	font-style: italic;
 
+	@include mixin.margin-x(20px);
+
+	@include mixin.from(small) {
+		@include mixin.margin-x(40px);
+	}
+
+	// Paragraph over cite
+	> p:last-child {
+		margin-top: -1rem;
+		line-height: 1em;
+	}
+
 	cite {
+		color: var(--fontColor-lighter);
 		font-size: 0.9rem;
 		font-family: var(--fontFamily-sans, sans-serif);
 		font-style: normal;

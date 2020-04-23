@@ -25,10 +25,13 @@ module.exports = function(album) {
 	}
 
 	else if (album.applemusic) {
-		return `<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="width:100%;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/es/album/${album.applemusic}"></iframe>`
+		return `<p><iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="width:100%;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/es/album/${album.applemusic}"></iframe></p>`
 	}
 
 	else if (album.spotify) {
-		return `<iframe src="https://open.spotify.com/embed/album/${album.spotify}" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+		return `<p><iframe src="https://open.spotify.com/embed/album/${album.spotify}" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></p>`;
 	}
 };
+
+
+// <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/as-catedrais-silenciadas/1499663162"></iframe>

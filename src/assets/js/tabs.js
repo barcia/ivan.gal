@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		menuItems.forEach((item, index) => {
 			const element = content.querySelector(`#${item.dataset.content}`);
 
-			index === 0 ? item.classList.add('is-active') : element.hidden = true;
+			index === 1 ? item.classList.add('is-active') : element.hidden = true;
 
 			item.addEventListener('click', () => {
 				hiddeAll(menuItems, contentItems);

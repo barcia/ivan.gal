@@ -49,6 +49,7 @@ module.exports = function(config) {
 	config.addShortcode("youtube", require("./shortcodes/youtube"));
 	config.addShortcode("vimeo", require("./shortcodes/vimeo"));
 	config.addShortcode("album", require("./shortcodes/album"));
+	config.addShortcode("listen", require("./shortcodes/listen"));
 	config.addPairedShortcode("details", require("./shortcodes/details"));
 	config.addPairedShortcode("blockquote", require("./shortcodes/blockquote"));
 

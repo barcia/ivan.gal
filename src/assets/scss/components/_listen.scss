@@ -1,0 +1,9 @@
+.Listen {
+	display: flex;
+	margin: -4px;
+
+	> * {
+		max-width: 200px;
+		margin: 4px;
+	}
+}
