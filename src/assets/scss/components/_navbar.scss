@@ -1,6 +1,6 @@
 @use 'library/function';
 @use 'library/mixin';
-@use "browserdom/dist/mixins" as browserdom;
+// @use "browserdom/dist/mixins" as browserdom;
 
 :root {
 	--Navbar-height: 55px;
@@ -54,12 +54,12 @@
 		top: 0;
 		transition: transform 300ms ease-out, box-shadow 300ms ease-out;
 
-		@include browserdom.scrolled {
-			box-shadow: function.shadow(2);
-		}
+		// @include browserdom.scrolled {
+		// 	box-shadow: function.shadow(2);
+		// }
 
-		@include browserdom.scroll(down) {
-			transform: translateY(calc(var(--Navbar-height) * -1));
-		}
+		// @include browserdom.scroll(down) {
+		// 	transform: translateY(calc(var(--Navbar-height) * -1));
+		// }
 	}
 }
