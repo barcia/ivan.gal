@@ -23,7 +23,7 @@ module.exports = function(config) {
 
 	// Collections - blog
 	config.addCollection('blog', collection => {
-		return collection.getFilteredByGlob(`./src/blog/**/*.md`).filter(livePosts).reverse();
+		return collection.getFilteredByGlob(`./src/content/posts/**/*.md`).filter(livePosts).reverse();
 	})
 
 	// Collections - pages
