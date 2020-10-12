@@ -14,4 +14,6 @@ Posiblemente os puntos mais relevantes que atravesa esta ruta sexan a **antiga c
 
 Esta proposta pode sufrir algunha pequena modificación se é posible mellorar algúns tramos ou engadir algún novo punto de interese. Neste senso, convídovos a todas e a todos a realizala xa sexa **camiñando**, **correndo** ou en **bicicleta de montaña**, e calquera opinión ou suxerencia será benvida.
 
-Aquí podedes ver e **descargar**  a proposta da ruta, onde irei engadindo máis información: [Ruta do Castelo](/ruta-castelo)
+Se a pandemia e o tempo o permiten, pode que próximamente intente organizar unha quedada para realizala en grupo.
+
+Aquí podedes ver a proposta da ruta, onde irei engadindo máis información: [Ruta do Castelo](/ruta-castelo)
