@@ -2,6 +2,7 @@
 title: A prol de Greta Thunberg
 description: Artigo a prol da activista contra o cambio climático Greta Thunberg onde destaco todo o que pode aportar á loita contra o cambio climático
 image: manifestacion-cambio-climatico.jpg
+draft: true
 tags:
   - ecoloxismo
 ---

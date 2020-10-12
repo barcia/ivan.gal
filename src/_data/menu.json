@@ -1,6 +1,10 @@
 {
 	"main": [
 		{
+			"name": "Ruta do Castelo",
+			"slug": "/ruta-castelo"
+		},
+		{
 			"name": "Blog",
 			"slug": "/blog"
 		},
