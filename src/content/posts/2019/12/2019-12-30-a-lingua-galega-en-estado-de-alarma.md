@@ -1,6 +1,7 @@
 ---
 title: "A lingua galega en estado de alarma"
 date: 2019-12-30T22:28:00+02:00
+draft: true
 tags:
   - lingua-galega
 ---
