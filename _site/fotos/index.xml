@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Iván Barcia • Fotos</title>
+  <subtitle>Sitio web personal de Iván Barcia</subtitle>
+  <link href="https://ivan.gal/fotos/index.xml" rel="self"/>
+  <link href="https://ivan.gal"/>
+  <updated>2021-01-12T11:25:00Z</updated>
+  <id>https://ivan.gal/fotos</id>
+  <author>
+    <name>Iván Barcia</name>
+    <email>ivanbarcia@icloud.com</email>
+  </author>
+  <entry>
+    <title>Néboa no solpor</title>
+    <link href="https://ivan.gal/fotos/neboa-no-solpor/"/>
+    <updated>2021-01-12T11:25:00Z</updated>
+    <id>https://ivan.gal/fotos/neboa-no-solpor/</id>
+    <content type="html">&lt;p&gt;Esta é a descripción da fotografía&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>ihoihjsaofij</title>
+    <link href="https://ivan.gal/fotos/holi/"/>
+    <updated>2020-12-07T00:00:00Z</updated>
+    <id>https://ivan.gal/fotos/holi/</id>
+    <content type="html">&lt;h1&gt;Hola un saludo&lt;/h1&gt;
+&lt;p&gt;que tal todo markdonw&lt;/p&gt;
+</content>
+  </entry>
+</feed>

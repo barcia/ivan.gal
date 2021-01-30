@@ -1,0 +1,8 @@
+---
+layout: base.html
+---
+
+<article>
+    <time datetime="{{ date | formatDate('isoDate') }}">{{ date | formatDate }}</time>
+    {{ content | safe }}
+</article>

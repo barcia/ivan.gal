@@ -1,5 +1,0 @@
-{
-    "layout": "blog",
-	"permalink": "blog/{{ page.fileSlug }}/index.html",
-	"description": "Artigos, notas breves, novas e opinións de temas de actualidade."
-}

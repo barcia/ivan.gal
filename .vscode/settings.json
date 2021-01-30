@@ -1,0 +1,10 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "podcast_galego.json"
+            ],
+            "url": "./_data/podcast_galego.schema.json"
+        }
+    ]
+}

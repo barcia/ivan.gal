@@ -1,0 +1,14 @@
+---
+layout: list.html
+title: "Fotos"
+---
+
+<ul>
+    {%- for photo in collections.photos | reverse -%}
+    <li>
+        <article>
+            <a href="{{ photo.url }}">{{ photo.url }}</a> - {{ photo.date }}
+        </article>
+    </li>
+    {%- endfor -%}
+</ul>

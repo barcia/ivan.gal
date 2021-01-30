@@ -1,0 +1,18 @@
+---
+layout: list.html
+title: "Blog"
+description: "Artigos de Iván Barcia"
+---
+
+<ul>
+    {%- for post in collections.posts | reverse -%}
+    <li>
+        <article>
+            <a href="{{ post.url }}"><h2>{{ post.data.title }}</h2>
+            <p>{{ post.data.excerpt }}</p>
+            <time datetime="{{ post.date | formatDate('isoDate') }}">{{ post.date | formatDate }}</time>
+        </a>
+        </article>
+    </li>
+    {%- endfor -%}
+</ul>
