@@ -1,4 +1,5 @@
 const markdownIt = require("markdown-it");
+const images = require("./src/images");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const now = new Date();
 
@@ -16,16 +17,17 @@ module.exports = function(config) {
   config.setLibrary("md", customMarkdown());
 
 
-  config.addFilter( 'formatDate', require("./lib/filters/formatDate") );
-  config.addFilter( 'limit', require("./lib/filters/limit") );
-  config.addFilter( 'absoluteUrl', require("./lib/filters/absoluteUrl") );
+  config.addFilter( 'formatDate', require("./src/lib/filters/formatDate") );
+  config.addFilter( 'limit', require("./src/lib/filters/limit") );
+  config.addFilter( 'absoluteUrl', require("./src/lib/filters/absoluteUrl") );
 
+  config.addShortcode("youtube", require("./src/_shortcodes/youtube"));
+	config.addShortcode("vimeo", require("./src/_shortcodes/vimeo"));
+	config.addShortcode("img", require("./src/_shortcodes/img") );
+	config.addPairedShortcode("blockquote", require("./src/_shortcodes/blockquote") );
+  config.addPairedShortcode("details", require("./src/_shortcodes/details"));
 
-	config.addCollection('posts', collection => {
-    const posts = collection.getFilteredByGlob(`./content/posts/**/*.md`).filter(isPublished);
-    posts.forEach(post => addTitle(post))
-    return posts;
-  })
+	config.addCollection('posts', collection => collection.getFilteredByGlob(`./content/posts/**/*.md`).filter(isPublished))
 
 	config.addCollection('postTags', collection => {
     const tagSet = new Set();
@@ -38,9 +40,7 @@ module.exports = function(config) {
     return tagSet;
   })
 
-	config.addCollection('photos', collection => {
-    return collection.getFilteredByGlob(`./content/photos/**/*.md`).filter(isPublished);
-	})
+	config.addCollection('photos', collection => collection.getFilteredByGlob(`./content/photos/**/*.md`).filter(isPublished))
 
 
 
@@ -78,7 +78,10 @@ module.exports = function(config) {
 
     return {
       dir: {
-        layouts: "_layouts"
+        output: "dist",
+        layouts: "src/_layouts",
+        includes: "src/_includes",
+        data: "src/_data",
       },
       dataTemplateEngine: "njk",
 			markdownTemplateEngine: "njk",
@@ -105,17 +108,5 @@ function customMarkdown() {
     html: true,
     typographer: true
   };
-  return markdownIt(options).use(markdownItTitle);
-}
-
-
-/**
- * Add as title the first H1 in the markdown document
- */
-function addTitle(post) {
-  if (! post.data.title) {
-    let env = {}
-    customMarkdown().render(post.template.frontMatter.content, env);
-    post.data.title = env.title
-  }
+  return markdownIt(options).use(markdownItTitle).use(images);
 }

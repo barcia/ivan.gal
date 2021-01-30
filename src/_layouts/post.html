@@ -3,6 +3,9 @@ layout: base.html
 ---
 
 <article>
+    <h1>
+        {{ title }}
+    </h1>
     <time datetime="{{ date | formatDate('isoDate') }}">{{ date | formatDate }}</time>
     {{ content | safe }}
 </article>

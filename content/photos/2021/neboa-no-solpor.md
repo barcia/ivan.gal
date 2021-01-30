@@ -6,7 +6,7 @@ lens: "Tamron 70-300"
 meta:
     speed: 1/300
     iso: 100
-    lens: 52mm
+    lens: 52
 tags:
     - patrimonio
 ---
