@@ -32,6 +32,7 @@ module.exports = function(config) {
 	config.addCollection('postTags', collection => {
     const tagSet = new Set();
     const posts = collection.getFilteredByGlob(`./content/posts/**/*.md`);
+    console.log(posts[0].template.frontMatter.data);
     posts.forEach(item => {
       if( "tags" in item.data ) {
         item.data.tags.forEach(tag => tagSet.add(tag));
@@ -105,8 +106,10 @@ function isPublished(item) {
 function customMarkdown() {
   let markdownItTitle = require("markdown-it-title");
   let options = {
-    html: true,
-    typographer: true
+    html: false,
+    linkify: true,
+    typographer: true,
+    quotes: '«»‘’',
   };
   return markdownIt(options).use(markdownItTitle).use(images);
 }

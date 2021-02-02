@@ -2,6 +2,31 @@
 layout: base.html
 ---
 
-{{ meta.speed }}
+
+<img src="https://cdn.ivan.gal/{{ url }}" width="800px" alt="{{ title }}" loading="lazy" srcset="">
+{{ date | formatDate() }}
+<pre>
+    <div>
+        {{ meta.speed }} seg.
+    </div>
+
+    <div>
+        ISO {{ meta.iso }}
+    </div>
+
+    <div>
+        {{ meta.lens }} mm.
+    </div>
+
+    <div>
+        <i>f</i> {{ meta.f }}
+    </div>
+</pre>
+
+<div>
+    <a href="https://www.openstreetmap.org/?mlat={{ coords.lat }}&mlon={{ coords.long }}#map=16/{{ coords.lat }}/{{ coords.long }}" target="blank">{{ coords.lat }}, {{ coords.long }}</a>
+</div>
+
+
 
 {{ content | safe }}
