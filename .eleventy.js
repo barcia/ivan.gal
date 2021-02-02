@@ -4,6 +4,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const now = new Date();
 
 const postcss = require('postcss')
+var atImport = require("postcss-import")
 const autoprefixer = require('autoprefixer')
 const precss = require('precss')
 const path = require('path');
@@ -46,7 +47,41 @@ module.exports = function(config) {
 
 
 
+  config.addWatchTarget("./src/styles/");
 
+
+  function compileCSS() {
+
+    // css to be processed
+    var css = fs.readFileSync("./src/styles/style.css", "utf8")
+
+    // process css
+    postcss()
+      .use(atImport())
+      .use(autoprefixer())
+      .process(css, {
+        // `from` option is needed here
+        from: "./src/styles/style.css"
+      })
+      .then(function (result) {
+        fs.writeFile('./dist/app.css', result.css, () => true)
+        if ( result.map ) {
+          fs.writeFile('./dist/app.css.map', result.map.toString(), () => true)
+        }
+      })
+
+
+    // fs.readFile('./src/styles/style.css', (err, css) => {
+    //   postcss([precss, autoprefixer])
+    //     .process(css, { from: './src/styles/style.css', to: './dist/app.css' })
+    //     .then(result => {
+    //       fs.writeFile('./dist/app.css', result.css, () => true)
+    //       if ( result.map ) {
+    //         fs.writeFile('./dist/app.css.map', result.map.toString(), () => true)
+    //       }
+    //     })
+    // })
+  }
 
 
 
@@ -54,18 +89,17 @@ module.exports = function(config) {
 
     config.on('beforeBuild', () => {
 
-        console.log('WEBPACK HERE');
 
-      fs.readFile('./src/style.css', (err, css) => {
-        postcss([precss, autoprefixer])
-          .process(css, { from: './src/style.css', to: './dist/app.css' })
-          .then(result => {
-            fs.writeFile('./dist/app.css', result.css, () => true)
-            if ( result.map ) {
-              fs.writeFile('./dist/app.css.map', result.map.toString(), () => true)
-            }
-          })
-      })
+        compileCSS()
+
+
+    });
+
+    config.on('beforeWatch', () => {
+
+
+
+        compileCSS()
 
     });
 

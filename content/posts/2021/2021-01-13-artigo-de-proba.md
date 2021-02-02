@@ -1,6 +1,6 @@
 ---
 date: 2021-01-13
-title: "Un título no texto"
+title: 2444
 excerpt: "Un resumo moi bonito"
 tags:
     - galiza

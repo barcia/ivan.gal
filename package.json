@@ -20,6 +20,11 @@
     "jest": "^26.6.3",
     "markdown-it-title": "^3.0.0",
     "postcss": "^8.2.4",
-    "precss": "^4.0.0"
+    "postcss-import": "^14.0.0",
+    "precss": "^4.0.0",
+    "standarize": "^4.0.0"
+  },
+  "devDependencies": {
+    "jest-json-schema": "^5.0.0"
   }
 }

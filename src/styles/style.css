@@ -1,0 +1,129 @@
+@import 'standarize/dist/standarize.css';
+
+@import './navbar.css';
+
+:root {
+    --bgColor: hsl(0, 0%, 100%);
+    --fontColor: hsl(0, 0%, 10%);
+}
+
+
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 500px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1000px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+body {
+    background-color: var(--bgColor);
+    color: var(--fontColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.Wrapper  {
+    margin: 1rem;
+    max-width: 1024px;
+    /* background-color: hsl(0, 0%, 82%); */
+}
+
+
+
+
+.Page-header {
+    margin-bottom: 2rem;
+}
+
+.Page-title {
+    margin: 0;
+    font-size: 2rem;
+}
+
+
+
+.Page--fotos {
+    --bgColor: hsl(0, 0%, 0%);
+    --fontColor: hsl(0, 0%, 100%);
+}
+
+
+
+.List {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 2rem;
+}
+
+.List--posts {
+
+}
+
+.List--photos {
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+
+
+
+.Photo-title {
+    font-size: 1.4rem;
+}
+
+
+.Photo-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: monospace;
+    font-size: 0.8rem;
+    color: hsl(0, 0%, 30%);
+    margin-bottom: 0.5rem;
+}
+
+.Photo-info a {
+    color: hsl(0, 0%, 30%);
+}
+
+.Photo-meta {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: monospace;
+    margin-top: 0.5rem;
+    color: hsl(0, 0%, 60%);
+    font-size: 0.8rem;
+}
+
+.Photo-meta svg {
+    vertical-align: text-top;
+    margin-right: 0.2em;
+}
+
+.Photo-meta-group {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1.5em;
+}
+
+.Photo-meta-group:first-child {
+    margin-right: 1em;
+    margin-bottom: 0.4em;
+}
+
+.Photo-description {
+    margin-top: 2rem;
+}

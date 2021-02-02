@@ -1,0 +1,20 @@
+.Navbar {
+    /* background-color: sandybrown; */
+    display: flex;
+    padding: 0.5rem 1rem;
+}
+
+
+.Navbar-link {
+    display: block;
+    padding: 1em 1.5em;
+    color: var(--fontColor);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 200ms;
+}
+
+.Navbar-link:hover {
+    /* background-color: hsl(0, 0%, 90%); */
+    text-decoration: underline;
+}

@@ -3,12 +3,12 @@ layout: list.html
 title: "Fotos"
 ---
 
-<ul>
+<ul class="List List--photos">
     {%- for photo in collections.photos | reverse -%}
     <li>
         <article>
             <a href="{{ photo.url }}">
-                <img width="600px" src="https://cdn.ivan.gal/{{ photo.data.url }}" alt="" loading="lazy" srcset="">
+                <img src="https://cdn.ivan.gal/{{ photo.data.url }}" alt="" loading="lazy" srcset="">
             </a>
         </article>
     </li>
