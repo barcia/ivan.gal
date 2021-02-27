@@ -2,6 +2,7 @@
 date: 2021-01-13
 title: 2444
 excerpt: "Un resumo moi bonito"
+draft: true
 tags:
     - galiza
     - patrimonio
