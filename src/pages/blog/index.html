@@ -7,11 +7,9 @@ description: "Artigos de Iván Barcia"
 <ul class="List List--posts">
     {%- for post in collections.posts | reverse -%}
     <li>
-        <article>
-            <a href="{{ post.url }}"><h2>{{ post.data.title }}</h2>
-            <p>{{ post.data.excerpt }}</p>
-            <time datetime="{{ post.date | formatDate('isoDate') }}">{{ post.date | formatDate }}</time>
-        </a>
+        <article class="List-post">
+            <time class="List-post-date" datetime="{{ post.date | formatDate('iso') }}">{{ post.date | formatDate('date') }}</time>
+            <h2 class="List-post-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
         </article>
     </li>
     {%- endfor -%}

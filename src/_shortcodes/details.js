@@ -1,4 +1,4 @@
-// Vimeo shortcode.
+// Details shortcode.
 // {% details "My summary" %}
 // Content
 // {% enddetails %}
@@ -10,8 +10,8 @@ module.exports = function(content, summary) {
 
 	return `
 <details>
-<summary>${summary}</summary>
-${content}
+	<summary>${summary}</summary>
+	${content}
 </details>
 	`
 };

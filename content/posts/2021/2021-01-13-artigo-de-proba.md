@@ -8,3 +8,9 @@ tags:
 ---
 
 Todos os [día](https://google.es) pasa esto e [aqueloutro](/blog/holi)
+
+<button>hola</button>
+
+{% details "My summary" %}
+Content
+{% enddetails %}

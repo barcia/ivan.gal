@@ -1,4 +1,4 @@
-// Vimeo shortcode.
+// Blockquote shortcode.
 // {% blockquote "cite" %}
 // Content
 // {% endblockquote %}
@@ -6,11 +6,9 @@
 module.exports = function(content, cite) {
 
 	return `
-<p>
 <blockquote>
-${content}
-<cite>${cite}</cite>
+	${content}
+	<cite>${cite}</cite>
 </blockquote>
-</p>
-	`
+`
 };

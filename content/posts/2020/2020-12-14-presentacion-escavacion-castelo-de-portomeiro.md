@@ -15,7 +15,7 @@ A intención inicial era celebralo na propia aldea de Portomeiro, pero despois d
 
 Estades todas e todos convidados.
 
-![Cartaz](https://cdn.ivan.gal/imaxes/conferencia-castelo-portomeiro.jpeg)
+![Cartaz](conferencia-castelo-portomeiro.jpeg)
 
 Aquí tendes a localización exacta.
 

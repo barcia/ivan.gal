@@ -14,17 +14,20 @@
   "dependencies": {
     "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-plugin-rss": "^1.1.0",
-    "autoprefixer": "^10.2.1",
+    "autoprefixer": "^10.2.4",
     "dayjs": "^1.10.4",
     "esbuild": "^0.8.33",
     "jest": "^26.6.3",
-    "markdown-it-title": "^3.0.0",
     "postcss": "^8.2.4",
     "postcss-import": "^14.0.0",
     "precss": "^4.0.0",
-    "standarize": "^4.0.0"
+    "standarize": "^5.0.0"
   },
   "devDependencies": {
-    "jest-json-schema": "^5.0.0"
-  }
+    "jest-json-schema": "^5.0.0",
+    "parcel-bundler": "^1.12.4"
+  },
+  "browserslist": [
+    "defaults"
+  ]
 }

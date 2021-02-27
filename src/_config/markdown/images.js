@@ -9,7 +9,7 @@ module.exports = function lazy_loading_plugin(md, options) {
     const src = token.attrs[0][1]
 
     // Set absolute path for relative paths
-    if (!isPathAbsolute(src)) token.attrSet('src', `https://cdn.ivan.gal/imaxes/${src}`);
+    if (!isAbsolutePath(src)) token.attrSet('src', `https://cdn.ivan.gal/imaxes/${src}`);
 
     // Add lazy load
     token.attrSet('loading', 'lazy');
@@ -19,6 +19,6 @@ module.exports = function lazy_loading_plugin(md, options) {
 };
 
 
-function isPathAbsolute(path) {
+function isAbsolutePath(path) {
   return /^(?:\/|[a-z]+:\/\/)/.test(path);
 }

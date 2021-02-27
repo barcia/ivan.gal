@@ -1,6 +1,7 @@
 @import 'standarize/dist/standarize.css';
 
 @import './navbar.css';
+@import './footer.css';
 
 :root {
     --bgColor: hsl(0, 0%, 100%);
@@ -66,7 +67,7 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .List--posts {
@@ -75,6 +76,47 @@ body {
 
 .List--photos {
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+
+.List-post {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+@media (max-width: 499px) {
+    .List-post {
+        flex-direction: column;
+    }
+}
+
+
+.List-post-title {
+    display: flex;
+    font-size: 1.8rem;
+}
+
+@media (min-width: 500px) {
+    .List-post-title {
+        margin-left: 1rem;
+    }
+}
+
+.List-post-title a {
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+}
+
+.List-post-title a:hover {
+    text-decoration: underline;
+}
+
+
+.List-post-date {
+    flex-shrink: 0;
+    font-size: 0.9rem;
+    margin: 0.55rem 0;
+    font-family: monospace;
+    color: hsl(0, 0%, 60%);
 }
 
 
