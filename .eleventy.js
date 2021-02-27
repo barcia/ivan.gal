@@ -47,6 +47,7 @@ module.exports = function(config) {
 
   config.on('beforeBuild', () => {
       fs.rmdir('dist', { recursive: true }, (err) => { if (err) throw err });
+      fs.mkdirSync('dist', 0744);
       css()
   });
 
