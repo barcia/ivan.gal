@@ -6,6 +6,7 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
+    "debug": "DEBUG=Eleventy* eleventy",
     "test": "jest"
   },
   "keywords": [],
