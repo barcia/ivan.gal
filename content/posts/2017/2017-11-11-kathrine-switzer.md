@@ -8,7 +8,7 @@ tags:
   - historia
 ---
 
-Ano **1967**. **Boston** era xa daquela unha cidade de referancia no que se refería ó atletismo popular, e máis concretamente na proba reina do atletismo: **a maratón**.
+Ano **1967**. **Boston** era xa daquela unha cidade de referancia no que se refería ó atletismo popular, e máis concretamente na proba raíña do atletismo: **a maratón**.
 
 Pero hai tan só 50 anos o mundo das maratóns era moi distinto a como o coñecemos hoxe en día. Tan distinto, coma que por lei só podían correlas **deportistas varóns**.
 
@@ -40,8 +40,10 @@ E comezou a carreira, levaba un bo ritmo e todo ía xenial ata o **quilómetro 3
 
 Jock intentou agarrar a Kathy para arrincarlle o dorsal e **expulsala da carreira**, pero Kathy contou coa axuda de Arnie que se interpuxo entre ela e Jock; e de Tom, que placou e derribou a éste último e animou a Kathy a que seguira correndo decíndolle “corre como nunca”. Parece ser que houbo outros corredores que tamén se interpuxeron para axudar á atleta para que ésta poidese seguir correndo.
 
-![KathrineSwitzer](kathrine-switzer-boston-1967.jpg)
-Foto histórica de Kathrine Switzer intentanto ser expulsada da maratón de Boston e o seu mozo Tom placando ó director da carreira
+{% figure "Fig. 1. Foto histórica de Kathrine Switzer intentanto ser expulsada da maratón de Boston e o seu mozo Tom placando ó director da carreira
+" %}
+![Foto histórica de Kathrine Switzer intentanto ser expulsada da maratón de Boston](imaxes/kathrine-switzer-boston-1967.jpg)
+{% endfigure %}
 
 Creouse moito barullo ao redor, e dende ese momento ata o final as **cámaras** centráronse en todo momento en Kathrine, **a muller que estaba a correr unha maratón**. Ela continuou aterrada, pero consciente ao mesmo tempo de que, agora máis que nunca, debía rematar como fose **e demostrarlle a todo o mundo que unha muller sí podía correr unha maratón**.
 
@@ -60,9 +62,10 @@ Por suposto, Kathrine seguiu correndo toda a súa vida. Chegou a gañar a marat�
 Actualmente é -ademáis de atleta- escritora e organiza maratóns por todo o mundo.
 Este ano **2017**, 50 anos despois daquel día, Kathrine Switzer (70 anos), volveu a rematar a maratón de Boston co dorsal 261.
 
-![Kathrinewitzer](kathrine-switzer-boston-2017.jpg)
-Kathrine Switzer na maratón de Boston do 2017 co dorsal 261
 
+{% figure "Fig. 2. Kathrine Switzer na maratón de Boston do 2017 co dorsal 261" %}
+![Kathrine Switzer na maratón de Boston do 2017 co dorsal 261](kathrine-switzer-boston-2017.jpg)
+{% endfigure %}
 Katherine conta a súa historia con detalle nun artigo (en inglés) na [súa páxina web.](http://kathrineswitzer.com/about-kathrine/1967-boston-marathon-the-real-story/). Ademáis tamén ten publicada a súa [biografía](https://www.amazon.es/Marathon-Woman-Running-Revolutionize-Womens/dp/0738213292/ref=sr_1_1?ie=UTF8&qid=1510394806&sr=8-1&keywords=marathon+woman) e podedes botarlle un ollo ao extraordinario especial que lle fixeron na revista Runner’s World hai 10 anos (en inglés), co motivo do 40 aniversario da súa primeira maratón: [“A Muller que o comezou todo”](http://kathrineswitzer.com/site/wp-content/uploads/SwitzerStory_RunnersWorld.pdf).
 
 Hoxen en día as mulleres poden desfrutar do deporte igual que os homes, pero por desgraza hai outros moitos aspectos no día a día nos que **non somos tratados todos por igual**. Todas ao longo da súa vida sofren **discriminación só por ser mulleres**. Xá dende pequenas. Moitas veces de forma tan asumida e aceptada, que nin nos decatamos de que se está a discriminar. Kathrine Switzer amosounos fai 50 anos o camiño para**cambiar isto**.

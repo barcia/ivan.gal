@@ -27,8 +27,11 @@ Eu non son quén para decir que estas empresas están interesadas ou non en que 
 
 Fai uns días enterámonos de que 6 das principais empresas do sector da prevención de incendios en España [pactaran en segredo prezos 3 veces por riba do normal](https://www.digitalsevilla.com/2017/06/22/empresas-espanolas-estafaron-al-gobierno-portugues-amanando-contratos-extincion-incendios/) para estafar a Portugal nas súas labores de prevención. En Portugal este ano morreron máis de 100 persoas por mor dos incendios. Sobran as palabras.
 
-![Kathrinewitzer](luis-davila-lumes.jpg)
-Viñeta de Luís Davila sobre os lumes en Galiza
+
+
+{% figure "Fig. 1. Viñeta de Luís Davila sobre os lumes en Galiza" %}
+![Viñeta de Luís Davila sobre os lumes en Galiza](luis-davila-lumes.jpg)
+{% endfigure %}
 
 Directamente relacionado co anterior están os **incendiarios** en sí. Case sempre seguen un patrón tipo: o máis díscolo e incivilizado da aldea, que ten mala ou nula relación cos veciños e con poucos recursos económicos. A esta xente **páganlles por prender o lume** (algúns aseguran incluso que as cantidades poden ir relacionadas cos resultados). O díficil da cuestión é saber quen. Aquí os fíos que moven estas marionetas soen ser imposibles de seguir ata moi arriba.
 

@@ -8,6 +8,22 @@
       "title": {
         "description": "The unique identifier for a product",
         "type": "string"
+      },
+      "excerpt": {
+        "description": "The unique identifier for a product",
+        "type": "string"
+      },
+      "image": {
+        "description": "The unique identifier for a product",
+        "type": "string"
+      },
+      "draft": {
+        "description": "The unique identifier for a product",
+        "type": "boolean"
+      },
+      "tags": {
+        "description": "The unique identifier for a product",
+        "type": "array"
       }
     }
   }

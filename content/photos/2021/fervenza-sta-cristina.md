@@ -1,6 +1,6 @@
 ---
 date: 2021-01-14T13:46
-title: "Foto2"
+title: "Fervenza en Sta. Cristina"
 url: "fotos/fervenza-remuinho.jpg"
 meta:
     camera: "Nikon D3300"
@@ -13,9 +13,7 @@ meta:
         lat: 42.969944
         lon: -8.603219
 tags:
-    - patrimonio
+    - natureza
 ---
 
-Fotografía de unha fervenza que cae sobre o río Tambre en parte de Sta. Cristina. A fotografía está sacada dende a parte alta do remuíño, na "norte" do 'río'. (c) (tm). https://google.es
-
-<button>Hola</button>
+Fotografía de unha fervenza que cae sobre o río Tambre na parroquia de Sta. Cristina. A fotografía está sacada dende a parte alta do remuíño, dende a outra ladeira do val.

@@ -21,6 +21,7 @@ module.exports = function(config) {
 	config.addShortcode("vimeo", require("./src/_shortcodes/vimeo"));
 	config.addShortcode("img", require("./src/_shortcodes/img") );
 	config.addPairedShortcode("blockquote", require("./src/_shortcodes/blockquote") );
+	config.addPairedShortcode("figure", require("./src/_shortcodes/figure") );
   config.addPairedShortcode("details", require("./src/_shortcodes/details"));
 
 	config.addCollection('posts', collection => collection.getFilteredByGlob(`./content/posts/**/*.md`).filter(isPublished))
@@ -47,7 +48,7 @@ module.exports = function(config) {
 
   config.on('beforeBuild', () => {
       fs.rmdir('dist', { recursive: true }, (err) => { if (err) throw err });
-      fs.mkdirSync('dist', 0744);
+      // fs.mkdirSync('dist', 0744);
       css()
   });
 

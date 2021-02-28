@@ -17,9 +17,10 @@ Uns anos atrás ardeu toda esa zona, o que provocou que desaparecese a capa vexe
 
 Son case imperceptibles, e maiormente só se vislubran se te colocas coa orientación correcta. De feito, a pesar de saber agora de esas estructuras, aínda nalgunha visita recente atopei algunha nova que non fora quén de ver antes.
 
-{% img "castelo-portomeiro-1.jpg", "Castelo de Portomeiro 1" %}
 
-{% img "castelo-portomeiro-2.jpg", "Castelo de Portomeiro 2" %}
+![Castelo de Portomeiro 1](castelo-portomeiro-1.jpg)
+
+![Castelo de Portomeiro 2](castelo-portomeiro-2.jpg)
 
 (Recentemente, nalgún estudo que lin nomeábanse xa ditas estructuras internas)
 
@@ -27,7 +28,7 @@ Nunha visita que fixen por alí con Antón, veciño de Portomouro, vimos tamén 
 
 O lugar ten unha situación privilexiada con unhas vistas espectaculares de todo o val do río Tambre.
 
-{% img "castelo-portomeiro-3.jpg", "Castelo de Portomeiro 3" %}
+![Castelo de Portomeiro 3](castelo-portomeiro-3.jpg)
 
 A boa nova que quería compartir é que agora parece ser que **un grupo da USC vai a realizar unha intervención** no Castelo dentro dunha liña de investigacións sobre as **fortificacións da Galicia altomedieval**.
 
