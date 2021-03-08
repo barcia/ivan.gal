@@ -42,6 +42,7 @@ module.exports = function(config) {
     return tagSet;
   })
 
+  config.addPassthroughCopy({ "src/_assets/font": "font" });
 
   config.addWatchTarget("./src/_assets/");
 

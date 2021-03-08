@@ -3,9 +3,15 @@
 @import './navbar.css';
 @import './footer.css';
 
+@font-face {
+    font-family: 'Inter';
+    src: url('/font/Inter.ttf') format("truetype-variations");
+}
+
 :root {
-    --bgColor: hsl(0, 0%, 100%);
-    --fontColor: hsl(0, 0%, 10%);
+    --bgColor: #DADED4;
+    --fontColor: #3C403D;
+    font-family: 'Inter';
 }
 
 
