@@ -1,0 +1,13 @@
+.title {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.date {
+    color: grey;
+}
+
+.content {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
