@@ -1,7 +1,6 @@
-import Layout from '../../components/layout'
-import { getPost, getAllPosts } from '../../lib/content'
-import parseMarkdown from '../../lib/parseMarkdown'
-import Post from '../../components/layouts/Post'
+import { getPost, getAllPosts } from '/lib/content'
+import parseMarkdown from '/lib/parseMarkdown'
+import Post from '/components/layouts/Post'
 
 export default function Artigo({title, date, readingTime, content}) {
   return (

@@ -1,6 +1,4 @@
-// import styles from './styles.module.css'
-import Head from 'next/head'
-import Navbar from '../Navbar'
+import Navbar from 'components/Navbar'
 import styles from './styles.module.css'
 
 

@@ -1,4 +1,4 @@
-import Date from '../../../components/Date'
+import Date from 'components/Date'
 import Head from 'next/head'
 import styles from './styles.module.css'
 import { useState, useEffect } from 'react';

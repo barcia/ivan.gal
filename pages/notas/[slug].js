@@ -1,6 +1,6 @@
-import Post from '../../components/layouts/Post'
-import { getNote, getAllNotes } from '../../lib/content'
-import parseMarkdown from '../../lib/parseMarkdown'
+import Post from 'components/layouts/Post'
+import { getNote, getAllNotes } from 'lib/content'
+import parseMarkdown from 'lib/parseMarkdown'
 
 
 export default function Note({ title, date, content }) {

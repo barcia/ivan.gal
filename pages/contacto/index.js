@@ -1,6 +1,6 @@
-import Layout from '../../components/Layout'
-import { contact } from '../../lib/constants';
-import Page from '../../components/layouts/Page';
+import Layout from 'components/Layout'
+import { contact } from 'lib/constants';
+import Page from 'components/layouts/Page';
 
 export default function Contacto({ contact }) {
 

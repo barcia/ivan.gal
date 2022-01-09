@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from './style.module.css'
-import { navbar } from '../../lib/constants'
+import { navbar } from 'lib/constants'
 
 export default function Navbar() {
     return (
