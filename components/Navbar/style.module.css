@@ -1,0 +1,13 @@
+.navbar {
+    display: inline-block;
+    align-self: end;
+    margin: 2rem 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: min(2rem, 5vw);
+}
