@@ -1,0 +1,22 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "11ty:start",
+			"label": "Eleventy",
+			"detail": "Compiling and watch Eleventy for development",
+		},
+		{
+			"type": "npm",
+			"script": "assets:start",
+			"label": "Assets",
+			"detail": "Compiling and watch CSS and JS for development",
+		},
+		{
+			"label": "All",
+			"dependsOn": ["Eleventy", "Assets"],
+			"detail": "Dev assets",
+		}
+	]
+}

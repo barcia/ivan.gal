@@ -1,0 +1,27 @@
+---
+layout: ""
+permalink: "/notas/feed.xml"
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.title }} • Notas</title>
+  <subtitle>{{ site.description }}</subtitle>
+  <link href="{{ permalink | absoluteUrl }}" rel="self"/>
+  <link href="{{ site.baseURL }}"/>
+  <updated>{{ collections.notes | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ site.baseURL }}/notas</id>
+  <author>
+    <name>{{ site.author.name }}</name>
+    <email>{{ site.author.email }}</email>
+  </author>
+  {%- for entry in collections.notes | reverse %}
+  <entry>
+    <title>{{ entry.data.title }}</title>
+    <link href="{{ entry.url | absoluteUrl }}"/>
+    <updated>{{ entry.date | dateToRfc3339 }}</updated>
+    <id>{{ entry.url | absoluteUrl }}</id>
+    <content type="html">{{ entry.templateContent | htmlToAbsoluteUrls(entry.url | absoluteUrl) }}</content>
+  </entry>
+  {%- endfor %}
+</feed>

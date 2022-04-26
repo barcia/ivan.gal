@@ -1,0 +1,4 @@
+{
+	"layout": "article.njk",
+	"permalink": "artigos/{{ page.fileSlug }}/index.html"
+}

@@ -1,0 +1,26 @@
+@import 'npm:standarize/dist/standarize.css';
+@import './css/typography.css';
+@import './css/components/Wrapper.css';
+@import './css/components/Footer.css';
+@import './css/components/NoteList.css';
+
+:root {
+    --bgColor: #DADED4;
+    --fontColor: #3C403D;
+    --fontColorLight: #878787;
+}
+
+
+html {
+    font-size: 1rem;
+    color: var(--fontColor);
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    accent-color: red;
+    font-family: 'Inter', sans-serif;
+}

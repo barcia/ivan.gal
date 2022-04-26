@@ -1,0 +1,22 @@
+---
+layout: page.njk
+title: "Notas"
+description: "Notas de Iván Barcia"
+---
+
+<ul class="NoteList">
+    {% if collections.notes.length > 0 %}
+        {%- for post in collections.notes | reverse -%}
+        <li class="">
+            <a href="{{ post.url }}">
+                <article class="NoteItem">
+                    <time class="NoteItem-date Date" datetime="{{ post.date | formatDate('iso') }}">{{ post.date | formatDate() }}</time>
+                    <h2 class="NoteItem-title">{{ post.data.title }}</h2>
+                </article>
+            </a>
+        </li>
+        {%- endfor -%}
+    {% else %}
+        <small>Silence is golden</small>
+    {% endif %}
+</ul>

@@ -1,0 +1,47 @@
+{
+  "name": "ivan.gal",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "eleventy && parcel build --no-source-maps --no-cache",
+    "11ty:start": "eleventy --serve",
+    "assets:start": "parcel watch",
+    "id": "uuid"
+  },
+  "keywords": [],
+  "source": [
+    "src/_assets/main.css",
+    "./src/_assets/index.js"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.0",
+    "swibe": "^2.1.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy-plugin-rss": "^1.1.2",
+    "parcel": "^2.5.0",
+    "rss": "^1.2.2",
+    "standarize": "^6.0.0",
+    "uuid": "^8.3.2"
+  },
+  "browserslist": [
+    "> 5%",
+    "last 2 firefox versions",
+    "last 2 chrome versions",
+    "last 2 safari versions",
+    "last 2 edge versions"
+  ],
+  "@parcel/transformer-css": {
+    "drafts": {
+      "nesting": true
+    }
+  },
+  "targets": {
+    "default": {
+      "distDir": "./_site"
+    }
+  }
+}

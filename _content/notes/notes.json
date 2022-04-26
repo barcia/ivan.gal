@@ -1,0 +1,4 @@
+{
+	"layout": "note.njk",
+	"permalink": "notas/{{ page.date | getYear }}/{{ page.date | getMonth }}/{{ page.fileSlug }}/index.html"
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ excerpt if excerpt else description }}">
+    <link rel="stylesheet" href="/main.css">
+	<script src="/main.js"></script>
+<body>
+
+	<header>
+		<a href="/">Iván</a>
+		<nav class="Navbar">
+			<ul>
+				<li><a href="/">Inicio</a></li>
+				<li><a href="/artigos">Artigos</a></li>
+				<li><a href="/notas">Notas</a></li>
+			</ul>
+		</nav>
+	</header>
+
+    <main class="Wrapper">
+        {{ content | safe }}
+    </main>
+
+	<footer class="Footer">
+		<p>&copy;</p>
+		{# <a href="/privacidade">Privacidade</a> #}
+		<a href="/contacto">Contacto</a>
+	</footer>
+
+</body>
+</html>
