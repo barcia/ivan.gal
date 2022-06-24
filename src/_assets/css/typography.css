@@ -18,3 +18,11 @@ explicitly, e.g.
 	font-style: oblique 0deg 10deg;
 	src: url("../typography/inter/Inter-roman.var.woff2") format("woff2");
 }
+
+
+/* @font-face {
+	font-family: 'Fraunces';
+	font-weight: 300;
+	font-display: swap;
+	src: url("../typography/Fraunces-Regular.ttf") format("ttf");
+} */

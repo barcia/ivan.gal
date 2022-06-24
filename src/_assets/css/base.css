@@ -1,0 +1,59 @@
+
+:root {
+	--bgColor: hsl(16, 15%, 85%);
+	--primaryColor: hsl(207, 40%, 30%);
+    --fontColor: hsl(0 0% 0% / 0.8);
+    --fontColorLight: hsl(0 0% 0% / 0.5);
+	--fontFamilyHeadings: 'Fraunces', serif;
+	--fontFamily: 'Inter', system-ui, sans-serif;
+
+    --size-1: 0.5rem;
+    --size-2: 1rem;
+    --size-3: 1.5rem;
+    --size-4: 2rem;
+    --size-5: 2.5rem;
+}
+
+
+html {
+    font-size: 1rem;
+    color: var(--fontColor);
+}
+
+body {
+	background-color: var(--bgColor);
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    accent-color: var(--primaryColor);
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fontFamilyHeadings);
+}
+
+a {
+    color: var(--primaryColor);
+}
+
+button, input[type="submit"], .Button {
+    background-color: var(--primaryColor);
+    color: white;
+    border: none;
+}
+
+
+.Wrapper {
+    width: 100%;
+    max-width: 75ch;
+    margin: 0 1rem;
+    align-self: center;
+}
+
+.Date {
+    font-size: 1.1rem;
+    color: var(--fontColorLight);
+    font-family: var(--fontFamilyHeadings);
+}

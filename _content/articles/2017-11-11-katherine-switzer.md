@@ -2,7 +2,7 @@
 title: Kathrine Switzer
 date: 2017-11-11
 excerpt: Aínda que pareza mentira, hai só 50 anos as mulleres non podían correr maratóns. Kathrine Switzer amosounos na maratón de Boston o camiño para cambiar as cousas.
-draft: true
+draft: false
 image:
   src: "kathrine-switzer-boston-1967.jpg"
   alt: "Texto alternativo"

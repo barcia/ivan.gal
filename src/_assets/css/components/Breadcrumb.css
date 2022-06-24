@@ -1,6 +1,5 @@
 .Breadcrumb {
 	padding: 1rem 0;
-	font: 1rem / 1.5 monospace;
 
 	& ol {
 		display: flex;

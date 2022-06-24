@@ -16,9 +16,9 @@ module.exports = (date, format) => {
 			return myDate.format('DD MMM YYYY')
 		case 'datelong':
 			return myDate.format('DD MMMM YYYY')
-		case 'iso':
-			return myDate.format()
+		case 'full':
+			return myDate.format('DD MMMM YYYY - HH:mm')
 		default:
-			return myDate.format('DD MMM YYYY HH:mm')
+			return myDate.format()
 	}
 }

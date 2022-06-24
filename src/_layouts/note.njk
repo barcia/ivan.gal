@@ -11,7 +11,7 @@ layout: base.njk
 			</ol>
 		</nav> #}
 		<h1 class="Page-title">{{ title }}</h1>
-		<time class="Date" datetime="{{ date | formatDate('isoDate') }}">{{ date | formatDate('date') }}</time>
+		<time class="Date" datetime="{{ date | formatDate() }}">{{ date | formatDate('full') }}</time>
 	</header>
     <div class="Page-content">{{ content | safe }}</div>
 	<footer>
