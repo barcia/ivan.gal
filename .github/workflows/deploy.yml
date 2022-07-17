@@ -1,13 +1,12 @@
-name: "Deploy production"
+name: Deploy production
 
-# Controls when the workflow will run
 on:
   push:
     branches:
       - main
 
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch: true
+  workflow_dispatch:
 
 jobs:
   build:
@@ -18,7 +17,7 @@ jobs:
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.2
         with:
-          publish-dir: './_site'
+          publish-dir: "./_site"
           production-branch: main
           production-deploy: true
           enable-pull-request-comment: false
