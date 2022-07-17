@@ -1,5 +1,6 @@
 ---
 title: "Contacto"
+description: "Contactar con Iván Barcia"
 ---
 
 - [{{ contact.email }}](mailto:{{ contact.email }})

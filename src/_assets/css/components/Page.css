@@ -6,6 +6,10 @@
 	font-size: 3rem;
 	margin-bottom: var(--size-2);
 
+	&:not(:first-child) {
+		margin-top: var(--size-2);
+	}
+
 	@media (max-width: 768px) {
 		font-size: 2rem;
 	}

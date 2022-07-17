@@ -1,0 +1,19 @@
+.ArticleItem {
+
+}
+
+.ArticleItem-title {
+	margin-bottom: 0;
+
+	&:not(:first-child) {
+		margin-top: var(--size-1);
+	}
+}
+
+.ArticleItem-coverimage {
+	max-width: 500px;
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+	border-radius: 1rem;
+}

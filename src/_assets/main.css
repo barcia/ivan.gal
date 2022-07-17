@@ -4,5 +4,9 @@
 @import './css/components/Wrapper.css';
 @import './css/components/Breadcrumb.css';
 @import './css/components/Footer.css';
+@import './css/components/Navbar.css';
+@import './css/components/NoteItem.css';
 @import './css/components/NoteList.css';
+@import './css/components/ArticleItem.css';
+@import './css/components/ArticleList.css';
 @import './css/components/Page.css';

@@ -2,10 +2,12 @@
 layout: base.njk
 ---
 
-<article class="Page">
-    <header class="Page-header">
-		<h1 class="Page-title">{{ title }}</h1>
-	</header>
+<main>
+	<article class="Page">
+		<header class="Page-header">
+			<h1 class="Page-title">{{ title }}</h1>
+		</header>
 
-    <div class="Page-content">{{ content | safe }}</div>
-</article>
+		<div class="Page-content">{{ content | safe }}</div>
+	</article>
+</main>

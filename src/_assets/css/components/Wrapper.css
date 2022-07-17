@@ -1,3 +1,7 @@
 .Wrapper {
 	flex: 1;
+    width: 100%;
+    max-width: 75ch;
+    padding: 0 1rem;
+    align-self: center;
 }

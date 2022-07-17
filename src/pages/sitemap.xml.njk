@@ -8,7 +8,7 @@ eleventyExcludeFromCollections: true
 {%- for entry in collections.all %}
   <url>
     <loc>{{ entry.url | absUrl }}</loc>
-    <lastmod>{{ entry.date | formatDate('iso') }}</lastmod>
+    <lastmod>{{ entry.date | formatDate() }}</lastmod>
   </url>
 {%- endfor %}
 </urlset>

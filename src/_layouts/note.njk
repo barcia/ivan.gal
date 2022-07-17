@@ -2,25 +2,12 @@
 layout: base.njk
 ---
 
-<article class="Page">
-    <header class="Page-header">
-		{# <nav class="Breadcrumb" aria-label="Breadcrumb">
-			<ol>
-				<li><a href="/notas">Notas</a></li>
-				<li><a href="./" aria-current="page">{{ title }}</a></li>
-			</ol>
-		</nav> #}
-		<h1 class="Page-title">{{ title }}</h1>
-		<time class="Date" datetime="{{ date | formatDate() }}">{{ date | formatDate('full') }}</time>
-	</header>
-    <div class="Page-content">{{ content | safe }}</div>
-	<footer>
-		{# <address>
-		 <em><a href="/contacto">{{ site.author.name }}</a></em>
-		</address> #}
-
-		{# {% include "subscribe.njk" %} #}
-
-		<!-- <button class="share" data-share-text="{{ title }}">Compartir</button> -->
-	</footer>
-</article>
+<main>
+	<article class="Page">
+		<header class="Page-header">
+			<h1 class="Page-title">{{ title }}</h1>
+			<time class="Date" datetime="{{ date | formatDate() }}">{{ date | formatDate('full') }}</time>
+		</header>
+		<div class="Page-content">{{ content | safe }}</div>
+	</article>
+</main>

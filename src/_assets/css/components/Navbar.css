@@ -1,0 +1,23 @@
+.Navbar {
+	padding: 2rem;
+
+	@media (max-width: 768px) {
+		padding: 2rem 1rem;
+	}
+
+	& ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		gap: 1rem;
+	}
+
+	& a {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

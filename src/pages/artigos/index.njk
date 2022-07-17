@@ -12,7 +12,7 @@ description: "Artigos de Iván Barcia"
                 <article class="ArticleItem">
                     <img class="ArticleItem-coverimage" src="/img/{{ post.data.image.src }}" alt="{{ post.data.image.alt }}" loading="lazy">
                     <h2 class="ArticleItem-title">{{ post.data.title }}</h2>
-                        <time class="ArticleItem-date Date" datetime="{{ post.date | formatDate('iso') }}">{{ post.date | formatDate('date') }}</time>
+                    <time class="ArticleItem-date Date" datetime="{{ post.date | formatDate('iso') }}">{{ post.date | formatDate('date') }}</time>
                     <div class="ArticleItem-excerpt">{{ post.data.excerpt }}</div>
                 </article>
             </a>

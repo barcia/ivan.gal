@@ -1,6 +1,6 @@
 
 :root {
-	--bgColor: hsl(16, 15%, 85%);
+	--bgColor: hsl(12, 9%, 89%);
 	--primaryColor: hsl(207, 40%, 30%);
     --fontColor: hsl(0 0% 0% / 0.8);
     --fontColorLight: hsl(0 0% 0% / 0.5);
@@ -45,15 +45,15 @@ button, input[type="submit"], .Button {
 }
 
 
-.Wrapper {
-    width: 100%;
-    max-width: 75ch;
-    margin: 0 1rem;
-    align-self: center;
-}
-
 .Date {
     font-size: 1.1rem;
     color: var(--fontColorLight);
     font-family: var(--fontFamilyHeadings);
+}
+
+.CoverImage {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+	border-radius: 1rem;
 }

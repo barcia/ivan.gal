@@ -13,24 +13,21 @@
 <body>
 
 	<header>
-		<a href="/">Iván</a>
 		<nav class="Navbar">
 			<ul>
 				<li><a href="/">Inicio</a></li>
 				<li><a href="/artigos">Artigos</a></li>
 				<li><a href="/notas">Notas</a></li>
+				<li><a href="/contacto">Contacto</a></li>
 			</ul>
 		</nav>
 	</header>
 
-    <main class="Wrapper">
+    <div class="Wrapper">
         {{ content | safe }}
-    </main>
+    </div>
 
 	<footer class="Footer">
-		<p>&copy;</p>
-		{# <a href="/privacidade">Privacidade</a> #}
-		<a href="/contacto">Contacto</a>
 	</footer>
 
 </body>

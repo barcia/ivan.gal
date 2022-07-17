@@ -2,50 +2,29 @@
 layout: base.njk
 ---
 
-<nav class="Breadcrumb" aria-label="Breadcrumb">
+{# <nav class="Breadcrumb" aria-label="Breadcrumb">
 	<ol>
 		<li><a href="/artigos">Artigos</a></li>
 		<li><a href="./" aria-current="page">{{ title }}</a></li>
 	</ol>
-</nav>
-<article class="Page">
-    <header class="Page-header">
-		<img class="CoverImage" src="/img/{{ image.url }}" alt="{{ image.alt }}">
-		<h1 class="Page-title">{{ title }}</h1>
-		<time class="Date" datetime="{{ date | formatDate('iso') }}">{{ date | formatDate('datelong') }}</time>
-	</header>
+</nav> #}
 
-    <div class="Page-content">{{ content | safe }}</div>
+<main>
+	<article class="Page">
+		<header class="Page-header">
+			<img class="CoverImage" src="{{ site.imgPath }}{{ image.src }}" alt="{{ image.alt }}">
+			<h1 class="Page-title">{{ title }}</h1>
+			<time class="Date" datetime="{{ date | formatDate('iso') }}">{{ date | formatDate('datelong') }}</time>
+		</header>
 
-	<footer>
-		<address>
-		 <em><a href="/contacto">{{ site.author.name }}</a></em>
-		</address>
+		<div class="Page-content">{{ content | safe }}</div>
 
-		{% include "subscribe.njk" %}
+		<footer>
+			<address>
+			 <em><a href="/contacto">{{ site.author.name }}</a></em>
+			</address>
 
-		<!-- <button class="share" data-share-text="{{ title }}">Compartir</button> -->
-	</footer>
-</article>
-
-<!--
-<script>
-	const button = document.querySelector('.share');
-
-	if (navigator.share) {
-		button.addEventListener('click', () => {
-
-		navigator.share({
-				url: window.location.href,
-				text: button.getAttribute('data-share-text'),
-			})
-		});
-	} else {
-		button.style.display = 'none';
-	}
-
-
-
-
-	// console.log(button);
-</script> -->
+			{% include "subscribe.njk" %}
+		</footer>
+	</article>
+</main>
