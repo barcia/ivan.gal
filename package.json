@@ -21,8 +21,8 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
-    "@11ty/eleventy-plugin-rss": "^1.1.2",
-    "parcel": "^2.5.0",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "parcel": "^2.6.2",
     "rss": "^1.2.2",
     "standarize": "^6.0.0",
     "uuid": "^8.3.2"
