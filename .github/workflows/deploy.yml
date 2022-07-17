@@ -1,0 +1,27 @@
+name: "Deploy production"
+
+# Controls when the workflow will run
+on:
+  push:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch: true
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: './_site'
+          production-branch: main
+          enable-pull-request-comment: false
+          enable-commit-comment: false
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        timeout-minutes: 1
