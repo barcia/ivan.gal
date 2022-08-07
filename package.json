@@ -5,8 +5,7 @@
   "scripts": {
     "build": "eleventy && parcel build --no-source-maps --no-cache",
     "11ty:start": "eleventy --serve",
-    "assets:start": "parcel watch",
-    "id": "uuid"
+    "assets:start": "parcel watch"
   },
   "keywords": [],
   "source": [
