@@ -1,0 +1,24 @@
+.Breadcrumbs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    opacity: 0.65;
+
+    & a {
+        color: inherit;
+        text-decoration: none;
+
+        &[aria-current="page"] {
+            pointer-events: none;
+        }
+    }
+
+    & > *:not(:last-child)::after {
+        margin-left: 0.5rem;
+        content: ">";
+    }
+}
+

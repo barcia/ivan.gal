@@ -1,7 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-
+import Date from '../../components/Date/index.astro'
 import { getCollection, getEntry } from 'astro:content';
+import './style.css'
 
 // Get all entries from a collection.
 // Requires the name of the collection as an argument.
@@ -13,13 +14,12 @@ const allStatus = await getCollection('status');
 <Layout title='Status'>
 	<h1>Status</h1>
 
-	<ul>
+	<ul class="PostList">
 		{
 			allStatus.map((post) => (
-				<li>
-					<a href={`/status/${post.slug}/`}>
-						<h4 class="title">{post.data.title}</h4>
-					</a>
+				<li class="PostItem">
+					<h2 class="title"><a href={`/status/${post.slug}/`}>{post.data.title}</a></h2>
+					<Date date={post.data.pubDate} type='full'/>
 				</li>
 			))
 		}

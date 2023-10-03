@@ -1,0 +1,31 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import './style.css'
+---
+
+<Layout title="Contacto">
+	<h1>Contacto</h1>
+
+    <form class="ContactForm" action="https://api.web3forms.com/submit" method="POST">
+
+      <input type="hidden" name="access_key" value="15786cbc-b2d6-4c14-a3d6-6eced856b006">
+
+      <div class="Field">
+        <label>Name:</label>
+        <input type="text" name="name" required>
+      </div>
+      <div class="Field">
+        <label>Email:</label>
+        <input type="email" name="email" required>
+      </div>
+      <div class="Field">
+        <label>Mensaxe:</label>
+        <textarea name="message" required></textarea>
+      </div>
+      <div class="h-captcha" data-captcha="true"></div>
+      <button type="submit">Enviar</button>
+  </form>
+
+</Layout>
+
+<script src="https://web3forms.com/client/script.js" async defer></script>

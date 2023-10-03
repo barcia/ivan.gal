@@ -1,0 +1,32 @@
+---
+import './style.css'
+export interface Props {
+	date: Date
+}
+
+const { date, type } = Astro.props
+
+
+const nombresDias = ['Domingo', 'Luns', 'Martes', 'Mércores', 'Xoves', 'Venres', 'Sábado'];
+const nombresDiasAlt = ['Domingo', 'Segunda feira', 'Terceira feira', 'Cuarta feira', 'Quinta feira', 'Sexta feira', 'Sábado'];
+const nombresMeses = ['Xaneiro', 'Febreiro', 'Marzo', 'Abril', 'Maio', 'Xuño', 'Xullo', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Decembro'];
+
+const diaSemana = date.getDay();
+const dia = date.getDate();
+const mes = date.getMonth();
+const año = date.getFullYear();
+const hora = date.getHours();
+const minuto = date.getMinutes();
+
+const diaSemanaEnGallego = nombresDias[diaSemana];
+const mesEnGallego = nombresMeses[mes];
+
+---
+
+<time class="Datetime" datetime={date.toISOString()}>
+	{
+        type === 'full' ?
+		`${diaSemanaEnGallego}, ${dia} de ${mesEnGallego} de ${año} ás ${hora}:${minuto}` :
+		`${diaSemanaEnGallego}, ${dia} de ${mesEnGallego} de ${año}`
+	}
+</time>
