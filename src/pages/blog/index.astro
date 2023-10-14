@@ -1,5 +1,5 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Page from '../../layouts/Page.astro';
 import Date from '../../components/Date/index.astro'
 import { getCollection, getEntry } from 'astro:content';
 import './_style.css'
@@ -7,21 +7,19 @@ import './_style.css'
 // Get all entries from a collection.
 // Requires the name of the collection as an argument.
 // Example: retrieve `src/content/blog/**`
-const allStatus = await getCollection('status');
+const posts = await getCollection('blog');
 ---
 
 
-<Layout title='Status'>
-	<h1>Status</h1>
-
+<Page title='Blog'>
 	<ul class="PostList">
 		{
-			allStatus.map((post) => (
+			posts.map((post) => (
 				<li class="PostItem">
-					<h2 class="title"><a href={`/status/${post.slug}/`}>{post.data.title}</a></h2>
 					<Date date={post.data.pubDate} type='full'/>
+					<h2 class="PostItem-title"><a href={`/blog/${post.slug}/`}>{post.data.title}</a></h2>
 				</li>
 			))
 		}
 	</ul>
-</Layout>
+</Page>

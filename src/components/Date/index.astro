@@ -24,9 +24,15 @@ const mesEnGallego = nombresMeses[mes];
 ---
 
 <time class="Datetime" datetime={date.toISOString()}>
-	{
-        type === 'full' ?
-		`${diaSemanaEnGallego}, ${dia} de ${mesEnGallego} de ${año} ás ${hora}:${minuto}` :
-		`${diaSemanaEnGallego}, ${dia} de ${mesEnGallego} de ${año}`
-	}
+	<span>
+		{
+			`${dia} ${mesEnGallego} ${año}`
+		}
+	</span>
+	<span>
+		{
+		type === 'full' &&
+		`${hora}:${minuto}`
+		}
+	</span>
 </time>

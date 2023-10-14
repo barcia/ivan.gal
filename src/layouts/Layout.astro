@@ -10,9 +10,6 @@ interface Props {
 
 const { title } = Astro.props;
 ---
-
-
-
 <!doctype html>
 <html lang="gl">
 	<head>
@@ -25,14 +22,12 @@ const { title } = Astro.props;
 		<ViewTransitions />
 	</head>
 	<body>
-		<div class="Wrapper">
-			<Nav />
-		</div>
-		<div class="Wrapper">
+		<Nav />
+		<main class="Wrapper">
 			<slot />
-		</div>
+		</main>
 		<footer class="Footer">
-			{siteConfig.author}
+			{siteConfig.author} © {new Date().getFullYear()}
 		</footer>
 	</body>
 </html>
@@ -67,7 +62,13 @@ const { title } = Astro.props;
 	.Wrapper {
 		max-width: 1024px;
 		padding: 0 1rem;
-		margin: 0 auto;
+		margin: 3rem auto 5rem;
 		width: 100%;
+
+		@media screen and (max-width: 720px) {
+			margin: 1rem auto 3rem;
+		}
+			
+		}
 	}
 </style>

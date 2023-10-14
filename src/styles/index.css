@@ -1,5 +1,29 @@
 @import './standarize.min.css';
 
+:root {
+    --brand-dark: #9f4e31;
+    --brand-light: #ba684a;
+    --neutral-1: #e1ddd4;
+    --neutral-2: #B3AEA4;
+    --neutral-3: #8A867F;
+    --neutral-4: #615F59;
+    --neutral-5: #383734;
+
+    --bg: var(--neutral-1);
+    --text: var(--neutral-5);
+    --text-light: var(--neutral-4);
+    --link: var(--brand-dark);
+    --link-hover: var(--brand-light);
+
+    @media (prefers-color-scheme: dark) {
+        --bg: var(--neutral-5);
+        --text: var(--neutral-1);
+        --text-light: var(--neutral-2);
+        --link: var(--brand-light);
+        --link-hover: var(--brand-dark);
+    }
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -7,23 +31,26 @@ body {
     width: 100%;
     min-height: 100vh;
     min-height: 100dvh;
+    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    background-color: var(--bg);
+    color: var(--text);
 }
 
-.Prose {
-    max-width: 860px;
-    margin: 0 auto;
-    & img {
-        max-width: 100%;
-        height: 100%;
+a {
+    color: var(--link);
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        color: var(--link-hover);
     }
 }
-
 
 .Footer {
     margin-top: auto;
     margin-inline: auto;
-    padding: 2rem 1rem;
-    background-color: hsl(0, 0%, 95%);
-    color: hsl(0, 0%, 40%);
+    padding: 3rem 1rem;
+    font-size: 0.85;
+    color: var(--neutral-3);
     width: 100%;
 }

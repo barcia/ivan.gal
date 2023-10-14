@@ -14,5 +14,6 @@ export const social = {
 	linkedin: 'https://www.linkedin.com/in/ivanbarcia/',
 	github: 'https://github.com/barcia',
 	instagram: 'https://www.instagram.com/ivanbarcia/',
-	x: 'https://twitter.com/ivarcia'
+	x: 'https://twitter.com/ivarcia',
+	youtube: 'https://www.youtube.com/@ivanbarciaf'
 }

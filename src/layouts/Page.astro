@@ -1,0 +1,19 @@
+---
+import Layout from './Layout.astro';
+
+
+const { title } = Astro.props;
+---
+
+<Layout title={title}>
+  <h1 class="PageTitle">{title}</h1>
+  <slot />
+</Layout>
+
+<style>
+  .PageTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+</style>
