@@ -1,0 +1,50 @@
+---
+import { siteConfig } from '../data/site.js'
+---
+
+<footer class="Footer">
+    <div class="Footer-content">{siteConfig.author} © {new Date().getFullYear()}</div>
+    <ul class="Footer-nav">
+        <li><a href="/blog/f0afed7e-7616-41d2-a18d-868f0622a23c">Acerca de</a></li>
+        <li><a href="/contacto">Contacto</a></li>
+    </ul>
+</footer>
+
+<style>
+.Footer {
+    margin-top: auto;
+    margin-inline: auto;
+    padding: 3rem 1rem;
+    font-size: 0.85rem;
+    color: var(--neutral-3);
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.Footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+
+    & a {
+        color: var(--neutral-3);
+        text-decoration: none;
+
+        &:hover {
+            color: var(--neutral-4);
+            text-decoration: underline;
+        }
+    }
+}
+</style>

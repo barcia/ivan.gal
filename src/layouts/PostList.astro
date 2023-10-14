@@ -1,0 +1,97 @@
+---
+import { getCollection } from 'astro:content';
+import Page from '../layouts/Page.astro';
+import Date from '../components/Date.astro'
+
+const { title, posts } = Astro.props;
+const blog = await getCollection('blog');
+const categories = [...new Set(blog.map((post) => post.data.category).flat())];
+---
+
+<Page title={title}>
+
+    <!-- <details>
+        <summary>Categories</summary>
+        <ul>
+            {categories.map((category) => <li><a href={`/blog/categoria/${category}`}>{category}</a></li>)}
+        </ul>
+    </details> -->
+
+	<ul class="PostList">
+		{
+			posts.map((post) => (
+				<li class="PostItem">
+					<Date date={post.data.pubDate} type='full'/>
+					<h2 class="PostItem-title"><a href={`/blog/${post.slug}/`}>{post.data.title}</a></h2>
+				</li>
+			))
+		}
+	</ul>
+</Page>
+
+<style>
+    .PostList {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+
+        @media screen and (max-width: 720px) {
+            gap: 2rem;
+        }
+
+    }
+
+.PostItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    position: relative;
+
+
+    @media screen and (max-width: 720px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    & .PostItem-title {
+        margin: 0rem;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    & a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+        }
+    }
+
+    & .Datetime {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        color: var(--text-light);
+        pointer-events: none;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+
+        & span:not(:last-child)::after {
+            content: '·';
+            margin: 0 0.25em;
+        }            
+    }
+}
+</style>

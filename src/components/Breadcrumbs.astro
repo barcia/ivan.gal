@@ -1,3 +1,18 @@
+---
+const { data } = Astro.props
+---
+
+<ul class="Breadcrumbs">
+	{
+		data.map((item) => (
+				<li>
+					<a href={item.slug} aria-current={item.current ? "page" : undefined}>{item.label}</a>
+				</li>
+			))
+	}
+</ul>
+
+<style>
 .Breadcrumbs {
     list-style: none;
     padding: 0;
@@ -33,3 +48,5 @@
     }
 }
 
+
+</style>

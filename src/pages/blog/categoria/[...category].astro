@@ -1,0 +1,24 @@
+---
+import { getCollection } from 'astro:content';
+import PostList from '../../../layouts/PostList.astro';
+
+export async function getStaticPaths() {
+	const blog = await getCollection('blog');
+	const categories = [...new Set(blog.map((post) => post.data.category).flat())];
+
+	return categories.map((category, index) => ({
+		params: { category },
+		props: { category },
+	}));
+}
+
+const blog = await getCollection('blog');
+const categories = [...new Set(blog.map((post) => post.data.category).flat())];
+
+const { category } = Astro.props;
+
+const filteredPosts = blog.filter((post) => post.data.category.includes(category));
+
+---
+
+<PostList title={`Blog:${category}`} posts={ filteredPosts } />

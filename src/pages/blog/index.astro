@@ -1,25 +1,9 @@
 ---
-import Page from '../../layouts/Page.astro';
-import Date from '../../components/Date/index.astro'
+import PostList from '../../layouts/PostList.astro';
+import Date from '../../components/Date.astro'
 import { getCollection, getEntry } from 'astro:content';
-import './_style.css'
 
-// Get all entries from a collection.
-// Requires the name of the collection as an argument.
-// Example: retrieve `src/content/blog/**`
 const posts = await getCollection('blog');
 ---
 
-
-<Page title='Blog'>
-	<ul class="PostList">
-		{
-			posts.map((post) => (
-				<li class="PostItem">
-					<Date date={post.data.pubDate} type='full'/>
-					<h2 class="PostItem-title"><a href={`/blog/${post.slug}/`}>{post.data.title}</a></h2>
-				</li>
-			))
-		}
-	</ul>
-</Page>
+<PostList title='Blog' posts={ posts } />

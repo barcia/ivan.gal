@@ -1,12 +1,10 @@
 ---
 import { social } from '../../data/site';
-import Layout from '../../layouts/Layout.astro';
+import Page from '../../layouts/Page.astro';
 import './_style.css'
 ---
 
-<Layout title="Contacto">
-	<h1>Contacto</h1>
-
+<Page title="Contacto">
   <ul>
     <li><a href={social.instagram} target="_blank">Instagram</a></li>
     <li><a href={social.linkedin} target="_blank">LinkedIn</a></li>
@@ -35,6 +33,6 @@ import './_style.css'
       <button type="submit">Enviar</button>
   </form>
 
-</Layout>
+</Page>
 
 <script src="https://web3forms.com/client/script.js" async defer></script>

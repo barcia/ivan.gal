@@ -1,13 +1,16 @@
 ---
 import Layout from './Layout.astro';
 
-
 const { title } = Astro.props;
 ---
 
 <Layout title={title}>
-  <h1 class="PageTitle">{title}</h1>
-  <slot />
+  <article>
+    <header>
+      <h1 class="PageTitle">{title}</h1>
+    </header>
+    <slot />
+  </article>
 </Layout>
 
 <style>

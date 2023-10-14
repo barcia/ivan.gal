@@ -2,6 +2,7 @@
 title: 'Acerca deste sitio web'
 slug: 'f0afed7e-7616-41d2-a18d-868f0622a23c'
 pubDate: '2023-10-14T02:10+02:00'
+category: meta
 ---
 
 O obxetivo deste sitio web é amosar cousas que vou facendo ou publicar algúns contidos dos temas que me interesan.
