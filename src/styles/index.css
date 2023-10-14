@@ -15,13 +15,13 @@
     --link: var(--brand-dark);
     --link-hover: var(--brand-light);
 
-    @media (prefers-color-scheme: dark) {
+    /* @media (prefers-color-scheme: dark) {
         --bg: var(--neutral-5);
         --text: var(--neutral-1);
         --text-light: var(--neutral-2);
         --link: var(--brand-light);
         --link-hover: var(--brand-dark);
-    }
+    } */
 }
 
 body {
