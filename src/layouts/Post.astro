@@ -34,7 +34,7 @@ const breadcumbs = [
   </article>
 </Layout>
 
-<style>
+<style is:global>
   .Article {
 }
 
@@ -56,6 +56,17 @@ const breadcumbs = [
 
     @media screen and (max-width: 720px) {
         font-size: 1.1rem;
+    }
+
+    & iframe {
+        width: 100%;
+        aspect-ratio: 16/9;
+
+        @media screen and (max-width: 720px) {
+            width: calc(100% + 2rem);
+            max-width: calc(100% + 2rem);;
+            margin-inline: -1rem;
+        }
     }
 
     & img {
