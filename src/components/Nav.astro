@@ -6,7 +6,7 @@ const currentSection = currentPath[0];
 
 <nav class="Nav">
 	<ul>
-		<li><a class={currentSection === "" ? "is-active" : ""} href="/"><img class="NavImage" src="/ivan_barcia.jpg" alt="Foto de perfíl de Iván Barcia">Inicio</a></li>
+		<li><a class={currentSection === "" ? "is-active" : ""} href="/">Inicio</a></li>
 		<li><a class={currentSection === "blog" ? "is-active" : ""} href="/blog">Blog</a></li>
 		<!-- <li><a class={currentSection === "contacto" ? "is-active" : ""} href="/contacto">Contacto</a></li> -->
 	</ul>
@@ -31,6 +31,7 @@ const currentSection = currentPath[0];
     font-weight: 600;
 
     @media screen and (max-width: 720px) {
+        top: 0.5rem;
         padding: 1rem 2.5rem 1rem 2rem;
     }
 }
@@ -60,18 +61,6 @@ const currentSection = currentPath[0];
 	.Nav {
 		& li {
 			position: relative;
-		}
-	}
-	.NavImage {
-		width: 1rem;
-		height: 1rem;
-		border-radius: 50%;
-		/* position: absolute;
-		left: -1.5rem; */
-        margin-right: 1rem;
-
-		&.is-hidden {
-			display: none;
 		}
 	}
 

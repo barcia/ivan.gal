@@ -78,20 +78,5 @@ const categories = [...new Set(blog.map((post) => post.data.category).flat())];
             inset: 0;
         }
     }
-
-    & .Datetime {
-        font-size: 0.9rem;
-        line-height: 1.5rem;
-        color: var(--text-light);
-        pointer-events: none;
-        flex-shrink: 0;
-        display: flex;
-        align-items: center;
-
-        & span:not(:last-child)::after {
-            content: '·';
-            margin: 0 0.25em;
-        }            
-    }
 }
 </style>
