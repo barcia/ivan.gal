@@ -3,11 +3,45 @@ import Layout from '../../layouts/Layout.astro';
 import Card from '../../components/Card.astro';
 ---
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registro operador UAS Iván Barcia</title>
+	<meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex">
+	<meta name="google" content="nositelinkssearchbox">
+</head>
+<body>
+	<h1>Drone propiedad de Iván Barcia</h1>
 
-<Layout title='Drone - Iván'>
+	<h2>Contacto</h2>
+	<table>
+		<tr>
+			<th>Nombre:</th>
+			<td>Iván</td>
+		</tr>
+		<tr>
+			<th>Apellidos:</th>
+			<td>Barcia Fernández</td>
+		</tr>
+		<tr>
+			<th>Dirección:</th>
+			<td><a href="https://maps.app.goo.gl/E3xM5S878ELRn6Wc6" target="_blank">Portomouro, Val do Dubra, Galicia, SPAIN</a></td>
+		</tr>
+		<tr>
+			<th>Teléfono:</th>
+			<td><a href="tel:+34626774164">+34 626 774 164</a></td>
+		</tr>
+		<tr>
+			<th>Email:</th>
+			<td><a href="mailto:ivanbarcia@icloud.com">ivanbarcia@icloud.com</a></td>
+		</tr>
+	</table>
+
 	
-	<h1>Registro operador UAS</h1>
-	
+	<h2>Registro operador UAS</h2>
 	<table>
 		<tr>
 			<th>Nombre:</th>
@@ -25,6 +59,10 @@ import Card from '../../components/Card.astro';
 			<th>Fecha de caducidad:</th>
 			<td><time datetime="29-08-2025">29/08/2025</time></td>
 		</tr>
+	</table>
+
+	<h2>Seguro</h2>
+	<table>
 		<tr>
 			<th>Número poliza seguro:</th>
 			<td>CDA22198380EUR</td>
@@ -35,6 +73,32 @@ import Card from '../../components/Card.astro';
 		</tr>
 	</table>
 	
-	<h2>Especificacións Drone</h2>
-	<a href='https://www.dji.com/mini-3-pro/specs'>DJI Mini 3 Pro Specs</a>
-</Layout>
+	<h2>Especificaciones Drone</h2>
+	<a href='https://www.dji.com/mini-3-pro/specs' target="_blank">DJI Mini 3 Pro Specs</a>
+
+</body>
+</html>
+
+<style>
+	body {
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		margin: 0;
+		padding: 2rem 1rem;
+	}
+	table {
+		border-collapse: collapse;
+	}
+	th, td {
+		padding: 0.5rem;
+		border: 1px solid #ccc;
+	}
+	th {
+		text-align: left;
+	}
+	a {
+		color: #000;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+</style>
