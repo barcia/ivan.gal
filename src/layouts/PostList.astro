@@ -1,27 +1,14 @@
 ---
-import { getCollection } from 'astro:content';
 import Page from '../layouts/Page.astro';
 import Date from '../components/Date.astro'
-import { formatPosts } from '../js/utils.js';
 
 const { title, posts } = Astro.props;
-const blog = await getCollection('blog');
-const formattedPosts = formatPosts(posts);
-const categories = [...new Set(blog.map((post) => post.data.category).flat())];
 ---
 
 <Page title={title}>
-
-    <!-- <details>
-        <summary>Categories</summary>
-        <ul>
-            {categories.map((category) => <li><a href={`/blog/categoria/${category}`}>{category}</a></li>)}
-        </ul>
-    </details> -->
-
 	<ul class="PostList">
 		{
-			formattedPosts.map((post) => (
+			posts.map((post) => (
 				<li class="PostItem">
 					<Date date={post.data.pubDate} type='full'/>
 					<h2 class="PostItem-title"><a href={`/blog/${post.slug}/`}>{post.data.title}</a></h2>

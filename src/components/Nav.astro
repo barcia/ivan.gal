@@ -1,14 +1,18 @@
 ---
+import { NAV } from "../config.js";
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1).split("/"); // remove the first "/"
 const currentSection = currentPath[0];
+
 ---
 
 <nav class="Nav">
 	<ul>
-		<li><a class={currentSection === "" ? "is-active" : ""} href="/">Inicio</a></li>
-		<li><a class={currentSection === "blog" ? "is-active" : ""} href="/blog">Blog</a></li>
-		<!-- <li><a class={currentSection === "contacto" ? "is-active" : ""} href="/contacto">Contacto</a></li> -->
+        {
+            NAV.map(item => (
+                <li><a class={`/${currentSection}` === item.url ? "is-active" : ""} href={item.url}>{item.label}</a></li>
+            ))
+        }
 	</ul>
 </nav>
 

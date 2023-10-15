@@ -1,7 +1,7 @@
-import { getCollection, getEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
 const posts = await getCollection('blog');
 
-export const formatPosts = ( {
+export const getBlogCollection = ( {
     drafts = false,
     future = false,
     sortByDate = true,
