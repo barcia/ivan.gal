@@ -1,0 +1,61 @@
+---
+import { SITE, SOCIAL } from '../../config.js';
+import '../../styles/index.css'
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iván Barcia</title>
+    <meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex">
+	<meta name="google" content="nositelinkssearchbox">
+</head>
+<body>
+    <h1>Iván Barcia</h1>
+    <ul>
+        <li><a href={SITE.url}>Website</a></li>
+        <li><a href={SOCIAL.instagram}>Instagram</a></li>
+        <li><a href={SOCIAL.linkedin}>LinkedIn</a></li>
+        <li><a href={SOCIAL.github}>GitHub</a></li>
+    </ul>
+</body>
+</html>
+
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100dvh;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    li {
+        margin: 3rem;
+        padding: 0;
+    }
+
+    a {
+        color: var(--neutral-1);
+        text-decoration: none;
+        background-color: var(--brand-light);
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        background-color: var(--brand-dark);
+    }
+
+</style>
