@@ -1,7 +1,7 @@
 ---
 title: 'Amsterdam still and footage'
 summary: 'Un video con fotografías de unha recente viaxe a Ámsterdam'
-slug: 028F8402-03C8-4B84-818E-8A097DA6D343
+slug: 'amsterdam-still-and-footage'
 pubDate: '2023-10-15T02:28'
 category: videos
 ---

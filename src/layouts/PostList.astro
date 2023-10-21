@@ -9,9 +9,9 @@ const { title, posts } = Astro.props;
 	<ul class="PostList">
 		{
 			posts.map((post) => (
-				<li class="PostItem">
-					<Date date={post.data.pubDate} type='full'/>
-					<h2 class="PostItem-title"><a href={`/blog/${post.slug}/`}>{post.data.title}</a></h2>
+				<li class="PostItem" >
+					<Date date={post.data.pubDate}/>
+					<h2 class="PostItem-title" ><a href={`/blog/${post.slug}/`}>{post.data.title}</a></h2>
 				</li>
 			))
 		}

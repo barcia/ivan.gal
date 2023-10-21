@@ -1,6 +1,6 @@
 import rss from '@astrojs/rss';
-import { SITE } from '../config.js'
-import { getBlogCollection } from '../utils/blog.js';
+import { SITE } from '../../config.js'
+import { getBlogCollection } from '../../utils/blog.js';
 
 export async function GET(context) {
     const blog = getBlogCollection();
