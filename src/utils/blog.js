@@ -9,7 +9,6 @@ export const getBlogCollection = ( {
 } = {}) => {
 
     const filteredPosts = posts.reduce((acc, post) => {
-        console.log(post);
         if (post.data.draft && !drafts) {
             return acc;
         }
