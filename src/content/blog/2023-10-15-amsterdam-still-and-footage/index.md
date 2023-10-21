@@ -1,7 +1,8 @@
 ---
 title: 'Amsterdam still and footage'
-slug: 028F8402-03C8-4B84-818E-8A097DA6D343
-pubDate: '2023-10-15T02:28+02:00'
+summary: 'Un video con fotografías de unha recente viaxe a Ámsterdam'
+slug: 'amsterdam-still-and-footage'
+pubDate: '2023-10-15T02:28'
 category: videos
 ---
 <iframe src="https://www.youtube.com/embed/7rf7-T8A57M?si=KFCICFBu0CFj-9Ir" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

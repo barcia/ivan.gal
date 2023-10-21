@@ -1,4 +1,7 @@
-export const formatPosts = (posts, {
+import { getCollection } from 'astro:content';
+const posts = await getCollection('blog');
+
+export const getBlogCollection = ( {
     drafts = false,
     future = false,
     sortByDate = true,
@@ -6,7 +9,6 @@ export const formatPosts = (posts, {
 } = {}) => {
 
     const filteredPosts = posts.reduce((acc, post) => {
-        console.log(post);
         if (post.data.draft && !drafts) {
             return acc;
         }

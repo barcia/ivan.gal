@@ -1,16 +1,16 @@
 ---
-import { social } from '../../data/site';
+import { SOCIAL } from '../../config.js';
 import Page from '../../layouts/Page.astro';
 import './_style.css'
 ---
 
 <Page title="Contacto">
   <ul>
-    <li><a href={social.instagram} target="_blank">Instagram</a></li>
-    <li><a href={social.linkedin} target="_blank">LinkedIn</a></li>
-    <li><a href={social.github} target="_blank">GitHub</a></li>
-    <li><a href={social.x} target="_blank">X (Twitter)</a></li>
-    <li><a href={social.youtube} target="_blank">YouTube</a></li>
+    <li><a href={SOCIAL.instagram} target="_blank">Instagram</a></li>
+    <li><a href={SOCIAL.linkedin} target="_blank">LinkedIn</a></li>
+    <li><a href={SOCIAL.github} target="_blank">GitHub</a></li>
+    <li><a href={SOCIAL.x} target="_blank">X (Twitter)</a></li>
+    <li><a href={SOCIAL.youtube} target="_blank">YouTube</a></li>
   </ul>
 
     <form class="ContactForm" action="https://api.web3forms.com/submit" method="POST">
