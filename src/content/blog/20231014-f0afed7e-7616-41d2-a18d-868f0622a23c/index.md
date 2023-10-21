@@ -1,7 +1,8 @@
 ---
 title: 'Acerca deste sitio web'
+summary: 'Explico o obxetivo desta web  falo de algunhas seccións e concreto'
 slug: 'f0afed7e-7616-41d2-a18d-868f0622a23c'
-pubDate: '2023-10-14T02:10+02:00'
+pubDate: '2023-10-14T02:10'
 category: meta
 ---
 

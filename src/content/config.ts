@@ -14,6 +14,7 @@ const blog = defineCollection({
 				.or(z.date())
 				.transform((val) => new Date(val)),
 			category: z.enum(categories),
+			summary: z.string().max(200),
 			draft: z.boolean().default(false)
 		}),
 })
