@@ -12,6 +12,6 @@
   "dependencies": {
     "@astrojs/rss": "^3.0.0",
     "@vercel/og": "^0.5.20",
-    "astro": "^3.3.2"
+    "astro": "^3.5.5"
   }
 }
