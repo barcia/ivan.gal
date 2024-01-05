@@ -7,7 +7,7 @@ const { title, galleries } = Astro.props;
 ---
 
 <Page title={title}>
-	<ul class="PostList">
+	<ul class="GalleryList">
 		{
 			galleries.map((gallery) => (
 				<li class="Gallery" >
@@ -23,7 +23,7 @@ const { title, galleries } = Astro.props;
 </Page>
 
 <style>
-	ul {
+	.GalleryList {
 		list-style: none;
 		margin: 0;
 		padding: 0;
