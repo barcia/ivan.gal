@@ -1,0 +1,7 @@
+---
+import { getCollection } from 'astro:content';
+import GalleryList from '../../layouts/GalleryList.astro';
+const galleries = await getCollection('photos');
+---
+
+<GalleryList title='Fotografías' galleries={ galleries } />

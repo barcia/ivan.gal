@@ -1,0 +1,80 @@
+---
+import Page from './Page.astro';
+import Date from '../components/Date.astro'
+import { Image } from 'astro:assets';
+const { title, galleries } = Astro.props;
+
+---
+
+<Page title={title}>
+	<ul class="PostList">
+		{
+			galleries.map((gallery) => (
+				<li class="Gallery" >
+					<Image src={gallery.data.cover} alt={gallery.data.title} />
+					<header class="Gallery-text">
+						<h2 class="e" ><a href={`/fotos/${gallery.data.slug}/`}>{gallery.data.title}</a></h2>
+
+					</header>
+				</li>
+			))
+		}
+	</ul>
+</Page>
+
+<style>
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	}
+
+	.Gallery {
+		aspect-ratio: 3 / 4 ;
+		position: relative;
+		border-radius: 1rem;
+		box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+		overflow: hidden;
+
+		&:has(a:hover) img {
+			transform: scale(1.05);
+		}
+	}
+
+	.Gallery-text {
+		position: absolute;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding: 1rem;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		text-align: center;
+		background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+	}
+
+	.Gallery a {
+		color: inherit;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.3s ease-in-out;
+	}
+</style>

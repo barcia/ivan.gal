@@ -1,0 +1,17 @@
+---
+import { getCollection } from 'astro:content';
+import Gallery from '../../../layouts/Gallery.astro';
+
+export async function getStaticPaths() {
+	const galleries = await getCollection('photos');
+	return galleries.map((gallery, index) => ({
+		params: { slug: gallery.data.slug },
+		props: { gallery },
+	}));
+}
+
+const { gallery } = Astro.props;
+
+---
+
+<Gallery gallery={gallery} />

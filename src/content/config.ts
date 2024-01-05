@@ -19,4 +19,25 @@ const blog = defineCollection({
 		}),
 })
 
-export const collections = { blog }
+const photos = defineCollection({
+	// Type-check frontmatter using a schema
+    type: 'data',
+	schema: ({ image }) =>
+		z.object({
+			title: z.string(),
+			description: z.string(),
+			pubDate: z
+				.string()
+				.or(z.date())
+				.transform((val) => new Date(val)),
+			slug: z.string(),
+			cover: image(),
+			images: z.array( z.object({
+				src: image(),
+				alt: z.string(),
+				title: z.string(),
+			})),
+		}),
+})
+
+export const collections = { blog, photos }

@@ -1,0 +1,64 @@
+---
+import Layout from './Layout.astro';
+import Date from '../components/Date.astro'
+import Breadcrumbs from '../components/Breadcrumbs.astro'
+import { Image } from 'astro:assets';
+
+const { gallery } = Astro.props;
+
+const breadcumbs = [
+	{
+		label: 'Fotos',
+		slug: '/fotos/',
+		current: false
+	},
+	{
+		label: gallery.data.title,
+		slug: `/fotos/${gallery.data.slug}`,
+		current: true
+	}
+]
+---
+
+<Layout title={gallery.data.title}>
+  <article class="Article">
+    <header>
+      <Breadcrumbs data={breadcumbs}  />
+      <h1 class="ArticleTitle">{ gallery.data.title }</h1>
+      <Date date={gallery.data.pubDate} type='full'/>
+    </header>
+
+    <ul class="Gallery">
+        {
+            gallery.data.images.map((photo, index) => (
+                <li>
+                    <Image src={photo.src} alt={photo.alt} />
+                </li>
+            ))
+        }
+    </ul>
+
+  </article>
+</Layout>
+
+<style>
+	ul {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-items: center;
+		/* grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); */
+		gap: 3rem;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	img {
+		/* width: 100%;
+		height: auto; */
+		width: auto;
+		height: auto;
+		max-height: 80vh;
+	}
+
+</style>

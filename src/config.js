@@ -17,7 +17,11 @@ export const NAV = [
     {
         label: 'Blog',
         url: '/blog'
-    }
+    },
+    {
+        label: 'Fotos',
+        url: '/fotos'
+    },
 ]
 
 export const SOCIAL = {
