@@ -11,11 +11,9 @@ const { title, galleries } = Astro.props;
 		{
 			galleries.map((gallery) => (
 				<li class="Gallery" >
-					<Image src={gallery.data.cover} alt={gallery.data.title} />
-					<header class="Gallery-text">
-						<h2 class="e" ><a href={`/fotos/${gallery.data.slug}/`}>{gallery.data.title}</a></h2>
-
-					</header>
+					<h2 style={`background-image: url(${ gallery.data.cover.src });`} >
+						<a href={`/fotos/${gallery.data.slug}/`}>{gallery.data.title}</a>
+					</h2>
 				</li>
 			))
 		}
@@ -23,15 +21,35 @@ const { title, galleries } = Astro.props;
 </Page>
 
 <style>
+	h2 {
+		background-repeat: no-repeat; 
+		background-position: center;
+		background-size: 100%;
+		-webkit-background-clip: text; 
+		-webkit-text-fill-color: transparent; 
+		font-size: 3.5rem;
+		font-weight: bolder;
+		margin: 0;
+		transition: background-size 0.3s ease-in-out;
+		
+		&:hover {
+			background-size: 105%;
+		}
+
+		@media screen and (min-width: 768px) {
+			font-size: 7rem;
+		}
+	}
+
 	.GalleryList {
 		list-style: none;
 		margin: 0;
 		padding: 0;
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		grid-template-columns: 1fr;
 	}
 
-	.Gallery {
+	/* .Gallery {
 		aspect-ratio: 3 / 4 ;
 		position: relative;
 		border-radius: 1rem;
@@ -41,34 +59,10 @@ const { title, galleries } = Astro.props;
 		&:has(a:hover) img {
 			transform: scale(1.05);
 		}
-	}
+	} */
 
-	.Gallery-text {
-		position: absolute;
-		bottom: 0;
-		top: 0;
-		left: 0;
-		right: 0;
-		padding: 1rem;
-		color: white;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
-		text-align: center;
-		background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
-	}
 
 	.Gallery a {
-		color: inherit;
-
-		&::before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-		}
 	}
 
 	img {
