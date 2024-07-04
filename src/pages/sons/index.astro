@@ -1,0 +1,40 @@
+---
+import Page from '../../layouts/Page.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+const title = "Paisaxes sonoras"
+
+import { getCollection } from 'astro:content';
+const sounds = await getCollection('sounds');
+console.log(sounds);
+
+---
+
+<Page title={title}>
+    <ul class="GalleryList">
+		{
+			sounds.map((sound) => (
+				<li class="Gallery" >
+					<h2 >
+						{sound.data.title}
+					</h2>
+					<p><strong>Lugar:</strong> {sound.data.location}</p>
+					<p><strong>Data:</strong> <FormattedDate date={new Date(sound.data.datetime)} /> </p>
+					<p><em>{ sound.body }</em></p>
+                    <audio controls src={sound.data.src}></audio>
+				</li>
+			))
+		}
+	</ul>
+</Page>
+
+<style>
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	audio {
+		width: 100%;
+	}
+</style>
