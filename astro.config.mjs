@@ -13,9 +13,7 @@ export default defineConfig({
           RESEND_AUDIENCE_ID: envField.string({ context: "server", access: "secret" }),
       }
     },
-
   adapter: vercel(),
-
   vite: {
     plugins: [tailwindcss()]
   },
