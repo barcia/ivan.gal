@@ -1,0 +1,25 @@
+---
+import Layout from '@/components/layouts/Root.astro';
+
+interface Props {
+	title: string;
+    description: string;
+	frontmatter?: Record<string, unknown>;
+}
+
+const { title, description, frontmatter } = Astro.props; 
+
+const pageTitle = frontmatter?.title as string || title;
+const pageDescription = frontmatter?.description as string || description;
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+	<div class="flex flex-col gap-6 py-8 ">
+        <header>
+            <h1 class="text-3xl font-serif md:text-4xl">{pageTitle}</h1>
+        </header>
+        <div>
+            <slot />
+        </div>
+    </div>
+</Layout>

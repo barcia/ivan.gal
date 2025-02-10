@@ -1,0 +1,49 @@
+---
+import '@/assets/global.css';
+import '@fontsource-variable/eb-garamond';
+import Navbar from '@/components/sections/Navbar.astro';
+import Footer from '@/components/sections/Footer.astro';
+import { ClientRouter } from 'astro:transitions';
+
+interface Props {
+	title: string,
+	description: string,
+	cover?: string
+}
+
+const { title, description, cover } = Astro.props;
+---
+
+<!doctype html>
+<html lang="gl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta name="author" content="Iván Barcia">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={Astro.url} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={cover} />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={Astro.url} />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content={cover} />
+		<ClientRouter />
+	</head>
+	<body class="max-w-2xl px-4 mx-auto flex flex-col min-h-screen">
+		<Navbar />
+		<main class="flex-1">
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>
