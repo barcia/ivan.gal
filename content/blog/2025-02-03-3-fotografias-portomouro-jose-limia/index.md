@@ -2,7 +2,7 @@
 title: "3 fotografías de Portomouro de José Limia"
 slug: "3-fotografias-portomouro-jose-limia"
 description: "3 novas fotografías de Portomouro no arquivo dixital da Catedral de Santiago de Compostela polo párroco e afeccionado á fotografía José Limia."
-pubDate: "2025-02-10"
+pubDate: "2025-02-11"
 cover: "./portomouro-figura-1.jpg"
 ---
 
