@@ -33,7 +33,7 @@ No medio da fotografía, xunto a estrada, podemos ver á esquerda unha edificaci
 
 Máis arriba, pola estrada, vemos unha pequena canteira no lugar que aínda se coñece hoxe co mesmo nome e xa máis adiante as mesmas dúas edificacións que víamos na figura 2.
 
-Se nos fixamos no alto, chámame á atención unha pequena caseta que había alí arriba e sobrertodo o alforamento granítico que sobresae. Non sei ben onde se localizaría exactamente ese afloramento, pero o certo é na zona de Barcelos podemos ver no nomenclátor que aparece alguna vez o nome de *A Leira das Pedras*. E uns metros ao sur, onde se atopa o pequeno petróglifo histórico, xusto abaixo do Castro, é unha zona na que tamén parece que houbese nalgún momento unha pequena actividade extractiva. Tal vez sexa por esa zona.
+Se nos fixamos no alto, chámame á atención unha pequena caseta que había alí arriba e sobretodo o alforamento granítico que sobresae. Non sei ben onde se localizaría exactamente ese afloramento, pero o certo é na zona de Barcelos podemos ver no nomenclátor que aparece alguna vez o nome de *A Leira das Pedras*. E uns metros ao sur, onde se atopa o pequeno petróglifo histórico, xusto abaixo do Castro, é unha zona na que tamén parece que houbese nalgún momento unha pequena actividade extractiva. Tal vez sexa por esa zona.
 
 ## *Outro*
 Estas fotografías amósannos un pouco máis como era Portomouro e ponlle imaxe a algunhas cousas que xa só pertencían á memoria. 
