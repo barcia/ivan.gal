@@ -6,7 +6,7 @@ pubDate: "2025-02-10"
 cover: "./portomouro-figura-1.jpg"
 ---
 
-O pasado venres coñecíamos, a través do portal de [Cultura Galega](https://culturagalega.gal/noticia.php?id=37243), de que o Arquivo Catedralicio de Santiago de Compostela viña de facer público o fondo fotográfico de José Limia Rodríguez, párroco e afeccionado á fotografía. 
+O pasado venres coñecíamos, a través do portal de [Cultura Galega](https://culturagalega.gal/noticia.php?id=37243), de que o [Arquivo Catedralicio](https://a3w-catedralsantiago.odilo.es/portalArchivo/consultas) de Santiago de Compostela viña de facer público o fondo fotográfico de José Limia Rodríguez, párroco e afeccionado á fotografía. 
 
 Este fondo consta de 193 fotografías de entre 1894 e 1910 da contorna de Compostela. Tamén comentan que hai 61 negativos novos que están sendo catalogados e dixitalizados. A restauración, dixitalización e catalogación foron feitas polo fotohistoriador Carlos Castelao.
 
