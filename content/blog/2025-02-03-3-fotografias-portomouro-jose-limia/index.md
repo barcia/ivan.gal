@@ -14,7 +14,7 @@ Na propia nova de Cultura Galega se amosa unha fotografía de Portomouro, pero a
 
 ## Figura 1
 ![Figura 1](./portomouro-figura-1.jpg)
-C. 1891-1905. Esta posiblmenete sexa a máis vistosa das tres. Un home e unha muller atópanse ao lado do río Tambre, calculo que a uns 200 metros río arriba da ponte de Portomouro no lugar que a veces se coñece como *A Praia*. Podemos observar que a ponte debía estar coa súa remodelación recén rematada pois vese a pedra nova e limpa.
+C. 1891-1905. Esta posiblemenete sexa a máis vistosa das tres. Un home e unha muller atópanse ao lado do río Tambre, calculo que a uns 200 metros río arriba da ponte de Portomouro no lugar que a veces se coñece como *A Praia*. Podemos observar que a ponte debía estar coa súa remodelación recén rematada pois vese a pedra nova e limpa.
 
 O señor ten un sombreiro de bombín, traxe e bastón. E a señora atópase sentada con un paraugas branco. Ao outro lado do río vemos varias edificacións no lugar que hoxe sería *O Rueiro*.
 
