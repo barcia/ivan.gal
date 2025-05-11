@@ -1,7 +1,6 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @theme {
-	--font-serif: "EB Garamond", serif;
+	--font-serif: "EB Garamond Variable", serif;
 }
-
-@plugin "@tailwindcss/typography";
