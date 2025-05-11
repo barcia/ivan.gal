@@ -3,13 +3,13 @@ import Layout from "@/components/layouts/Root.astro";
 import { getCollection, render } from "astro:content";
 import FormattedDate from "@/components/ui/FormattedDate.astro";
 export async function getStaticPaths() {
-  const posts = await getCollection("blog");
-  return posts.map((post) => ({
-    params: { id: post.id },
-    props: {
-      post,
-    },
-  }));
+	const posts = await getCollection("blog");
+	return posts.map((post) => ({
+		params: { id: post.id },
+		props: {
+			post,
+		},
+	}));
 }
 
 const { post } = Astro.props;
@@ -17,24 +17,27 @@ const { Content } = await render(post);
 ---
 
 <Layout
-  title={post.data.title}
-  description={post.data.description}
-  cover={post.data.cover?.src}
+	title={post.data.title}
+	description={post.data.description}
+	cover={post.data.cover?.src}
 >
-  <article class="flex flex-col gap-6 py-4">
-    <header class="flex flex-col gap-1.5">
-      <h1 transition:name={post.id} class="text-3xl font-serif md:text-4xl">
-        {post.data.title}
-      </h1>
-      <div class="text-sm text-gray-500">
-        <FormattedDate date={post.data.pubDate} month="long" />
-      </div>
-    </header>
-    <div class="prose prose-headings:font-serif prose-headings:font-medium">
-      <Content />
-    </div>
-    <footer>
-      <address>Iván.</address>
-    </footer>
-  </article>
+	<article class="flex flex-col gap-6 py-4">
+		<header class="flex flex-col gap-1.5">
+			<h1
+				transition:name={post.id}
+				class="font-serif text-3xl md:text-4xl"
+			>
+				{post.data.title}
+			</h1>
+			<div class="text-sm text-gray-500">
+				<FormattedDate date={post.data.pubDate} month="long" />
+			</div>
+		</header>
+		<div class="prose prose-headings:font-serif prose-headings:font-medium">
+			<Content />
+		</div>
+		<footer>
+			<address>Iván.</address>
+		</footer>
+	</article>
 </Layout>

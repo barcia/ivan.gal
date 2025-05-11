@@ -5,13 +5,13 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  adapter: vercel({
-    webAnalytics: {
-      enabled: true,
-    },
-  }),
-  vite: {
-    plugins: [tailwindcss()],
-  },
-  site: "https://ivan.gal",
+	adapter: vercel({
+		webAnalytics: {
+			enabled: true,
+		},
+	}),
+	vite: {
+		plugins: [tailwindcss()],
+	},
+	site: "https://ivan.gal",
 });

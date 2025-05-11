@@ -1,14 +1,14 @@
 ---
-import '@/assets/global.css';
-import '@fontsource-variable/eb-garamond';
-import Navbar from '@/components/sections/Navbar.astro';
-import Footer from '@/components/sections/Footer.astro';
-import { ClientRouter } from 'astro:transitions';
+import "@/assets/global.css";
+import "@fontsource-variable/eb-garamond";
+import Navbar from "@/components/sections/Navbar.astro";
+import Footer from "@/components/sections/Footer.astro";
+import { ClientRouter } from "astro:transitions";
 
 interface Props {
-	title: string,
-	description: string,
-	cover?: string
+	title: string;
+	description: string;
+	cover?: string;
 }
 
 const { title, description, cover } = Astro.props;
@@ -22,7 +22,7 @@ const { title, description, cover } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>{title}</title>
 		<meta name="description" content={description} />
-		<meta name="author" content="Iván Barcia">
+		<meta name="author" content="Iván Barcia" />
 
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website" />
@@ -39,7 +39,7 @@ const { title, description, cover } = Astro.props;
 		<meta property="twitter:image" content={cover} />
 		<ClientRouter />
 	</head>
-	<body class="max-w-2xl px-4 mx-auto flex flex-col min-h-screen">
+	<body class="mx-auto flex min-h-screen max-w-2xl flex-col px-4">
 		<Navbar />
 		<main class="flex-1">
 			<slot />

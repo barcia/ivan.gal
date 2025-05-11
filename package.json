@@ -1,40 +1,42 @@
 {
-  "name": "ivan.gal",
-  "type": "module",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "dev": "astro dev",
-    "dev:host": "astro dev --host",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/rss": "^4.0.11",
-    "@astrojs/vercel": "^8.1.4",
-    "astro": "^5.7.12"
-  },
-  "devDependencies": {
-    "@fontsource-variable/eb-garamond": "^5.2.5",
-    "@fontsource/instrument-serif": "^5.2.5",
-    "@tailwindcss/typography": "^0.5.16",
-    "@tailwindcss/vite": "^4.1.6",
-    "prettier": "^3.5.3",
-    "prettier-plugin-astro": "^0.14.1",
-    "tailwindcss": "^4.1.6"
-  },
-  "prettier": {
-    "plugins": [
-      "prettier-plugin-astro"
-    ],
-    "overrides": [
-      {
-        "files": "*.astro",
-        "options": {
-          "parser": "astro"
-        }
-      }
-    ]
-  }
+	"name": "ivan.gal",
+	"type": "module",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "astro dev",
+		"dev:host": "astro dev --host",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"@astrojs/rss": "^4.0.11",
+		"@astrojs/vercel": "^8.1.4",
+		"astro": "^5.7.12"
+	},
+	"devDependencies": {
+		"@fontsource-variable/eb-garamond": "^5.2.5",
+		"@fontsource/instrument-serif": "^5.2.5",
+		"@tailwindcss/typography": "^0.5.16",
+		"@tailwindcss/vite": "^4.1.6",
+		"prettier": "^3.5.3",
+		"prettier-plugin-astro": "^0.14.1",
+		"prettier-plugin-tailwindcss": "^0.6.11",
+		"tailwindcss": "^4.1.6"
+	},
+	"prettier": {
+		"plugins": [
+			"prettier-plugin-astro",
+			"prettier-plugin-tailwindcss"
+		],
+		"overrides": [
+			{
+				"files": "*.astro",
+				"options": {
+					"parser": "astro"
+				}
+			}
+		]
+	}
 }
