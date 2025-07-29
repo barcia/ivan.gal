@@ -4,3 +4,9 @@
 @theme {
 	--font-serif: "EB Garamond Variable", serif;
 }
+
+a {
+	&:hover {
+		@apply text-orange-900 underline;
+	}
+}
