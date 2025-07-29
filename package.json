@@ -3,26 +3,33 @@
 	"type": "module",
 	"version": "0.0.1",
 	"private": true,
+	"engines": {
+		"node": ">=22.10.0"
+	},
 	"scripts": {
 		"dev": "astro dev",
 		"dev:host": "astro dev --host",
 		"build": "astro build",
 		"preview": "astro preview",
-		"astro": "astro"
+		"astro": "astro",
+		"lint": "astro check"
 	},
 	"dependencies": {
-		"@astrojs/rss": "^4.0.11",
-		"@astrojs/vercel": "^8.0.4",
-		"astro": "^5.7.12"
+		"@astrojs/check": "^0.9.4",
+		"@astrojs/rss": "^4.0.12",
+		"@astrojs/vercel": "^8.2.3",
+		"astro": "^5.12.5",
+		"typescript": "^5.8.3"
 	},
 	"devDependencies": {
-		"@fontsource-variable/eb-garamond": "^5.2.5",
+		"@fontsource-variable/eb-garamond": "^5.2.6",
 		"@tailwindcss/typography": "^0.5.16",
-		"@tailwindcss/vite": "^4.1.6",
-		"prettier": "^3.5.3",
+		"@tailwindcss/vite": "^4.1.11",
+		"prettier": "^3.6.2",
 		"prettier-plugin-astro": "^0.14.1",
-		"prettier-plugin-tailwindcss": "^0.6.11",
-		"tailwindcss": "^4.1.6"
+		"prettier-plugin-tailwindcss": "^0.6.14",
+		"sharp": "^0.34.3",
+		"tailwindcss": "^4.1.11"
 	},
 	"prettier": {
 		"plugins": [
@@ -37,5 +44,6 @@
 				}
 			}
 		]
-	}
+	},
+	"packageManager": "pnpm@10.13.1+sha512.37ebf1a5c7a30d5fabe0c5df44ee8da4c965ca0c5af3dbab28c3a1681b70a256218d05c81c9c0dcf767ef6b8551eb5b960042b9ed4300c59242336377e01cfad"
 }
