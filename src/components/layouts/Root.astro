@@ -1,6 +1,7 @@
 ---
 import "@/assets/global.css";
 import "@fontsource-variable/eb-garamond";
+import "@fontsource-variable/inter";
 import Navbar from "@/components/sections/Navbar.astro";
 import Footer from "@/components/sections/Footer.astro";
 import { ClientRouter } from "astro:transitions";
@@ -15,7 +16,7 @@ const { title, description, cover } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="gl">
+<html data-theme="dark" lang="gl">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -40,7 +41,7 @@ const { title, description, cover } = Astro.props;
 		<ClientRouter />
 	</head>
 	<body
-		class="mx-auto flex min-h-screen max-w-2xl flex-col bg-orange-50 px-4"
+		class="text-foreground bg-background mx-auto flex min-h-screen max-w-2xl flex-col px-4"
 	>
 		<Navbar />
 		<main class="flex-1">

@@ -1,7 +1,15 @@
 <header class="flex items-center justify-between py-4 font-normal lowercase">
-	<div>{Astro.url.pathname !== "/" ? <a href="/">inicio</a> : undefined}</div>
 	<nav>
 		<ul class="flex gap-4">
+			<li>
+				<a
+					aria-current={Astro.url.pathname === "/"
+						? "page"
+						: undefined}
+					href="/"
+					class="transition-colors">Inicio</a
+				>
+			</li>
 			<li>
 				<a
 					aria-current={Astro.url.pathname === "/blog"

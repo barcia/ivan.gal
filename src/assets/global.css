@@ -1,12 +1,33 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-@theme {
-	--font-serif: "EB Garamond Variable", serif;
+:root {
+	color-scheme: light dark;
 }
 
-a {
-	&:hover {
-		@apply text-orange-900 underline;
+@theme inline {
+	--font-serif: "EB Garamond Variable", ui-serif;
+	--font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+
+	--color-background: light-dark(var(--color-white), var(--color-gray-900));
+	--color-foreground: light-dark(
+		var(--color-gray-900),
+		var(--color-gray-100)
+	);
+	--color-foreground-muted: light-dark(
+		var(--color-gray-700),
+		var(--color-gray-300)
+	);
+	--color-foreground-light: light-dark(
+		var(--color-gray-500),
+		var(--color-gray-400)
+	);
+}
+
+@layer base {
+	a {
+		@apply hover:underline;
 	}
 }
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));

@@ -21,12 +21,12 @@ const postsList = slice ? posts.slice(0, slice) : posts;
 	{
 		postsList.map((post) => (
 			<li class="flex flex-col gap-1">
-				<div class="text-sm text-gray-500">
+				<div class="text-foreground-light text-sm">
 					<FormattedDate date={post.data.pubDate} />
 				</div>
 				<h3
 					transition:name={post.id}
-					class="font-serif text-xl transition-colors has-[a:hover]:text-orange-900 md:text-2xl"
+					class="font-serif text-xl md:text-2xl"
 				>
 					<a href={`/blog/${post.id}`}>{post.data.title}</a>
 				</h3>

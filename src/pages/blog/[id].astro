@@ -23,17 +23,16 @@ const { Content } = await render(post);
 >
 	<article class="flex flex-col gap-6 py-4">
 		<header class="flex flex-col gap-1.5">
-			<h1
-				transition:name={post.id}
-				class="font-serif text-3xl md:text-4xl"
-			>
+			<h1 class="font-serif text-3xl md:text-4xl">
 				{post.data.title}
 			</h1>
-			<div class="text-sm text-gray-500">
+			<div class="text-foreground-light text-sm">
 				<FormattedDate date={post.data.pubDate} month="long" />
 			</div>
 		</header>
-		<div class="prose prose-headings:font-serif prose-headings:font-medium">
+		<div
+			class="prose dark:prose-invert text-foreground-muted prose-headings:font-serif prose-headings:font-medium"
+		>
 			<Content />
 		</div>
 		<footer>
