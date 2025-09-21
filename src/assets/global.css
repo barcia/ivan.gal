@@ -29,5 +29,3 @@
 		@apply hover:underline;
 	}
 }
-
-@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
