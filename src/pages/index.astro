@@ -1,36 +1,45 @@
 ---
 import Layout from "@/components/layouts/Root.astro";
-import PostList from "@/components/ui/PostList.astro";
+import ArticlesList from "@/components/ui/ArticlesList.astro";
+import SessionList from "@/components/ui/SessionList.astro";
+import getCollectionArticles from "@/utils/getCollectionArticles";
+import getCollectionPhotos from "@/utils/getCollectionPhotos";
+
+const articles = await getCollectionArticles(3);
+const sessions = await getCollectionPhotos(3);
 ---
 
 <Layout title="Iván Barcia" description="Sitio web personal de Iván Barcia.">
 	<div class="flex flex-col gap-16 py-8">
 		<header>
-			<h1 class="font-serif text-3xl md:text-4xl">Iván Barcia</h1>
+			<h1 class="font-serif text-3xl md:text-5xl">Iván Barcia</h1>
 			<span class="text-foreground-light text-sm"> * * * </span>
 		</header>
 		<section class="flex flex-col gap-4">
 			<div class="flex items-center justify-between">
 				<h2 class="font-serif text-2xl md:text-3xl">
-					Entradas recentes no blog
+					Artigos recentes
 				</h2>
 				<a
-					href="/blog"
+					href="/artigos"
 					class="text-foreground-light hover:text-foreground-muted text-sm"
-					>Ver todas</a
+					>Ver todos</a
 				>
 			</div>
-			<PostList slice={3} />
+			<ArticlesList articles={articles} />
 		</section>
 		<section class="flex flex-col gap-4">
-			<h2 class="font-serif text-2xl md:text-3xl">Programación</h2>
-			<p>
-				Se estás buscando información acerca do Iván Barcia deseñador e
-				programador web, estás na páxina incorrecta. Estás buscando
-				esta: <a href="https://barcia.dev" class="font-medium"
-					>https://barcia.dev</a
-				>.
-			</p>
+			<div class="flex items-center justify-between">
+				<h2 class="font-serif text-2xl md:text-3xl">
+					Fotografías recentes
+				</h2>
+				<a
+					href="/fotografia"
+					class="text-foreground-light hover:text-foreground-muted text-sm"
+					>Ver todos</a
+				>
+			</div>
+			<SessionList sessions={sessions} />
 		</section>
 	</div>
 </Layout>

@@ -1,0 +1,24 @@
+---
+import ArrowUpIcon from "@/components/ui/ArrowUpIcon.astro";
+import ArrowDownIcon from "@/components/ui/ArrowDownIcon.astro";
+
+const { type } = Astro.props;
+
+interface Props {
+	type: "prev" | "next";
+}
+
+const label = {
+	prev: "Anterior",
+	next: "Siguiente",
+};
+
+const Icon = type === "prev" ? ArrowUpIcon : ArrowDownIcon;
+---
+
+<button
+	id={type}
+	aria-label={label[type]}
+	class="cursor-pointer rounded-md bg-gray-100 p-2 text-gray-600 hover:bg-gray-200 hover:transition-colors dark:bg-gray-600 dark:text-gray-700 dark:hover:bg-gray-400"
+	><Icon /></button
+>

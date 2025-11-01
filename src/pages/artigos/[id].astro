@@ -3,31 +3,31 @@ import Layout from "@/components/layouts/Root.astro";
 import { getCollection, render } from "astro:content";
 import FormattedDate from "@/components/ui/FormattedDate.astro";
 export async function getStaticPaths() {
-	const posts = await getCollection("blog");
-	return posts.map((post) => ({
-		params: { id: post.id },
+	const articles = await getCollection("articles");
+	return articles.map((article) => ({
+		params: { id: article.id },
 		props: {
-			post,
+			article,
 		},
 	}));
 }
 
-const { post } = Astro.props;
-const { Content } = await render(post);
+const { article } = Astro.props;
+const { Content } = await render(article);
 ---
 
 <Layout
-	title={post.data.title}
-	description={post.data.description}
-	cover={post.data.cover?.src}
+	title={article.data.title}
+	description={article.data.description}
+	cover={article.data.cover?.src}
 >
 	<article class="flex flex-col gap-6 py-4">
 		<header class="flex flex-col gap-1.5">
 			<h1 class="font-serif text-3xl md:text-4xl">
-				{post.data.title}
+				{article.data.title}
 			</h1>
 			<div class="text-foreground-light text-sm">
-				<FormattedDate date={post.data.pubDate} month="long" />
+				<FormattedDate date={article.data.pubDate} month="long" />
 			</div>
 		</header>
 		<div

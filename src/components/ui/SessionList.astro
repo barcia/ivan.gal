@@ -1,0 +1,29 @@
+---
+import FormattedDate from "@/components/ui/FormattedDate.astro";
+import type { CollectionEntry } from "astro:content";
+interface Props {
+	sessions: CollectionEntry<"photos">[];
+}
+
+const { sessions } = Astro.props;
+---
+
+<ul class="flex flex-col gap-6">
+	{
+		sessions.map((session) => (
+			<li class="flex flex-col gap-1">
+				<div class="text-foreground-light text-sm">
+					<FormattedDate date={session.data.pubDate} />
+				</div>
+				<h3
+					transition:name={session.id}
+					class="font-serif text-xl md:text-2xl"
+				>
+					<a href={`/fotografia/${session.id}`}>
+						{session.data.title}
+					</a>
+				</h3>
+			</li>
+		))
+	}
+</ul>

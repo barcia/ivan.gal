@@ -1,0 +1,27 @@
+---
+import FormattedDate from "@/components/ui/FormattedDate.astro";
+import type { CollectionEntry } from "astro:content";
+interface Props {
+	articles: CollectionEntry<"articles">[];
+}
+
+const { articles } = Astro.props;
+---
+
+<ul class="flex flex-col gap-6">
+	{
+		articles.map((article) => (
+			<li class="flex flex-col gap-1">
+				<div class="text-foreground-light text-sm">
+					<FormattedDate date={article.data.pubDate} />
+				</div>
+				<h3
+					transition:name={article.id}
+					class="font-serif text-xl md:text-2xl"
+				>
+					<a href={`/artigos/${article.id}`}>{article.data.title}</a>
+				</h3>
+			</li>
+		))
+	}
+</ul>

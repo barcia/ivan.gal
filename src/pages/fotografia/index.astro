@@ -1,0 +1,10 @@
+---
+import Layout from "@/components/layouts/Page.astro";
+import SessionList from "@/components/ui/SessionList.astro";
+import getCollectionPhotos from "@/utils/getCollectionPhotos";
+const sessions = await getCollectionPhotos();
+---
+
+<Layout title="Fotografía" description="Fotografía de Iván Barcia">
+	<SessionList sessions={sessions} />
+</Layout>

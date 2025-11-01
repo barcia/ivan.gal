@@ -1,0 +1,80 @@
+---
+import SliderButton from "@/components/ui/SliderButton.astro";
+---
+
+<aside
+	class="fixed top-1/2 right-10 flex -translate-y-1/2 flex-col gap-2 opacity-50 transition-opacity hover:opacity-100 pointer-coarse:hidden"
+>
+	<SliderButton type="prev" />
+	<SliderButton type="next" />
+</aside>
+
+<script>
+	const prev = document.getElementById("prev");
+	const next = document.getElementById("next");
+	const wrapper = document.querySelector(".wrapper");
+
+	if (wrapper && prev && next) {
+		const children = Array.from(wrapper.children) as HTMLElement[];
+
+		function getElementCenter(element: HTMLElement): number {
+			const rect = element.getBoundingClientRect();
+			return rect.top + rect.height / 2;
+		}
+
+		function getViewportCenter(): number {
+			return window.innerHeight / 2;
+		}
+
+		function findClosestElement(): {
+			element: HTMLElement;
+			index: number;
+		} | null {
+			const viewportCenter = getViewportCenter();
+			let closest: HTMLElement | null = null;
+			let closestIndex = -1;
+			let minDistance = Infinity;
+
+			children.forEach((child, index) => {
+				const elementCenter = getElementCenter(child);
+				const distance = Math.abs(viewportCenter - elementCenter);
+
+				if (distance < minDistance) {
+					minDistance = distance;
+					closest = child;
+					closestIndex = index;
+				}
+			});
+
+			return closest ? { element: closest, index: closestIndex } : null;
+		}
+
+		function scrollToElement(element: HTMLElement) {
+			const elementRect = element.getBoundingClientRect();
+			const viewportCenter = getViewportCenter();
+			const elementCenter = elementRect.top + elementRect.height / 2;
+			const scrollOffset = elementCenter - viewportCenter;
+
+			window.scrollBy({
+				top: scrollOffset,
+				behavior: "smooth",
+			});
+		}
+
+		prev.addEventListener("click", () => {
+			const current = findClosestElement();
+			if (current && current.index > 0) {
+				const previousElement = children[current.index - 1];
+				scrollToElement(previousElement);
+			}
+		});
+
+		next.addEventListener("click", () => {
+			const current = findClosestElement();
+			if (current && current.index < children.length - 1) {
+				const nextElement = children[current.index + 1];
+				scrollToElement(nextElement);
+			}
+		});
+	}
+</script>

@@ -9,18 +9,18 @@
 	--font-serif: "EB Garamond Variable", ui-serif;
 	--font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
 
-	--color-background: light-dark(var(--color-white), var(--color-gray-900));
+	--color-background: light-dark(var(--color-white), var(--color-zinc-900));
 	--color-foreground: light-dark(
-		var(--color-gray-900),
-		var(--color-gray-100)
+		var(--color-zinc-900),
+		var(--color-zinc-100)
 	);
 	--color-foreground-muted: light-dark(
-		var(--color-gray-700),
-		var(--color-gray-300)
+		var(--color-zinc-700),
+		var(--color-zinc-300)
 	);
 	--color-foreground-light: light-dark(
-		var(--color-gray-500),
-		var(--color-gray-400)
+		var(--color-zinc-500),
+		var(--color-zinc-400)
 	);
 }
 
@@ -29,3 +29,29 @@
 		@apply hover:underline;
 	}
 }
+
+.wrapper {
+	@apply font-light;
+
+	& > p {
+		@apply flex flex-col gap-1;
+	}
+
+	& > p:has(img) {
+		@apply h-[100dvh] place-content-center py-8 items-center;
+	}
+
+	& img {
+		@apply object-contain min-h-0 min-w-0;
+	}
+
+	& > p:has(img + img) {
+		@apply flex flex-col md:flex-row gap-4;
+
+		& img {
+			flex: 1;
+		}
+	}
+}
+
+

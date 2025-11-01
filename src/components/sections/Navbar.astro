@@ -1,24 +1,40 @@
-<header class="flex items-center justify-between py-4 font-normal lowercase">
+---
+const menu = [
+	{
+		label: "Inicio",
+		href: "/",
+	},
+	{
+		label: "Artigos",
+		href: "/artigos",
+	},
+	{
+		label: "Fotografía",
+		href: "/fotografia",
+	},
+];
+---
+
+<header class="flex items-center justify-between py-6">
 	<nav>
-		<ul class="flex gap-4">
-			<li>
-				<a
-					aria-current={Astro.url.pathname === "/"
-						? "page"
-						: undefined}
-					href="/"
-					class="transition-colors">Inicio</a
-				>
-			</li>
-			<li>
-				<a
-					aria-current={Astro.url.pathname === "/blog"
-						? "page"
-						: undefined}
-					href="/blog"
-					class="transition-colors">Blog</a
-				>
-			</li>
+		<ul class="flex gap-6 text-sm">
+			{
+				menu.map((item) => (
+					<li>
+						<a
+							aria-current={
+								Astro.url.pathname === item.href
+									? "page"
+									: undefined
+							}
+							href={item.href}
+							class="aria-[current=page]:underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				))
+			}
 		</ul>
 	</nav>
 </header>
