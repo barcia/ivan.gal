@@ -38,7 +38,7 @@
 	}
 
 	& > p:has(img) {
-		@apply h-[100dvh] place-content-center py-8 items-center;
+		@apply h-screen place-content-center py-8 items-center;
 	}
 
 	& img {
