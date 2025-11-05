@@ -31,14 +31,10 @@
 }
 
 .wrapper {
-	@apply font-light;
+	@apply flex flex-col gap-40 font-light;
 
 	& > p {
 		@apply flex flex-col gap-1;
-	}
-
-	& > p:has(img) {
-		@apply h-screen place-content-center py-8 items-center;
 	}
 
 	& img {
