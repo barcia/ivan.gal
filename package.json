@@ -4,25 +4,26 @@
 	"version": "0.0.1",
 	"private": true,
 	"engines": {
-		"node": "26"
+		"node": "24"
 	},
 	"scripts": {
 		"dev": "astro dev",
 		"dev:host": "astro dev --host",
-		"build": "astro build",
+		"build": "pnpm run lint && astro build",
 		"preview": "astro preview",
+		"preview:worker": "astro build && wrangler dev",
+		"deploy": "astro build && wrangler deploy",
 		"astro": "astro",
 		"lint": "astro check"
 	},
 	"dependencies": {
-		"@astrojs/check": "0.9.10",
 		"@astrojs/rss": "4.0.19",
-		"@astrojs/vercel": "11.0.10",
+		"@astrojs/sitemap": "3.7.4",
 		"@fontsource-variable/inter": "5.3.0",
-		"astro": "7.3.1",
-		"typescript": "6"
+		"astro": "7.3.1"
 	},
 	"devDependencies": {
+		"@astrojs/check": "0.9.10",
 		"@fontsource-variable/eb-garamond": "5.3.0",
 		"@tailwindcss/typography": "0.5.20",
 		"@tailwindcss/vite": "4.3.3",
@@ -30,7 +31,9 @@
 		"prettier-plugin-astro": "0.14.1",
 		"prettier-plugin-tailwindcss": "0.8.1",
 		"sharp": "0.35.4",
-		"tailwindcss": "4.3.3"
+		"tailwindcss": "4.3.3",
+		"typescript": "6.0.3",
+		"wrangler": "4.129.0"
 	},
 	"prettier": {
 		"plugins": [
