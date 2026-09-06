@@ -18,7 +18,11 @@ const { session } = Astro.props;
 const { Content } = await render(session);
 ---
 
-<Layout title="Fotografía" description="Fotografía de Iván Barcia">
+<Layout
+	title={session.data.title}
+	description={session.data.description}
+	cover={session.data.cover?.src}
+>
 	<article class="flex flex-col gap-6 py-4">
 		<header class="flex flex-col gap-1.5">
 			<h1 class="font-serif text-3xl md:text-4xl">
