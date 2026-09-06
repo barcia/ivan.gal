@@ -6,7 +6,7 @@
 	"engines": {
 		"node": ">=24"
 	},
-	"packageManager": "pnpm@12.3.4+sha512-lhqkH7B32joEpEHZ+OFevAyW2o73ELLrZ7+e58sGEOq9SPH9hfUc/+c4RnhfoPh8VqOocqHYk/hEZ0G1zORUVw==",
+	"packageManager": "pnpm@12.3.4",
 	"scripts": {
 		"dev": "astro dev",
 		"dev:host": "astro dev --host",
