@@ -2,9 +2,9 @@
 import "@/assets/global.css";
 import "@fontsource-variable/eb-garamond";
 import "@fontsource-variable/inter";
-import Navbar from "@/components/sections/Navbar.astro";
-import Footer from "@/components/sections/Footer.astro";
 import { ClientRouter } from "astro:transitions";
+import Footer from "@/components/sections/Footer.astro";
+import Navbar from "@/components/sections/Navbar.astro";
 
 interface Props {
 	title: string;
@@ -50,19 +50,14 @@ const coverURL = cover ? new URL(cover, Astro.site) : undefined;
 		{coverURL && <meta property="og:image" content={coverURL} />}
 
 		<!-- Twitter -->
-		<meta
-			property="twitter:card"
-			content={coverURL ? "summary_large_image" : "summary"}
-		/>
+		<meta property="twitter:card" content={coverURL ? "summary_large_image" : "summary"} />
 		<meta property="twitter:url" content={canonicalURL} />
 		<meta property="twitter:title" content={title} />
 		<meta property="twitter:description" content={description} />
 		{coverURL && <meta property="twitter:image" content={coverURL} />}
 		<ClientRouter />
 	</head>
-	<body
-		class="text-foreground bg-background mx-auto flex min-h-screen max-w-4xl flex-col px-4"
-	>
+	<body class="text-foreground bg-background mx-auto flex min-h-screen max-w-4xl flex-col px-4">
 		<Navbar />
 		<main class="flex-1">
 			<slot />

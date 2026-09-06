@@ -22,11 +22,7 @@ const menu = [
 				menu.map((item) => (
 					<li>
 						<a
-							aria-current={
-								Astro.url.pathname === item.href
-									? "page"
-									: undefined
-							}
+							aria-current={Astro.url.pathname === item.href ? "page" : undefined}
 							href={item.href}
 							class="aria-[current=page]:underline"
 						>

@@ -10,18 +10,9 @@
 	--font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
 
 	--color-background: light-dark(var(--color-white), var(--color-zinc-900));
-	--color-foreground: light-dark(
-		var(--color-zinc-900),
-		var(--color-zinc-100)
-	);
-	--color-foreground-muted: light-dark(
-		var(--color-zinc-700),
-		var(--color-zinc-300)
-	);
-	--color-foreground-light: light-dark(
-		var(--color-zinc-500),
-		var(--color-zinc-400)
-	);
+	--color-foreground: light-dark(var(--color-zinc-900), var(--color-zinc-100));
+	--color-foreground-muted: light-dark(var(--color-zinc-700), var(--color-zinc-300));
+	--color-foreground-light: light-dark(var(--color-zinc-500), var(--color-zinc-400));
 }
 
 @layer base {

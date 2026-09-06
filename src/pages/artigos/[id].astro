@@ -1,6 +1,6 @@
 ---
-import Layout from "@/components/layouts/Root.astro";
 import { getCollection, render } from "astro:content";
+import Layout from "@/components/layouts/Root.astro";
 import FormattedDate from "@/components/ui/FormattedDate.astro";
 export async function getStaticPaths() {
 	const articles = await getCollection("articles");
@@ -30,9 +30,7 @@ const { Content } = await render(article);
 				<FormattedDate date={article.data.pubDate} month="long" />
 			</div>
 		</header>
-		<div
-			class="prose dark:prose-invert prose-headings:font-serif prose-headings:font-medium"
-		>
+		<div class="prose dark:prose-invert prose-headings:font-serif prose-headings:font-medium">
 			<Content />
 		</div>
 		<footer>
