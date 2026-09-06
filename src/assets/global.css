@@ -38,16 +38,14 @@
 	}
 
 	& img {
-		@apply object-contain min-h-0 min-w-0;
+		@apply min-h-0 min-w-0 object-contain;
 	}
 
 	& > p:has(img + img) {
-		@apply flex flex-col md:flex-row gap-4;
+		@apply flex flex-col gap-4 md:flex-row;
 
 		& img {
 			flex: 1;
 		}
 	}
 }
-
-
