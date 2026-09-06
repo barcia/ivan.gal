@@ -4,38 +4,44 @@
 	"version": "0.0.1",
 	"private": true,
 	"engines": {
-		"node": "24"
+		"node": ">=24"
 	},
+	"packageManager": "pnpm@12.3.4+sha512-lhqkH7B32joEpEHZ+OFevAyW2o73ELLrZ7+e58sGEOq9SPH9hfUc/+c4RnhfoPh8VqOocqHYk/hEZ0G1zORUVw==",
 	"scripts": {
 		"dev": "astro dev",
 		"dev:host": "astro dev --host",
-		"build": "pnpm run lint && astro build",
+		"build": "astro build",
 		"preview": "astro preview",
 		"preview:worker": "astro build && wrangler dev",
-		"deploy": "astro build && wrangler deploy",
-		"astro": "astro",
-		"lint": "astro check"
+		"check": "astro check && biome check && prettier --check .",
+		"format": "biome check --write && prettier --write .",
+		"deploy": "pnpm run check && astro build && wrangler deploy",
+		"astro": "astro"
 	},
 	"dependencies": {
 		"@astrojs/rss": "4.0.19",
 		"@astrojs/sitemap": "3.7.4",
+		"@fontsource-variable/eb-garamond": "5.3.0",
 		"@fontsource-variable/inter": "5.3.0",
-		"astro": "7.3.1"
+		"@tailwindcss/typography": "0.5.20",
+		"@tailwindcss/vite": "4.3.3",
+		"astro": "7.3.1",
+		"tailwindcss": "4.3.3"
 	},
 	"devDependencies": {
 		"@astrojs/check": "0.9.10",
-		"@fontsource-variable/eb-garamond": "5.3.0",
-		"@tailwindcss/typography": "0.5.20",
-		"@tailwindcss/vite": "4.3.3",
+		"@biomejs/biome": "2.5.12",
 		"prettier": "3.9.6",
 		"prettier-plugin-astro": "0.14.1",
 		"prettier-plugin-tailwindcss": "0.8.1",
 		"sharp": "0.35.4",
-		"tailwindcss": "4.3.3",
 		"typescript": "6.0.3",
 		"wrangler": "4.129.0"
 	},
 	"prettier": {
+		"useTabs": true,
+		"tabWidth": 2,
+		"printWidth": 100,
 		"plugins": [
 			"prettier-plugin-astro",
 			"prettier-plugin-tailwindcss"
@@ -48,6 +54,5 @@
 				}
 			}
 		]
-	},
-	"packageManager": "pnpm@10.17.0+sha512.fce8a3dd29a4ed2ec566fb53efbb04d8c44a0f05bc6f24a73046910fb9c3ce7afa35a0980500668fa3573345bd644644fa98338fa168235c80f4aa17aa17fbef"
+	}
 }
